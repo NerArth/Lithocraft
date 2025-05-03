@@ -1,0 +1,38 @@
+[
+	{
+		"enabled": true,
+		"recipeGroup": 2,
+		"ingredientPattern": "G",
+		"ingredients": {
+			"G": { "type": "block", "code": "metalgrate-*-big-down", "quantity": 1, "name": "metal" }
+		},
+		"width": 1,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "block", "code": "metalgrate-{metal}-big-down", "quantity": 1 }
+	},
+	{
+		"enabled": true,
+		"recipeGroup": 2,
+		"ingredientPattern": "G",
+		"ingredients": {
+			"G": { "type": "block", "code": "metalgrate-*-small-down", "quantity": 1, "name": "metal" }
+		},
+		"width": 1,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "block", "code": "metalgrate-{metal}-small-down", "quantity": 1 }
+	},
+	{
+		"enabled": true,
+		"recipeGroup": 2,
+		"ingredientPattern": "G",
+		"ingredients": {
+			"G": { "type": "block", "code": "metalgrate-*-fancy-down", "quantity": 1, "name": "metal" }
+		},
+		"width": 1,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "block", "code": "metalgrate-{metal}-fancy-down", "quantity": 1 }
+	}
+]

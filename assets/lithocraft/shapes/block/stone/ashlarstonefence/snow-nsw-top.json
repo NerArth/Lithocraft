@@ -1,0 +1,108 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"snowcover": "game:block/liquid/snow/normal1",
+		"wall": "block/stone/brick/andesite1",
+		"edge": "block/stone/drystonefence/andesite-edge"
+	},
+	"elements": [
+		{
+			"name": "origin",
+			"from": [ 8.0, 0.0, 8.0 ],
+			"to": [ 8.0, 0.0, 8.0 ],
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "short",
+					"from": [ -8.0, 0.0, -2.0 ],
+					"to": [ -2.0, 14.5, 2.0 ],
+					"faces": {
+						"north": { "texture": "#wall", "uv": [ 8.0, 1.5, 14.0, 16.0 ] },
+						"south": { "texture": "#wall", "uv": [ 10.0, 1.5, 16.0, 16.0 ] },
+						"west": { "texture": "#wall", "uv": [ 6.5, 1.5, 10.5, 16.0 ] },
+						"down": { "texture": "#wall", "uv": [ 0.0, 12.0, 6.0, 16.0 ] }
+					},
+					"children": [
+						{
+							"name": "shorttop",
+							"from": [ 0.0, 14.5, -1.0 ],
+							"to": [ 5.0, 16.0, 5.0 ],
+							"rotationOrigin": [ 0.0, 14.5, 1.0 ],
+							"faces": {
+								"north": { "texture": "#edge", "uv": [ 2.5, 8.5, 7.5, 10.0 ], "windMode": [-1,-1,-1,-1], "windData": [0,1,1,0] },
+								"south": { "texture": "#edge", "uv": [ 5.0, 5.0, 10.0, 6.5 ], "windMode": [-1,-1,-1,-1], "windData": [0,0,1,1] },
+								"west": { "texture": "#edge", "uv": [ 0.0, 2.5, 6.0, 4.0 ], "windMode": [-1,-1,-1,-1], "windData": [0,0,1,1] },
+								"down": { "texture": "#wall", "uv": [ 9.5, 2.0, 14.5, 8.0 ], "windMode": [-1,-1,-1,-1] }
+							},
+							"children": [
+								{
+									"name": "snow1",
+									"from": [ 0.0, 1.5, 0.0 ],
+									"to": [ 5.0, 3.5, 6.0 ],
+									"faces": {
+										"north": { "texture": "#snowcover", "uv": [ 0.0, 0.0, 5.0, 2.0 ] },
+										"east": { "texture": "#snowcover", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+										"south": { "texture": "#snowcover", "uv": [ 0.0, 0.0, 5.0, 2.0 ] },
+										"west": { "texture": "#snowcover", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+										"up": { "texture": "#snowcover", "uv": [ 0.0, 0.0, 5.0, 6.0 ] }
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "big",
+					"from": [ -8.0, 0.0, -2.0 ],
+					"to": [ 8.0, 14.5, 2.0 ],
+					"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+					"rotationY": -90.0,
+					"faces": {
+						"north": { "texture": "#wall", "uv": [ 0.0, 1.5, 16.0, 16.0 ] },
+						"east": { "texture": "#wall", "uv": [ 6.0, 1.5, 10.0, 16.0 ] },
+						"south": { "texture": "#wall", "uv": [ 0.0, 1.5, 16.0, 16.0 ] },
+						"west": { "texture": "#wall", "uv": [ 6.5, 1.5, 10.5, 16.0 ] },
+						"down": { "texture": "#wall", "uv": [ 0.0, 10.0, 16.0, 14.0 ] }
+					},
+					"children": [
+						{
+							"name": "bigtop",
+							"from": [ 0.0, 14.5, -1.0 ],
+							"to": [ 16.0, 16.0, 5.0 ],
+							"rotationOrigin": [ 0.0, 14.5, 1.0 ],
+							"faces": {
+								"north": { "texture": "#edge", "uv": [ 0.0, 8.5, 16.0, 10.0 ] },
+								"east": { "texture": "#edge", "uv": [ 6.0, 2.5, 12.0, 4.0 ], "windMode": [-1,-1,-1,-1], "windData": [0,1,1,0] },
+								"south": { "texture": "#edge", "uv": [ 0.0, 8.5, 16.0, 10.0 ], "windMode": [-1,-1,-1,-1], "windData": [0,0,1,1] },
+								"west": { "texture": "#edge", "uv": [ 0.0, 2.5, 6.0, 4.0 ] },
+								"down": { "texture": "#wall", "uv": [ 0.0, 9.0, 16.0, 15.0 ], "windMode": [-1,-1,-1,-1] }
+							},
+							"children": [
+								{
+									"name": "snow2",
+									"from": [ 0.0, 1.5, 0.0 ],
+									"to": [ 16.0, 3.5, 6.0 ],
+									"faces": {
+										"north": { "texture": "#snowcover", "uv": [ 0.0, 0.0, 16.0, 2.0 ] },
+										"east": { "texture": "#snowcover", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+										"south": { "texture": "#snowcover", "uv": [ 0.0, 0.0, 16.0, 2.0 ] },
+										"west": { "texture": "#snowcover", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+										"up": { "texture": "#snowcover", "uv": [ 0.0, 0.0, 16.0, 6.0 ] }
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]}

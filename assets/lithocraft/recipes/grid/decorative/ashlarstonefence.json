@@ -1,0 +1,11 @@
+[
+	{
+		"ingredientPattern": "BBB,BBB",
+		"ingredients": {
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 1, "name": "rock", "skipVariants": ["meteorite-iron", "obsidian", "kimberlite", "scoria", "tuff", "halite", "suevite", "whitemarble", "redmarble", "greenmarble"] }
+		},
+		"width": 3,
+		"height": 2,
+		"output": { "type": "block", "code": "ashlarstonefence-{rock}-ew-free", "quantity": 8 }
+	}
+]

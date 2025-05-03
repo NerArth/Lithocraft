@@ -1,0 +1,23 @@
+[
+	{
+		"ingredientPattern": "BBB,BSB,_B_",
+		"ingredients": {
+			"B": { "type": "item", "code": "game:bone" },
+			"S": { "type": "block", "code": "game:cobblestone-*", "name": "rock", "skipVariants": ["whitemarble","redmarble","greenmarble","suevite","kimberlite"] }
+		},
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "game:cobbleskull-{rock}", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": { "type": "block", "code": "game:cobbleskull-*", "name": "rock" }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "block", "code": "game:cobblestone-{rock}", "quantity": 1 }
+	}
+]

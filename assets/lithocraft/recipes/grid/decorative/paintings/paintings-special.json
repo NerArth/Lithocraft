@@ -1,0 +1,41 @@
+[
+	{
+		"code": "painting-rust",
+		"ingredientPattern": "FCF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-meteorite-iron" },
+			"D": { "type": "item", "code": "game:cloth-blue" },
+			"C": { "type": "item", "code": "game:cloth-black" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-rust-2x3-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-shadow",
+		"ingredientPattern": "FCF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-redmarble" },
+			"D": { "type": "item", "code": "game:cloth-red" },
+			"C": { "type": "item", "code": "game:cloth-black" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-shadow-2x3-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-monolith",
+		"ingredientPattern": "FCF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-granite" },
+			"D": { "type": "item", "code": "game:cloth-yellow" },
+			"C": { "type": "item", "code": "game:cloth-black" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-monolith-2x3-north", "quantity": 1 }
+	}
+]

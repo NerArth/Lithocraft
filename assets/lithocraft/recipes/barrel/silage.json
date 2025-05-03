@@ -1,0 +1,10 @@
+[
+	{
+		"code": "silage-standard",
+		"sealHours": 72,
+		"ingredients": [
+			{ "type": "block", "code": "game:hay-normal-ud", "quantity": 1 }
+		],
+		"output": { "type": "block", "code": "silage-normal-ud", "quantity": 1 }
+	}
+]

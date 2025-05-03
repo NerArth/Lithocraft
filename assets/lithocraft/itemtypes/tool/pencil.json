@@ -1,0 +1,132 @@
+{
+	"code": "pencil",
+	"variantgroups": [
+		{ "code": "type", "states": ["graphite", "lead", "silver", "gold", "electrum", "copper", "bismuth", "molybdochalkos"] }
+	],
+	"storageFlags": 257,
+	"maxStackSize": 64,
+	"attributes": {
+		"writingTool": true,
+		"handbook": {
+				"extraSections": [ { "title": "game:handbooktitle-trivia", "text": "game:trivia-pencil" } ]
+		},
+		"groundStorageTransform": {
+			"rotation": { "x": 0, "y": 23, "z": 0 }
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ],
+		"tools": [ "*" ],
+		"lithocraft": [ "*" ]
+	},
+	"attributesByType": {
+		"pencil-graphite": {
+			"pigment": {
+				"name": "Graphite black",
+				"color": { "red": 32, "green": 32, "blue": 32 },
+			},
+			"displaycaseable": true, "shelvable": true,
+		},
+		"pencil-lead": {
+			"pigment": {
+				"name": "Lead grey",
+				"color": { "red": 72, "green": 72, "blue": 72 }
+			},
+			"displaycaseable": true,
+			"shelvable": true
+		},
+		"pencil-silver": {
+			"pigment": {
+				"name": "Silver grey",
+				"color": { "red": 192, "green": 192, "blue": 192 }
+			},
+			"displaycaseable": true,
+			"shelvable": true
+		},
+		"pencil-gold": {
+			"pigment": {
+				"name": "Golden",
+				"color": { "red": 255, "green": 215, "blue": 0 }
+			},
+			"displaycaseable": true,
+			"shelvable": true
+		},
+		"pencil-electrum": {
+			"pigment": {
+				"name": "Electrum yellow",
+				"color": { "red": 227, "green": 198, "blue": 115 }
+			},
+			"displaycaseable": true,
+			"shelvable": true
+		},
+		"pencil-copper": {
+			"pigment": {
+				"name": "Copper orange",
+				"color": { "red": 184, "green": 115, "blue": 51 }
+			},
+			"displaycaseable": true,
+			"shelvable": true
+		},
+		"pencil-bismuth": {
+			"pigment": {
+				"name": "Bismuth lilac",
+				"color": { "red": 211, "green": 177, "blue": 255 }
+			},
+			"displaycaseable": true,
+			"shelvable": true
+		},
+		"pencil-molybdochalkos": {
+			"pigment": {
+				"name": "Molybdochalkos dark orange",
+				"color": { "red": 153, "green": 101, "blue": 61 }
+			},
+			"displaycaseable": true,
+			"shelvable": true
+		},
+	},
+	"behaviors": [
+		{ "name": "GroundStorable", "properties": { "layout": "Quadrants", "collisionBox": { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.125, z2: 1 } } }
+	],
+	"shape": { "base": "item/tool/pencil" },
+	"textures": {
+		"gold": { "base": "game:block/metal/ingot/{type}" },
+		"pine": { "base": "game:block/wood/debarked/pine" }
+	},
+	"texturesByType": {
+		"*-graphite": { 
+			"gold": { "base": "game:block/coal/charcoal" },
+			"pine": { "base": "game:block/wood/debarked/kapok" }
+		}
+	},
+	"guiTransform": {
+		"translation": { x: 0, y: 0, z: 0 },
+		"rotation": { x: -36, y: 18, z: -6 },
+		"origin": { x: 0.48, y: 0.19, z: 0.44 },
+		"scale": 4.05
+	},
+	"fpHandTransform": {
+		"translation": { x: 0, y: 0, z: 0 },
+		"rotation": { x: 72, y: 143, z: -30 },
+		"origin": { x: 0.5, y: 0.3, z: 0.5 },
+		"scale": 1.53
+	},
+	"tpHandTransform": {
+		"translation": { x: -1.02, y: 0.06, z: -0.79 },
+		"rotation": { x: -6, y: 96, z: 7 },
+		"origin": { x: 0.5, y: 0, z: 0.5 },
+		"scale": 0.58
+	},
+	"tpOffHandTransform": {
+		"translation": { x: -1.02, y: 0.06, z: -0.99 },
+		"rotation": { x: -1, y: 83, z: -55 },
+		"origin": { x: 0.5, y: 0, z: 0.5 },
+		"scale": 0.5899
+	},
+	"groundTransform": {
+		"translation": { x: 0, y: 0, z: 0 },
+		"rotation": { x: 0, y: 45, z: 0 },
+		"origin": { x: 0.5, y: 0, z: 0.5 },
+		"scale": 3.2
+	}
+}

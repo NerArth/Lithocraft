@@ -1,0 +1,95 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
+	<AnalysisLevel>latest-recommended</AnalysisLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI">
+      <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VSSurvivalMod">
+      <HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+	<Reference Include="VSCreativeMod">
+		<HintPath>$(VINTAGE_STORY)/Mods/VSCreativeMod.dll</HintPath>
+		<Private>False</Private>
+	</Reference>
+    <Reference Include="VSEssentials">
+      <HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VintagestoryLib">
+      <HintPath>$(VINTAGE_STORY)/VintagestoryLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>$(VINTAGE_STORY)/Lib/protobuf-net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="cairo-sharp">
+      <HintPath>$(VINTAGE_STORY)/Lib/cairo-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="Abstract\AbstractAnimationHelper.cs" />
+		<Compile Remove="BlockBehavior\BlockBehaviorDebug.cs" />
+		<Compile Remove="BlockEntity\BEVat.cs" />
+		<Compile Remove="BlockEntity\NecessariesBEGrindstoneREFONLY.cs" />
+		<Compile Remove="Blocks\BlockGrindstone - Copy.cs" />
+		<Compile Remove="Blocks\BlockVat.cs" />
+		<Compile Remove="Items\ItemCannonRocket.cs" />
+		<Compile Remove="Items\ItemHandCannon.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="assets\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="modicon.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="modinfo.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="changelog.md">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="specialthanks.md">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Abstract\AbstractAnimationHelper.cs" />
+	  <None Include="BlockBehavior\BlockBehaviorDebug.cs" />
+	  <None Include="BlockEntity\BEVat.cs" />
+	  <None Include="Blocks\BlockGrindstone - Copy.cs" />
+	  <None Include="Blocks\BlockVat.cs" />
+	  <None Include="C:\J\VintageStoryModsDev\Lithocraft\.editorconfig" />
+	  <None Include="Items\ItemCannonRocket.cs" />
+	  <None Include="Items\ItemHandCannon.cs" />
+	</ItemGroup>
+
+	<ProjectExtensions><VisualStudio><UserProperties assets_4lithocraft_4lang_4en_1json__JsonSchema="..\..\..\schemas\game\lang.json" /></VisualStudio></ProjectExtensions>
+
+	<ItemGroup>
+	  <EditorConfigFiles Remove="C:\J\VintageStoryModsDev\Lithocraft\.editorconfig" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,154 @@
+[
+    {
+        "file": "lithocraft:recipes/grid/decorative/decorativegem.json",
+        "op": "addmerge",
+        "path": "/1/enabled",
+        "value": "false",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons", "invert": true } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "berylaquamarine",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "berylbixbite",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "corundumruby",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "corundumsapphire",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "garnetalmandine",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "garnetandradite",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "garnetgrossular",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "garnetpyrope",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "garnetspessartine",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "garnetuvarovite",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "spinelred",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "topazamber",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "topazblue",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "topazpink",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "tourmalineschorl",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "tourmalineverdelite",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "tourmalinewatermelon",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:blocktypes/stone/decorativegem.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "tourmalinerubellite",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    }
+]

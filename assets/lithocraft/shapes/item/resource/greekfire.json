@@ -1,0 +1,28 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"material": "item/chemical/mineralwax"
+	},
+	"elements": [
+		{
+			"name": "wax",
+			"from": [ 3.0, 0.0, 6.0 ],
+			"to": [ 13.0, 6.0, 10.0 ],
+			"rotationOrigin": [ 7.0, 0.0, 9.0 ],
+			"faces": {
+				"north": { "texture": "#material", "uv": [ 0.0, 0.0, 16.0, 8.0 ], "autoUv": false },
+				"east": { "texture": "#material", "uv": [ 0.0, 0.0, 16.0, 8.0 ], "autoUv": false },
+				"south": { "texture": "#material", "uv": [ 0.0, 0.0, 16.0, 8.0 ], "autoUv": false },
+				"west": { "texture": "#material", "uv": [ 0.0, 0.0, 16.0, 8.0 ], "autoUv": false },
+				"up": { "texture": "#material", "uv": [ 0.0, 16.0, 16.0, 8.0 ], "autoUv": false },
+				"down": { "texture": "#material", "uv": [ 0.0, 16.0, 16.0, 8.0 ], "autoUv": false }
+			}
+		}
+	]}

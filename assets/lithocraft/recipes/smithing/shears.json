@@ -1,0 +1,10 @@
+{
+	"ingredient": { "type": "item", "code": "ingot-*", "name": "metal", "allowedVariants": ["alum", "alumbronze", "orokhalkos", "titanbronze"] },
+	"pattern": [[
+		"###########",
+		"#__________",
+		"###########"
+	]],
+	"name": "Shears",
+	"output": { "type": "item", "code": "shears-{metal}"  }
+}

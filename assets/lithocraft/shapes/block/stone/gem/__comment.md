@@ -1,0 +1,1 @@
+Gem is a very loose category for this, as I expect some of this to be used/usable with metals and rock in general, but gem was the original intent.

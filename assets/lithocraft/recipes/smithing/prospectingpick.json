@@ -1,0 +1,10 @@
+{
+	"ingredient": { "type": "item", "code": "ingot-*", "name": "metal", "allowedVariants": ["alum", "alumbronze", "orokhalkos", "titanbronze"] },
+	"pattern": [[
+		"_____####",
+		"__#######",
+		"#####____"
+	]],
+	"name": "Prospecting pickaxe",
+	"output": { "type": "item", "code": "prospectingpickhead-{metal}"  }
+}

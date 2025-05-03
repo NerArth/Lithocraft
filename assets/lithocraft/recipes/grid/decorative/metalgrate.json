@@ -1,0 +1,14 @@
+[
+	{
+		"ingredientPattern": "H,C,M",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"M": { "type": "item", "code": "game:metalplate-*", "quantity": 2, "name": "metal" }
+		},
+		"width": 1,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "metalgrate-{metal}-big-down", "quantity": 6 }
+	}
+]

@@ -1,0 +1,10 @@
+[
+	{
+		"code": "cupritenitre",
+		"sealHours": 24,
+		"ingredients": [
+			{ "type": "item", "code": "chemicalportion-dilutedcuprite", "litres": 2, "consumelitres": 2 }
+		],
+		"output": { "type": "item", "code": "game:saltpeter", "quantity": 1 }
+	}
+]

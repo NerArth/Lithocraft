@@ -1,0 +1,34 @@
+[
+    {
+        "file": "chemistrylib:itemtypes/liquid/mineralacid.json",
+        "op": "replace", 
+        "path": "/attributes/waterTightContainerProps/texturebytype/*-nitric/base", 
+        "value": "lithocraft:block/liquid/acidnitric",
+        "side": "server",
+        "dependsOn": [{ "modid": "chemistrylib" }]
+    },
+    {
+        "file": "chemistrylib:itemtypes/liquid/mineralacid.json",
+        "op": "replace", 
+        "path": "/texturebytype/*-nitric/base", 
+        "value": "lithocraft:block/liquid/acidnitric",
+        "side": "server",
+        "dependsOn": [{ "modid": "chemistrylib" }]
+    },
+    {
+        "file": "chemistrylib:itemtypes/liquid/mineralacid.json",
+        "op": "replace", 
+        "path": "/attributes/waterTightContainerProps/texturebytype/*-sulfuric/base", 
+        "value": "lithocraft:block/liquid/acidnitric",
+        "side": "server",
+        "dependsOn": [{ "modid": "chemistrylib" }]
+    },
+    {
+        "file": "chemistrylib:itemtypes/liquid/mineralacid.json",
+        "op": "replace", 
+        "path": "/texturebytype/*-sulfuric/base", 
+        "value": "lithocraft:block/liquid/acidnitric",
+        "side": "server",
+        "dependsOn": [{ "modid": "chemistrylib" }]
+    }
+]

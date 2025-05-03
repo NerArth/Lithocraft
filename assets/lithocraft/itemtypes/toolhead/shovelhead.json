@@ -1,0 +1,50 @@
+{
+	"code": "shovelhead",
+	"variantGroups": [
+		{ "code": "material", "loadFromProperties": "lithocraft:block/metal" }
+	],
+	"skipVariants": [
+		"*-mercuryamalgam"
+	],
+	"heldTpUseAnimation": "interactstatic", "maxstacksize": 4,
+	"shapeByType": {
+		"*": { "base": "game:item/tool/shovelhead-copper" }
+	},
+	"texturesByType": {
+		"*": {
+			"material": { "base": "block/metal/ingot/{material}" },
+			"string": { "base": "game:block/transparent" },
+			"handle": { "base": "game:block/transparent" }
+		}
+	},
+	"creativeInventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
+	"fpHandTransformByType": {
+		"*": {
+			"translation": { "x": -0.25, "y": -0.1, "z": 0 },
+			"rotation": { "x": 3, "y": 15, "z": 90 },
+			"scale": 2.5
+		}
+	},
+	"guiTransformByType": {
+		"*": {
+			"rotate": false,
+			"translation": { "x": 0, "y": 0, "z": 4 },
+			"rotation": { "x": 141, "y": 33, "z": -38 },
+			"origin": { "x": 0.52, "y": 0.29, "z": 0.3 },
+			"scale": 2.24
+		}
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0.33, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 0.8, "y": 0.47, "z": 0.5 },
+		"scale": 3.6
+	},
+	"tpHandTransformByType": {
+		"*": {
+			"translation": { "x": -0.7, "y": -0.6, "z": -0.1 },
+			"rotation": { "x": 90, "y": 20, "z": 0 },
+			"scale": 0.85
+		}
+	}
+}

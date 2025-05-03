@@ -1,0 +1,18 @@
+[
+ {
+  "file": "chemistrylib:itemtypes/liquid/carbonatedammonia.json",
+    "op": "replace", 
+    "path": "/attributes/waterTightContainerProps/texture/base", 
+    "value": "lithocraft:block/liquid/ammonia",
+    "side": "server",
+    "dependsOn": [{ "modid": "chemistrylib" }]
+ },
+ {
+  "file": "chemistrylib:itemtypes/liquid/carbonatedammonia.json",
+    "op": "replace", 
+    "path": "/texture/base", 
+    "value": "lithocraft:block/liquid/ammonia",
+    "side": "server",
+    "dependsOn": [{ "modid": "chemistrylib" }]
+ }
+]

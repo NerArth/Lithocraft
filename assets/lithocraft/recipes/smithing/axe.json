@@ -1,0 +1,53 @@
+[
+    {
+    "ingredient": { "type": "item", "code": "ingot-*", "name": "metal", "allowedVariants": ["alum"] },
+    "pattern": [[
+        "#####____",
+        "#########",
+        "#########",
+        "#########",
+        "#####____"
+    ]],
+    "name": "Axe",
+    "output": { "type": "item", "code": "axehead-{metal}"  }
+    },
+    {
+	"ingredient": { "type": "item", "code": "ingot-*", "name": "metal", "allowedVariants": ["alumbronze"] },
+	"pattern": [[
+		"_########",
+		"#########",
+		"#########",
+		"_#####___",
+		"__###____",
+		"___###___"
+	]],
+	"name": "Axe",
+	"output": { "type": "item", "code": "axehead-{metal}"  }
+	},
+    {
+	"ingredient": { "type": "item", "code": "ingot-*", "name": "metal", "allowedVariants": ["orokhalkos"] },
+	"pattern": [[
+		"__####___",
+		"_#######_",
+		"####_____",
+		"###______",
+		"####_____",
+		"_#######_",
+		"__####___"
+	]],
+	"name": "Axe",
+	"output": { "type": "item", "code": "axehead-{metal}"  }
+    },
+	{
+	"ingredient": { "type": "item", "code": "ingot-*", "name": "metal", "allowedVariants": ["titanbronze"] },
+	"pattern": [[
+		"_###_###_",
+		"####_####",
+		"#########",
+		"####_####",
+		"_###_###_"
+	]],
+	"name": "Axe",
+	"output": { "type": "item", "code": "axehead-{metal}"  }
+	}
+]

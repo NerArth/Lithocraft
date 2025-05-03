@@ -1,0 +1,122 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"granite1": "block/stone/rock/granite1"
+	},
+	"elements": [
+		{
+			"name": "Origin",
+			"from": [ 8.0, 0.0, 8.0 ],
+			"to": [ 9.0, 1.0, 9.0 ],
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "Wall N",
+					"from": [ -6.5, 0.0, -7.5 ],
+					"to": [ 6.5, 16.0, -6.0 ],
+					"rotationOrigin": [ -6.0, 0.0, -7.5 ],
+					"faces": {
+						"north": { "texture": "#granite1", "uv": [ 0.5, 0.0, 13.5, 16.0 ] },
+						"east": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.5, 16.0 ] },
+						"south": { "texture": "#granite1", "uv": [ 0.5, 0.0, 13.5, 16.0 ] },
+						"west": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.5, 16.0 ] },
+						"up": { "texture": "#granite1", "uv": [ 0.0, 0.0, 13.0, 1.5 ] },
+						"down": { "texture": "#granite1", "uv": [ 0.0, 0.0, 13.0, 1.5 ] }
+					}
+				},
+				{
+					"name": "Wall S",
+					"from": [ -6.5, 0.0, 6.0 ],
+					"to": [ 6.5, 16.0, 7.5 ],
+					"rotationOrigin": [ -6.0, 0.0, 7.5 ],
+					"faces": {
+						"north": { "texture": "#granite1", "uv": [ 0.5, 0.0, 13.5, 16.0 ] },
+						"east": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.5, 16.0 ] },
+						"south": { "texture": "#granite1", "uv": [ 0.5, 0.0, 13.5, 16.0 ] },
+						"west": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.5, 16.0 ] },
+						"up": { "texture": "#granite1", "uv": [ 0.0, 0.0, 13.0, 1.5 ] },
+						"down": { "texture": "#granite1", "uv": [ 0.0, 0.0, 13.0, 1.5 ] }
+					}
+				},
+				{
+					"name": "Floor",
+					"from": [ -6.0, 0.0, -6.0 ],
+					"to": [ 6.0, 1.8, 6.0 ],
+					"rotationOrigin": [ -6.0, 0.0, -6.0 ],
+					"faces": {
+						"north": { "texture": "#granite1", "uv": [ 0.0, 0.0, 12.0, 1.5 ] },
+						"east": { "texture": "#granite1", "uv": [ 0.0, 0.0, 12.0, 1.5 ] },
+						"south": { "texture": "#granite1", "uv": [ 0.0, 0.0, 12.0, 1.5 ] },
+						"west": { "texture": "#granite1", "uv": [ 0.0, 0.0, 12.0, 1.5 ] },
+						"up": { "texture": "#granite1", "uv": [ 2.0, 2.5, 14.0, 14.5 ] },
+						"down": { "texture": "#granite1", "uv": [ 2.0, 2.5, 14.0, 14.5 ] }
+					}
+				},
+				{
+					"name": "Wall W",
+					"from": [ -7.5, 0.0, -6.0 ],
+					"to": [ -6.0, 16.0, 6.0 ],
+					"rotationOrigin": [ -7.5, 0.0, -6.0 ],
+					"faces": {
+						"north": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.5, 16.0 ] },
+						"east": { "texture": "#granite1", "uv": [ 2.5, 0.0, 14.5, 16.0 ] },
+						"south": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.5, 16.0 ] },
+						"west": { "texture": "#granite1", "uv": [ 3.5, 0.0, 15.5, 16.0 ] },
+						"up": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.5, 12.0 ] },
+						"down": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.5, 12.0 ] }
+					}
+				},
+				{
+					"name": "Wall E",
+					"from": [ 6.0, 0.0, -6.0 ],
+					"to": [ 7.5, 16.0, 6.0 ],
+					"rotationOrigin": [ 7.5, 0.0, -6.0 ],
+					"faces": {
+						"north": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.5, 16.0 ] },
+						"east": { "texture": "#granite1", "uv": [ 2.0, 0.0, 14.0, 16.0 ] },
+						"south": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.5, 16.0 ] },
+						"west": { "texture": "#granite1", "uv": [ 2.0, 0.0, 14.0, 16.0 ] },
+						"up": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.5, 12.0 ] },
+						"down": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.5, 12.0 ] }
+					}
+				},
+				{
+					"name": "Catch N",
+					"from": [ -6.0, 13.0, -6.0 ],
+					"to": [ 6.0, 14.0, -5.0 ],
+					"rotationOrigin": [ 0.0, 13.0, -6.0 ],
+					"faces": {
+						"north": { "texture": "#granite1", "uv": [ 0.0, 0.0, 12.0, 1.0 ] },
+						"east": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"south": { "texture": "#granite1", "uv": [ 0.0, 0.0, 12.0, 1.0 ] },
+						"west": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"up": { "texture": "#granite1", "uv": [ 0.0, 0.0, 12.0, 1.0 ] },
+						"down": { "texture": "#granite1", "uv": [ 0.0, 0.0, 12.0, 1.0 ] }
+					}
+				},
+				{
+					"name": "Catch S",
+					"from": [ -6.0, 13.0, 5.0 ],
+					"to": [ 6.0, 14.0, 6.0 ],
+					"rotationOrigin": [ 0.0, 13.0, 6.0 ],
+					"faces": {
+						"north": { "texture": "#granite1", "uv": [ 0.0, 0.0, 12.0, 1.0 ] },
+						"east": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"south": { "texture": "#granite1", "uv": [ 0.0, 0.0, 12.0, 1.0 ] },
+						"west": { "texture": "#granite1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"up": { "texture": "#granite1", "uv": [ 0.0, 0.0, 12.0, 1.0 ] },
+						"down": { "texture": "#granite1", "uv": [ 0.0, 0.0, 12.0, 1.0 ] }
+					}
+				}
+			]
+		}
+	]}

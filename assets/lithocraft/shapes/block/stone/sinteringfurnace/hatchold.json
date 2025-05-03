@@ -1,0 +1,431 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"iron": "block/metal/ingot/iron",
+		"lead": "block/metal/ingot/lead"
+	},
+	"elements": [
+		{
+			"name": "Door Origins",
+			"from": [ 1.0, 0.0, 16.0 ],
+			"to": [ 15.0, 15.0, 18.0 ],
+			"rotationOrigin": [ 1.0, 0.0, 16.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "Door Bot Origin",
+					"from": [ 0.0, 1.5, 0.0 ],
+					"to": [ 1.0, 2.5, 1.0 ],
+					"rotationOrigin": [ 0.0, 1.5, 0.0 ],
+					"faces": {
+					},
+					"children": [
+						{
+							"name": "Hinge Bottom 1",
+							"from": [ 0.0, 0.25, 0.0 ],
+							"to": [ 1.0, 0.75, 0.5 ],
+							"rotationOrigin": [ 0.0, 0.75, 0.0 ],
+							"faces": {
+								"east": { "texture": "#lead", "uv": [ 6.0, 6.5, 6.5, 7.0 ] },
+								"south": { "texture": "#lead", "uv": [ 13.0, 4.0, 14.0, 4.5 ] },
+								"west": { "texture": "#lead", "uv": [ 0.0, 12.0, 0.5, 12.5 ] },
+								"up": { "texture": "#lead", "uv": [ 11.0, 0.5, 12.0, 1.0 ] },
+								"down": { "texture": "#lead", "uv": [ 8.0, 0.0, 9.0, 0.5 ] }
+							}
+						},
+						{
+							"name": "Hinge Bottom 2",
+							"from": [ 0.0, 2.75, 0.0 ],
+							"to": [ 1.0, 3.25, 0.5 ],
+							"rotationOrigin": [ 0.0, 3.25, 0.0 ],
+							"faces": {
+								"east": { "texture": "#lead", "uv": [ 8.5, 6.5, 9.0, 7.0 ] },
+								"south": { "texture": "#lead", "uv": [ 10.0, 6.5, 11.0, 7.0 ] },
+								"west": { "texture": "#lead", "uv": [ 13.0, 10.5, 13.5, 11.0 ] },
+								"up": { "texture": "#lead", "uv": [ 13.0, 10.0, 14.0, 10.5 ] },
+								"down": { "texture": "#lead", "uv": [ 14.5, 10.0, 15.5, 10.5 ] }
+							}
+						},
+						{
+							"name": "Bot Rotator Origin",
+							"from": [ 0.5, 0.0, 0.0 ],
+							"to": [ 1.5, 1.0, 1.0 ],
+							"rotationOrigin": [ 0.5, 0.0, 0.5 ],
+							"faces": {
+							},
+							"children": [
+								{
+									"name": "Bot Plate 1",
+									"from": [ 1.0, -0.5, 0.0 ],
+									"to": [ 12.0, 4.0, 0.5 ],
+									"rotationOrigin": [ 1.0, -0.5, 0.0 ],
+									"faces": {
+										"north": { "texture": "#iron", "uv": [ 0.5, 5.0, 11.5, 9.5 ] },
+										"east": { "texture": "#iron", "uv": [ 3.5, 0.5, 4.0, 5.0 ] },
+										"south": { "texture": "#iron", "uv": [ 0.0, 1.5, 11.0, 6.0 ] },
+										"west": { "texture": "#iron", "uv": [ 12.0, 0.0, 12.5, 4.5 ] },
+										"up": { "texture": "#iron", "uv": [ 3.5, 10.0, 14.5, 10.5 ] },
+										"down": { "texture": "#iron", "uv": [ 4.5, 8.5, 15.5, 9.0 ] }
+									},
+									"children": [
+										{
+											"name": "Bot Handle Ori",
+											"from": [ 9.1, 1.0, 0.5 ],
+											"to": [ 10.1, 4.0, 2.5 ],
+											"rotationOrigin": [ 9.1, 1.0, 0.5 ],
+											"faces": {
+											},
+											"children": [
+												{
+													"name": "Handle Seg 3",
+													"from": [ 0.2, 0.0, -0.25 ],
+													"to": [ 0.8, 1.0, 0.25 ],
+													"rotationOrigin": [ 0.2, 0.0, -0.25 ],
+													"rotationX": 67.5,
+													"faces": {
+														"north": { "texture": "#iron", "uv": [ 14.0, 6.0, 14.5, 7.0 ] },
+														"east": { "texture": "#iron", "uv": [ 8.0, 12.0, 8.5, 13.0 ] },
+														"south": { "texture": "#iron", "uv": [ 1.0, 12.0, 1.5, 13.0 ] },
+														"west": { "texture": "#iron", "uv": [ 7.0, 4.5, 7.5, 5.5 ] }
+													}
+												},
+												{
+													"name": "Handle Seg 4",
+													"from": [ 0.8, 2.5, -0.25 ],
+													"to": [ 1.4, 3.5, 0.25 ],
+													"rotationOrigin": [ 0.8, 2.5, -0.25 ],
+													"rotationX": 112.5,
+													"rotationY": 180.0,
+													"faces": {
+														"north": { "texture": "#iron", "uv": [ 6.5, 2.5, 7.0, 3.5 ] },
+														"east": { "texture": "#iron", "uv": [ 0.5, 13.0, 1.0, 14.0 ] },
+														"south": { "texture": "#iron", "uv": [ 6.0, 13.5, 6.5, 14.5 ] },
+														"west": { "texture": "#iron", "uv": [ 12.0, 7.5, 12.5, 8.5 ] }
+													}
+												},
+												{
+													"name": "Handle SegMid 2",
+													"from": [ 0.0, -0.5, 0.6739 ],
+													"to": [ 1.0, 3.0, 1.1739 ],
+													"rotationOrigin": [ 0.1, -0.5, 0.6739 ],
+													"faces": {
+														"north": { "texture": "#lead", "uv": [ 13.5, 1.5, 14.5, 5.0 ] },
+														"east": { "texture": "#lead", "uv": [ 14.0, 4.5, 14.5, 8.0 ] },
+														"south": { "texture": "#lead", "uv": [ 8.5, 5.0, 9.5, 8.5 ] },
+														"west": { "texture": "#lead", "uv": [ 14.5, 11.0, 15.0, 14.5 ] },
+														"up": { "texture": "#lead", "uv": [ 4.0, 11.0, 5.0, 11.5 ] },
+														"down": { "texture": "#lead", "uv": [ 10.5, 7.0, 11.5, 7.5 ] }
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "Bot Shaft 1",
+									"from": [ -0.3, -0.25, 0.1 ],
+									"to": [ 0.3, 1.25, 0.7 ],
+									"rotationOrigin": [ 0.0, -0.25, 0.4 ],
+									"rotationY": 45.0,
+									"faces": {
+										"north": { "texture": "#lead", "uv": [ 11.0, 7.5, 11.5, 9.0 ] },
+										"east": { "texture": "#lead", "uv": [ 6.0, 5.0, 6.5, 6.5 ] },
+										"south": { "texture": "#lead", "uv": [ 9.0, 12.5, 9.5, 14.0 ] },
+										"west": { "texture": "#lead", "uv": [ 3.0, 13.0, 3.5, 14.5 ] },
+										"up": { "texture": "#lead", "uv": [ 10.5, 6.0, 11.0, 6.5 ] },
+										"down": { "texture": "#lead", "uv": [ 6.5, 3.0, 7.0, 3.5 ] }
+									},
+									"children": [
+										{
+											"name": "Bot Hingeplate 1",
+											"from": [ 0.3, 0.25, 0.3 ],
+											"to": [ 2.9, 1.25, 0.6 ],
+											"rotationOrigin": [ 0.3, 0.25, 0.3 ],
+											"rotationY": -45.0,
+											"faces": {
+												"north": { "texture": "#lead", "uv": [ 6.5, 1.0, 9.0, 2.0 ] },
+												"east": { "texture": "#lead", "uv": [ 3.0, 4.0, 3.5, 5.0 ] },
+												"south": { "texture": "#lead", "uv": [ 0.5, 13.5, 3.0, 14.5 ] },
+												"up": { "texture": "#lead", "uv": [ 9.0, 10.0, 11.5, 10.5 ] },
+												"down": { "texture": "#lead", "uv": [ 7.5, 0.5, 10.0, 1.0 ] }
+											}
+										}
+									]
+								},
+								{
+									"name": "Bot Shaft 2",
+									"from": [ -0.3, 2.25, 0.1 ],
+									"to": [ 0.3, 3.75, 0.7 ],
+									"rotationOrigin": [ 0.0, 2.25, 0.4 ],
+									"rotationY": 45.0,
+									"faces": {
+										"north": { "texture": "#lead", "uv": [ 7.5, 2.0, 8.0, 3.5 ] },
+										"east": { "texture": "#lead", "uv": [ 12.5, 0.5, 13.0, 2.0 ] },
+										"south": { "texture": "#lead", "uv": [ 8.0, 7.5, 8.5, 9.0 ] },
+										"west": { "texture": "#lead", "uv": [ 11.5, 12.0, 12.0, 13.5 ] },
+										"up": { "texture": "#lead", "uv": [ 3.5, 12.0, 4.0, 12.5 ] },
+										"down": { "texture": "#lead", "uv": [ 0.0, 3.5, 0.5, 4.0 ] }
+									},
+									"children": [
+										{
+											"name": "Bot Hingeplate 2",
+											"from": [ 0.3, 0.25, 0.3 ],
+											"to": [ 2.9, 1.25, 0.6 ],
+											"rotationOrigin": [ 0.3, 0.25, 0.3 ],
+											"rotationY": -45.0,
+											"faces": {
+												"north": { "texture": "#lead", "uv": [ 11.0, 0.5, 13.5, 1.5 ] },
+												"east": { "texture": "#lead", "uv": [ 1.5, 13.5, 2.0, 14.5 ] },
+												"south": { "texture": "#lead", "uv": [ 4.5, 4.0, 7.0, 5.0 ] },
+												"up": { "texture": "#lead", "uv": [ 11.0, 10.0, 13.5, 10.5 ] },
+												"down": { "texture": "#lead", "uv": [ 4.5, 1.0, 7.0, 1.5 ] }
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Door Top Origin",
+					"from": [ 0.0, 6.5, 0.0 ],
+					"to": [ 1.0, 7.5, 1.0 ],
+					"rotationOrigin": [ 0.0, 6.5, 0.0 ],
+					"faces": {
+					},
+					"children": [
+						{
+							"name": "Hinge Top 1",
+							"from": [ 0.0, 0.5, 0.0 ],
+							"to": [ 1.0, 1.0, 0.5 ],
+							"rotationOrigin": [ 0.0, 1.0, 0.0 ],
+							"faces": {
+								"east": { "texture": "#lead", "uv": [ 11.5, 12.0, 12.0, 12.5 ] },
+								"south": { "texture": "#lead", "uv": [ 4.0, 5.0, 5.0, 5.5 ] },
+								"west": { "texture": "#lead", "uv": [ 11.5, 9.0, 12.0, 9.5 ] },
+								"up": { "texture": "#lead", "uv": [ 5.0, 2.5, 6.0, 3.0 ] },
+								"down": { "texture": "#lead", "uv": [ 12.0, 13.5, 13.0, 14.0 ] }
+							}
+						},
+						{
+							"name": "Hinge Top 2",
+							"from": [ 0.0, 3.5, 0.0 ],
+							"to": [ 1.0, 4.0, 0.5 ],
+							"rotationOrigin": [ 0.0, 4.0, 0.0 ],
+							"faces": {
+								"east": { "texture": "#lead", "uv": [ 3.0, 3.5, 3.5, 4.0 ] },
+								"south": { "texture": "#lead", "uv": [ 8.0, 6.5, 9.0, 7.0 ] },
+								"west": { "texture": "#lead", "uv": [ 9.5, 4.5, 10.0, 5.0 ] },
+								"up": { "texture": "#lead", "uv": [ 7.0, 1.5, 8.0, 2.0 ] },
+								"down": { "texture": "#lead", "uv": [ 0.5, 15.0, 1.5, 15.5 ] }
+							}
+						},
+						{
+							"name": "Top Rotator Origin",
+							"from": [ 0.5, 0.0, 0.0 ],
+							"to": [ 1.5, 1.0, 1.0 ],
+							"rotationOrigin": [ 0.5, 0.0, 0.5 ],
+							"faces": {
+							},
+							"children": [
+								{
+									"name": "Top Plate 1",
+									"from": [ 1.0, -0.5, 0.0 ],
+									"to": [ 12.0, 5.0, 0.5 ],
+									"rotationOrigin": [ 1.0, -0.5, 0.0 ],
+									"faces": {
+										"north": { "texture": "#iron", "uv": [ 2.5, 0.0, 13.5, 5.5 ] },
+										"east": { "texture": "#iron", "uv": [ 0.0, 1.5, 0.5, 7.0 ] },
+										"south": { "texture": "#iron", "uv": [ 4.5, 5.5, 15.5, 11.0 ] },
+										"west": { "texture": "#iron", "uv": [ 11.0, 4.0, 11.5, 9.5 ] },
+										"up": { "texture": "#iron", "uv": [ 2.0, 1.0, 13.0, 1.5 ] },
+										"down": { "texture": "#iron", "uv": [ 4.5, 1.5, 15.5, 2.0 ] }
+									},
+									"children": [
+										{
+											"name": "Top Handle Ori",
+											"from": [ 9.1, 1.0, 0.5 ],
+											"to": [ 10.1, 4.0, 2.5 ],
+											"rotationOrigin": [ 9.1, 1.0, 0.5 ],
+											"faces": {
+											},
+											"children": [
+												{
+													"name": "Handle Seg 1",
+													"from": [ 0.2, 0.0, -0.25 ],
+													"to": [ 0.8, 1.0, 0.25 ],
+													"rotationOrigin": [ 0.2, 0.0, -0.25 ],
+													"rotationX": 67.5,
+													"faces": {
+														"north": { "texture": "#iron", "uv": [ 7.0, 8.5, 7.5, 9.5 ] },
+														"east": { "texture": "#iron", "uv": [ 11.0, 9.5, 11.5, 10.5 ] },
+														"south": { "texture": "#iron", "uv": [ 13.0, 11.5, 13.5, 12.5 ] },
+														"west": { "texture": "#iron", "uv": [ 13.5, 11.0, 14.0, 12.0 ] }
+													}
+												},
+												{
+													"name": "Handle Seg 2",
+													"from": [ 0.8, 3.5, -0.25 ],
+													"to": [ 1.4, 4.5, 0.25 ],
+													"rotationOrigin": [ 0.8, 3.5, -0.25 ],
+													"rotationX": 112.5,
+													"rotationY": 180.0,
+													"faces": {
+														"north": { "texture": "#iron", "uv": [ 11.0, 5.5, 11.5, 6.5 ] },
+														"east": { "texture": "#iron", "uv": [ 11.5, 14.0, 12.0, 15.0 ] },
+														"south": { "texture": "#iron", "uv": [ 11.0, 6.0, 11.5, 7.0 ] },
+														"west": { "texture": "#iron", "uv": [ 3.5, 3.0, 4.0, 4.0 ] }
+													}
+												},
+												{
+													"name": "Handle SegMid 1",
+													"from": [ 0.0, -0.5, 0.6739 ],
+													"to": [ 1.0, 4.0, 1.1739 ],
+													"rotationOrigin": [ 0.1, -0.5, 0.6739 ],
+													"faces": {
+														"north": { "texture": "#lead", "uv": [ 7.0, 5.5, 8.0, 10.0 ] },
+														"east": { "texture": "#lead", "uv": [ 13.0, 1.5, 13.5, 6.0 ] },
+														"south": { "texture": "#lead", "uv": [ 2.5, 11.0, 3.5, 15.5 ] },
+														"west": { "texture": "#lead", "uv": [ 4.0, 11.0, 4.5, 15.5 ] },
+														"up": { "texture": "#lead", "uv": [ 12.0, 11.5, 13.0, 12.0 ] },
+														"down": { "texture": "#lead", "uv": [ 5.5, 8.5, 6.5, 9.0 ] }
+													}
+												}
+											]
+										},
+										{
+											"name": "Top Latch",
+											"from": [ 8.0, 2.0, 0.5 ],
+											"to": [ 13.0, 2.8, 0.8 ],
+											"rotationOrigin": [ 8.4, 2.4, 0.5 ],
+											"faces": {
+												"north": { "texture": "#lead", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+												"east": { "texture": "#lead", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"south": { "texture": "#lead", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+												"west": { "texture": "#lead", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+												"up": { "texture": "#lead", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+												"down": { "texture": "#lead", "uv": [ 0.0, 0.0, 5.0, 0.5 ] }
+											}
+										},
+										{
+											"name": "Top Latch Bolt",
+											"from": [ 8.2, 2.2, 0.8 ],
+											"to": [ 8.6, 2.6, 1.1 ],
+											"rotationOrigin": [ 8.4, 2.4, 0.8 ],
+											"faces": {
+												"east": { "texture": "#iron", "uv": [ 1.0, 4.0, 1.5, 4.5 ] },
+												"south": { "texture": "#iron", "uv": [ 9.0, 6.0, 9.5, 6.5 ] },
+												"west": { "texture": "#iron", "uv": [ 10.5, 14.5, 11.0, 15.0 ] },
+												"up": { "texture": "#iron", "uv": [ 4.5, 13.0, 5.0, 13.5 ] },
+												"down": { "texture": "#iron", "uv": [ 12.0, 14.0, 12.5, 14.5 ] }
+											}
+										}
+									]
+								},
+								{
+									"name": "Top Shaft 1",
+									"from": [ -0.3, 0.0, 0.1 ],
+									"to": [ 0.3, 1.5, 0.7 ],
+									"rotationOrigin": [ 0.0, 0.0, 0.4 ],
+									"rotationY": 45.0,
+									"faces": {
+										"north": { "texture": "#lead", "uv": [ 5.5, 5.5, 6.0, 7.0 ] },
+										"east": { "texture": "#lead", "uv": [ 14.0, 8.5, 14.5, 10.0 ] },
+										"south": { "texture": "#lead", "uv": [ 1.5, 9.0, 2.0, 10.5 ] },
+										"west": { "texture": "#lead", "uv": [ 13.5, 1.5, 14.0, 3.0 ] },
+										"up": { "texture": "#lead", "uv": [ 6.0, 3.5, 6.5, 4.0 ] },
+										"down": { "texture": "#lead", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+									},
+									"children": [
+										{
+											"name": "Top Hingeplate 1",
+											"from": [ 0.3, 0.25, 0.3 ],
+											"to": [ 2.9, 1.25, 0.6 ],
+											"rotationOrigin": [ 0.3, 0.25, 0.3 ],
+											"rotationY": -45.0,
+											"faces": {
+												"north": { "texture": "#lead", "uv": [ 6.5, 12.0, 9.0, 13.0 ] },
+												"east": { "texture": "#lead", "uv": [ 4.5, 12.5, 5.0, 13.5 ] },
+												"south": { "texture": "#lead", "uv": [ 12.0, 0.5, 14.5, 1.5 ] },
+												"up": { "texture": "#lead", "uv": [ 3.0, 13.5, 5.5, 14.0 ] },
+												"down": { "texture": "#lead", "uv": [ 12.5, 9.0, 15.0, 9.5 ] }
+											}
+										}
+									]
+								},
+								{
+									"name": "Top Shaft 2",
+									"from": [ -0.3, 3.0, 0.1 ],
+									"to": [ 0.3, 4.5, 0.7 ],
+									"rotationOrigin": [ 0.0, 3.0, 0.4 ],
+									"rotationY": 45.0,
+									"faces": {
+										"north": { "texture": "#lead", "uv": [ 12.0, 5.5, 12.5, 7.0 ] },
+										"east": { "texture": "#lead", "uv": [ 1.5, 8.0, 2.0, 9.5 ] },
+										"south": { "texture": "#lead", "uv": [ 13.5, 5.5, 14.0, 7.0 ] },
+										"west": { "texture": "#lead", "uv": [ 10.5, 6.0, 11.0, 7.5 ] },
+										"up": { "texture": "#lead", "uv": [ 14.0, 13.5, 14.5, 14.0 ] },
+										"down": { "texture": "#lead", "uv": [ 2.0, 1.5, 2.5, 2.0 ] }
+									},
+									"children": [
+										{
+											"name": "Top Hingeplate 2",
+											"from": [ 0.3, 0.25, 0.3 ],
+											"to": [ 2.9, 1.25, 0.6 ],
+											"rotationOrigin": [ 0.3, 0.25, 0.3 ],
+											"rotationY": -45.0,
+											"faces": {
+												"north": { "texture": "#lead", "uv": [ 3.0, 11.0, 5.5, 12.0 ] },
+												"east": { "texture": "#lead", "uv": [ 9.5, 4.5, 10.0, 5.5 ] },
+												"south": { "texture": "#lead", "uv": [ 8.0, 13.0, 10.5, 14.0 ] },
+												"up": { "texture": "#lead", "uv": [ 12.5, 4.5, 15.0, 5.0 ] },
+												"down": { "texture": "#lead", "uv": [ 2.0, 3.5, 4.5, 4.0 ] }
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Top Latchholder 1",
+							"from": [ 12.5, 0.5, 0.0 ],
+							"to": [ 14.0, 3.5, 0.5 ],
+							"rotationOrigin": [ 12.5, 0.5, 0.0 ],
+							"faces": {
+								"north": { "texture": "#lead", "uv": [ 0.0, 0.0, 1.5, 3.0 ] },
+								"east": { "texture": "#lead", "uv": [ 0.0, 0.0, 0.5, 3.0 ] },
+								"south": { "texture": "#lead", "uv": [ 0.0, 0.0, 1.5, 3.0 ] },
+								"west": { "texture": "#lead", "uv": [ 0.0, 0.0, 0.5, 3.0 ] },
+								"up": { "texture": "#lead", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+								"down": { "texture": "#lead", "uv": [ 0.0, 0.0, 1.5, 0.5 ] }
+							}
+						},
+						{
+							"name": "Top Latchholder 2",
+							"from": [ 12.75, 1.0, 0.0 ],
+							"to": [ 13.75, 2.0, 0.5 ],
+							"rotationOrigin": [ 12.75, 1.0, 0.0 ],
+							"rotationX": 36.0,
+							"faces": {
+								"north": { "texture": "#lead", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+								"east": { "texture": "#lead", "uv": [ 0.0, 0.0, 0.5, 1.0 ] },
+								"south": { "texture": "#lead", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+								"west": { "texture": "#lead", "uv": [ 0.0, 0.0, 0.5, 1.0 ] },
+								"up": { "texture": "#lead", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+								"down": { "texture": "#lead", "uv": [ 0.0, 0.0, 1.0, 0.5 ] }
+							}
+						}
+					]
+				}
+			]
+		}
+	]}

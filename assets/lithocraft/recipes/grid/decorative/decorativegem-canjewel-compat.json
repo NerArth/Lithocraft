@@ -1,0 +1,194 @@
+[
+	{
+		"code": "decogem-canjewel-standard-flawed",
+		"recipeGroup": 2,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-flawed-*", "quantity": 1, "name": "material", "allowedVariants": ["diamond","emerald","lapislazuli","quartz","amethyst"]}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-{material}-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-canjewel-standard-chipped",
+		"recipeGroup": 2,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-chipped-*", "quantity": 1, "name": "material", "allowedVariants": ["diamond","emerald","lapislazuli","quartz","amethyst"]}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-{material}-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-canjewel-standard-normal",
+		"recipeGroup": 2,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-normal-*", "quantity": 1, "name": "material", "allowedVariants": ["diamond","emerald","lapislazuli","quartz","amethyst"]}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-{material}-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-canjewel-ruby-flawed",
+		"recipeGroup": 2,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-flawed-ruby", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-corundumruby-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-canjewel-ruby-chipped",
+		"recipeGroup": 2,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-chipped-ruby", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-corundumruby-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-canjewel-ruby-normal",
+		"recipeGroup": 2,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-normal-ruby", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-corundumruby-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-canjewel-sapphire-flawed",
+		"recipeGroup": 2,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-flawed-corundum", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-corundumsapphire-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-canjewel-sapphire-chipped",
+		"recipeGroup": 2,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-chipped-corundum", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-corundumsapphire-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-canjewel-sapphire-normal",
+		"recipeGroup": 2,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-normal-corundum", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-corundumsapphire-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-canjewel-olivine-flawed",
+		"recipeGroup": 2,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-flawed-olivine", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-olivine_peridot-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-canjewel-olivine-chipped",
+		"recipeGroup": 2,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-chipped-olivine", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-olivine_peridot-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-canjewel-olivine-normal",
+		"recipeGroup": 2,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-normal-olivine", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-olivine_peridot-simple", "quantity": 4 }
+	}
+]

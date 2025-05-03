@@ -1,0 +1,54 @@
+{
+	"enabled": false,
+	"code": "spearhead",
+	"variantGroups": [
+		{ "code": "material", "loadFromProperties": "lithocraft:block/metal" }
+	],
+	"skipVariants": [
+		"*-mercuryamalgam"
+	],
+	"heldTpUseAnimation": "interactstatic", "maxstacksize": 4,
+	"shapeByType": {
+		"*": { "base": "game:item/tool/spear/spearhead-metal" }
+	},
+	"texturesByType": {
+		"*": {
+			"material": { "base": "block/metal/ingot/{material}" },
+			"string": { "base": "game:block/transparent" },
+			"handle": { "base": "game:block/transparent" }
+		}
+	},
+	"creativeInventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
+	"guiTransformByType": {
+		"*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": 43, "y": 28, "z": -59 },
+			"origin": { "x": 0.45, "y": 0.02, "z": 0.5 },
+			"scale": 3.51
+		}
+	},
+	"fpHandTransformByType": {
+		"*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": -23, "y": 127, "z": 81 },
+			"origin": { "x": 0.5, "y": 0.06, "z": 0.51 },
+			"scale": 2.5
+		}
+	},
+	"tpHandTransformByType": {
+		"*": {
+			"translation": { "x": -0.8, "y": -0.1, "z": -0.6 },
+			"rotation": { "x": -19, "y": -22, "z": -22 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.82
+		}
+	},
+	"groundTransformByType": {
+		"*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": 90, "y": -5, "z": 0 },
+			"origin": { "x": 0.5, "y": 0.05, "z": 0.52 },
+			"scale": 4.63
+		}
+	}
+}

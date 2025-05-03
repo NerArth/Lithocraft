@@ -1,0 +1,79 @@
+{
+	"code": "decorativegem",	
+	"attributes": {
+		"handbook": {
+			"groupBy": ["decorativegem-*"]
+		}
+	},
+	"variantGroups": [
+		{ "code": "type", "states": ["emerald", "diamond", "olivine_peridot", "amethyst", "rosequartz", "clearquartz", "smokyquartz", "quartz", "lapislazuli"] },
+		{ "code": "style", "states": ["simple"] }
+	],
+	"creativeInventory": { "lithocraft": ["*"], "construction": ["*"], "decorative": ["*"] },
+	"shape": { "base": "game:block/basic/cube" },
+	"storageFlags": 5,
+	"drawType": "JSON",
+	"vertexFlags": {
+		"zOffsetByType": {
+			"*-quartz-*": 2,
+			"*-rosequartz-*": 2,
+			"*-clearquartz-*": 2,
+			"*-smokyquartz-*": 2,
+			"*-diamond-*": 2,
+			"*-olivine_peridot-*": 2,
+		},
+		"reflective": true
+	},	
+	"sideSolid": { "all": true },
+	"sideOpaqueByType": {
+		"*-quartz-*": { "all": false },
+		"*-rosequartz-*": { "all": false },
+		"*-clearquartz-*": { "all": false },
+		"*-smokyquartz-*": { "all": false },
+		"*-diamond-*": { "all": false },
+		"*-olivine_peridot-*": { "all": false },
+		"*": { "all": true }
+	},
+	"renderPassByType": {
+		"*-quartz-*": "Transparent",
+		"*-rosequartz-*": "Transparent",
+		"*-clearquartz-*": "Transparent",
+		"*-smokyquartz-*": "Transparent",
+		"*-diamond-*": "Transparent",
+		"*-olivine_peridot-*": "Transparent"
+	},
+	"faceCullModeByType": {
+		"*-quartz-*": "MergeMaterial",
+		"*-rosequartz-*": "MergeMaterial",
+		"*-clearquartz-*":"MergeMaterial",
+		"*-smokyquartz-*": "MergeMaterial",
+		"*-diamond-*": "MergeMaterial",
+		"*-olivine_peridot-*": "MergeMaterial"
+	},
+	"blockMaterial": "Stone",
+	"replaceable": 600,
+	"resistance": 2.5,
+	"materialDensity": 9001,
+	"lightAbsorptionByType": {
+		"*-quartz-*": 0,
+		"*-rosequartz-*": 0,
+		"*-clearquartz-*": 0,
+		"*-smokyquartz-*": 0,
+		"*-diamond-*": 0,
+		"*-olivine_peridot-*": 0,
+		"*": 99
+	},
+	"textures": {
+		"all": { "base": "block/stone/special/deco/deco-{style}-{type}" }
+	},
+	"sounds": {
+		"walk": "game:walk/stone",
+		"place": "game:block/ceramicplace"
+	},
+	"heldTpIdleAnimation": "holdbothhandslarge", "heldRightReadyAnimation": "heldblockready", "heldTpUseAnimation": "twohandplaceblock",
+	"tpHandTransform": {
+		"translation": { x: -1.23, y: -0.91, z: -0.8 },
+		"rotation": { x: -2, y: 25, z: -78 },
+		"scale": 0.4
+	}
+}

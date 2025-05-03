@@ -1,0 +1,81 @@
+{
+	"code": "chemicalcompound",
+	"variantgroups": [
+        {
+            "code": "type",
+            "states": [
+				"greekfire",
+				"thermitemix",
+				"thermite"
+            ]
+        }
+	],
+	"heldTpIdleAnimation": "holdbothhands",
+	"heldRightReadyAnimation": "holdbothhands",
+	"shapeByType": {
+		"*": {
+			"base": "item/resource/chemicalresidue/large" 
+		}
+	},
+	"texturesByType": {
+			"*-greekfire": {
+				"lumpy": { "base": "item/chemical/mineralwax"},
+				"dusty": { "base": "item/chemical/mineralwax"}
+			},
+			"@*-(thermitemix|thermite)": {
+				"lumpy": { "base": "item/chemical/mineralwax"},
+				"dusty": { "base": "item/chemical/mineralwax"}
+			}
+		},
+	"creativeinventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
+	"attributes": {
+		"handbook": {
+			"extraSectionsByType": {
+				"*-greekfire": [{ "title": "handbooktitle-trivia", "text": "trivia-chemicalcompound-greekfire" }],
+				"@*-(thermitemix|thermite)": [{ "title": "handbooktitle-trivia", "text": "trivia-chemicalcompound-thermite" }]
+			}
+		}
+	},
+	"combustiblePropsByType": {
+		"*-greekfire": {
+			"burnTemperature": 1500,
+			"burnDuration": 72
+		},
+		"*-thermite": {
+			"burnTemperature": 2200,
+			"burnDuration": 90
+		}
+	},
+	"maxstacksizeByType": {
+		"*": 32
+	},
+	"materialDensity": 1200,
+	"guiTransformByType": {
+		"*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": -31, "y": -1, "z": -180 },
+			"origin": { "x": 0.55, "y": 0.45, "z": 1 },
+			"scale": 1.84
+		}
+	},
+	"fpHandTransformByType": {
+		"*": {
+			"rotation": { "x": 54, "y": 95, "z": -31 },
+			"scale": 1.34
+		}
+	},
+	"tpHandTransformByType": {
+		"*": {
+			"translation": { "x": -1.4, "y": -0, "z": -0.9 },
+			"rotation": { "x": 70, "y": 11, "z": -76 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.41
+		}
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0.2, "z": 0 },
+		"rotation": { "x": -4, "y": 8, "z": 0 },
+		"origin": { "x": 0.5, "y": 0.5, "z": 0.5299 },
+		"scale": 1.92
+	}
+}

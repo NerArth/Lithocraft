@@ -1,0 +1,51 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"wall": "block/stone/brick/andesite1"
+	},
+	"elements": [
+		{
+			"name": "origin",
+			"from": [ 8.0, 0.0, 8.0 ],
+			"to": [ 8.0, 0.0, 8.0 ],
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "wall",
+					"from": [ -8.0, 0.0, -2.0 ],
+					"to": [ 2.0, 16.0, 2.0 ],
+					"faces": {
+						"north": { "texture": "#wall", "uv": [ 0.0, 0.0, 10.0, 16.0 ] },
+						"east": { "texture": "#wall", "uv": [ 8.0, 0.0, 12.0, 16.0 ] },
+						"south": { "texture": "#wall", "uv": [ 2.5, 0.0, 12.5, 16.0 ] },
+						"west": { "texture": "#wall", "uv": [ 0.0, 0.0, 4.0, 16.0 ] },
+						"up": { "texture": "#wall", "uv": [ 2.5, 0.0, 12.5, 4.0 ] },
+						"down": { "texture": "#wall", "uv": [ 0.0, 0.0, 10.0, 4.0 ] }
+					}
+				},
+				{
+					"name": "wall3",
+					"from": [ 2.0, 0.0, -2.0 ],
+					"to": [ 8.0, 16.0, 2.0 ],
+					"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+					"rotationY": -90.0,
+					"faces": {
+						"north": { "texture": "#wall", "uv": [ 2.5, 0.0, 8.5, 16.0 ] },
+						"east": { "texture": "#wall", "uv": [ 0.0, 0.0, 4.0, 16.0 ] },
+						"south": { "texture": "#wall", "uv": [ 8.0, 0.0, 14.0, 16.0 ] },
+						"up": { "texture": "#wall", "uv": [ 8.5, 8.0, 14.5, 12.0 ], "rotation": 180 },
+						"down": { "texture": "#wall", "uv": [ 1.0, 0.0, 7.0, 4.0 ] }
+					}
+				}
+			]
+		}
+	]}

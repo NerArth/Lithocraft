@@ -1,0 +1,10 @@
+{
+	"ingredient": { "type": "item", "code": "ingot-*", "name": "metal", "allowedVariants": ["alum", "alumbronze", "orokhalkos", "titanbronze"] },
+	"pattern": [[
+		"__########______",
+		"________##______",
+		"_________#______"
+	]],
+	"name": "Hoe",
+	"output": { "type": "item", "code": "hoehead-{metal}"  }
+}

@@ -1,0 +1,107 @@
+{
+	"enabled": false,
+	"code": "handcannon",
+	"class": "lithocraft.handcannon",
+	"attributes": {
+		"heldItemPitchFollow": 1,
+		"handbook": {
+				"extraSections": [ { "title": "game:handbooktitle-trivia", "text": "game:trivia-handcannon" } ]
+		}
+	},
+	"behaviors": [{ 
+		"name": "GroundStorable",
+		"properties": {
+			"layout": 'WallHalves',
+			"wallOffYByType": {
+				"*": 1
+			},
+			"sprintKey": true,
+			"selectionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1 },
+			"collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0 }
+		}
+	}],
+	"variantgroups": [
+		{ "code": "type", "states": ["stone","rocket"] },
+		{ "code": "metal", "states":  ["bismuthbronze","tinbronze","brass","iron","meteoriciron","steel"]}
+	],
+	"tool": "handcannon",
+	"maxStackSize": 1,
+	"durabilityByType": {
+		"*-bismuthbronze": 600,
+		"*-tinbronze": 500,
+		"*-brass": 600,
+		"*-iron": 1000,
+		"*-meteoriciron": 1500,
+		"*-steel": 2300
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ],
+		"tools": [ "*" ],
+		"lithocraft": [ "*" ]
+	},
+	"shapeByType":
+	{
+		"*-rocket": {
+			"base": "item/tool/handcannon/launcher-{type}",
+			"alternates": [
+			{ "base": "item/tool/handcannon/launcher-{type}-loaded" },
+			{ "base": "item/tool/handcannon/launcher-{type}-charge2" },
+			{ "base": "item/tool/handcannon/launcher-{type}-charge3" }
+		]
+		},
+		"*": {"base": "item/tool/handcannon/launcher-{type}"}
+	},
+	"texturesByType": {
+		"*-rocket": { 
+			"gold": { "base": "game:block/coal/charcoal" },
+			"pine": { "base": "game:block/wood/debarked/kapok" }
+		},
+		"*-stone": { 
+			"gold": { "base": "game:block/coal/charcoal" },
+			"pine": { "base": "game:block/wood/debarked/kapok" }
+		}
+	},
+	"guiTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": -36, "y": 18, "z": -6 },
+		"origin": { "x": 0.48, "y": 0.19, "z": 0.44 },
+		"scale": 4.05
+	},
+	"fpHandTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 72, "y": 143, "z": -30 },
+		"origin": { "x": 0.5, "y": 0.3, "z": 0.5 },
+		"scale": 1.53
+	},
+	"tpHandTransform": {
+		"translation": { "x": -1.02, "y": 0.06, "z": -0.79 },
+		"rotation": { "x": -6, "y": 96, "z": 7 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 0.58
+	},
+	"tpOffHandTransform": {
+		"translation": { "x": -1.02, "y": 0.06, "z": -0.99 },
+		"rotation": { "x": -1, "y": 83, "z": -55 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 0.5899
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 45, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 3.2
+	},
+	"toolrackTransformByType": {
+		"bow-long": {
+			"rotation": { "x": 2, "y": 5, "z": 0 },
+			"translation": { "x": 0.2, "y": 0.95 },
+			"scale": 1.76
+		},
+		"*": {
+			"rotation": { "x": 2, "y": 5, "z": 0 },
+			"translation": { "y": 0.63 },
+			"scale": 1.25
+		}
+	}
+}

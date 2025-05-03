@@ -1,0 +1,16 @@
+{
+	"ingredient": { "type": "item", "code": "ingot-*", "name": "metal", "allowedVariants": ["alum", "alumbronze", "orokhalkos", "titanbronze"] },
+	"name": "Plate",
+	"pattern": [[
+		"#########",
+		"#########",
+		"#########",
+		"#########",
+		"#########",
+		"#########",
+		"#########",
+		"#########",
+		"#########"
+	]],
+	"output": { "type": "item", "code": "metalplate-{metal}"  }
+}

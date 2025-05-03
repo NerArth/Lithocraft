@@ -1,0 +1,88 @@
+{
+	"code": "metalnailsandstrips",
+	"behaviors": [
+		{ "name": "GroundStorable", "properties": { "layout": "Quadrants", "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 } } }
+	],
+	"maxStackSize": 32,
+	"storageFlags": 5,
+	"attributes": {
+		"reinforcementStrengthByType": {
+			"*": 150
+		},		
+		"handbook": {
+			"groupBy": ["metalnailsandstrips-*"]
+		}
+	},
+	"variantGroups": [
+		{ "code": "metal", "loadFromProperties": "lithocraft:block/metal" }
+	],
+	"allowedVariants": [
+		"*-alum",
+		"*-alumbronze",
+		"*-silumin",
+		"*-orokhalkos",
+		"*-titanbronze"
+	],
+	"shape": { "base": "game:item/resource/metalnailsandstrips" },
+	"textures": {
+		"metal": { "base": "lithocraft:block/metal/sheet/{metal}1" }
+	},	
+	"creativeInventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
+	"materialDensityByType": {
+		"*-alum": 2699,
+		"*-alumbronze": 7900,
+		"*-silumin": 3800,
+		"*-orokhalkos": 13000,
+		"*-titanbronze": 5200
+	},
+	"combustiblePropsByType": {
+		"*-alum": {
+			"meltingPoint": 660,
+			"meltingDuration": 15,
+			"smeltedRatio": 4,
+			"smeltedStack": { "type": "item", "code": "ingot-alum" }
+		},
+		"*-alumbronze": {
+			"meltingPoint": 990,
+			"meltingDuration": 20,
+			"smeltedRatio": 4,
+			"smeltedStack": { "type": "item", "code": "ingot-alumbronze" }
+		},
+		"*-silumin": {
+			"meltingPoint": 860,
+			"meltingDuration": 20,
+			"smeltedRatio": 4,
+			"smeltedStack": { "type": "item", "code": "ingot-silumin" }
+		},
+		"*-orokhalkos": {
+			"meltingPoint": 1385,
+			"meltingDuration": 10,
+			"smeltedRatio": 4,
+			"smeltedStack": { "type": "item", "code": "ingot-orokhalkos" }
+		},
+		"*-titanbronze": {
+			"meltingPoint": 1497,
+			"meltingDuration": 30,
+			"smeltedRatio": 4,
+			"smeltedStack": { "type": "item", "code": "ingot-titanbronze" }
+		}
+	},
+	"guiTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": -30, "y": -46, "z": -180 },
+		"origin": { "x": 0.58, "y": 0.07, "z": 0.55 },
+		"scale": 3.55
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 90, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 4
+	},
+	"tpHandTransform": {
+		"translation": { "x": -0.7, "y": 0.1, "z": -0.53 },
+		"rotation": { "x": 94, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+		"scale": 0.75
+	}
+}

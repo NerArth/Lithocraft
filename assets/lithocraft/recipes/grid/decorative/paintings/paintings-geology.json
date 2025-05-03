@@ -1,0 +1,51 @@
+[
+	{
+		"code": "painting-stonehenge",
+		"ingredientPattern": "FCF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-quartzite" },
+			"D": { "type": "item", "code": "game:cloth-orange" },
+			"C": { "type": "item", "code": "game:cloth-black" }
+		},
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-stonehenge-1x1-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-space",
+		"ingredientPattern": "FCF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-diorite" },
+			"D": { "type": "item", "code": "game:cloth-white" },
+			"C": { "type": "item", "code": "game:cloth-black" }
+		},
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-space-1x1-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-jupiter",
+		"ingredientPattern": "FCF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-gabbro" },
+			"D": { "type": "item", "code": "game:cloth-orange" },
+			"C": { "type": "item", "code": "game:cloth-blue" }
+		},
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-jupiter-1x1-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-memory",
+		"ingredientPattern": "FCF,FDF,FGF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-diorite" },
+			"D": { "type": "item", "code": "game:cloth-pink" },
+			"C": { "type": "item", "code": "game:cloth-black" },
+			"G": { "type": "item", "code": "game:cloth-green" }
+		},
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-memory-1x2-north", "quantity": 1 }
+	}
+]

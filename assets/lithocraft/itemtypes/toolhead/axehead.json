@@ -1,0 +1,60 @@
+{
+	"code": "axehead",
+	"variantGroups": [
+		{ "code": "material", "loadFromProperties": "lithocraft:block/metal" }
+	],
+	"skipVariants": [
+		"*-mercuryamalgam"
+	],
+	"heldTpUseAnimation": "interactstatic",
+	"maxStackSize": 4,
+	"shapeByType": {
+		"*-alumbronze": { "base": "game:item/tool/axe/bearded" },
+		"*-silumin": { "base": "game:item/tool/axe/battle" },
+		"*-orokhalkos": { "base": "game:item/tool/axe/bardiche" },
+		"*-titanbronze": { "base": "game:item/tool/axe/double" },
+		"*": { "base": "game:item/tool/axe/iron" }
+	},
+	"_comment": "Easier to use all in such cases I think, but the rest should work regardless; this may all need refactoring some day",
+	"texturesByType": {
+		"*": {
+			"material": { "base": "block/metal/ingot/{material}" },
+			"string": { "base": "game:block/transparent" },
+			"debarked/oak": { "base": "game:block/transparent" },
+			"handle": { "base": "game:block/transparent" },
+			"all": { "base": "game:block/transparent" }
+		}
+	},
+	"creativeInventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
+	"guiTransformByType": {
+		"*-orokhalkos": {
+			"translation": { "x": 0, "y": 0, "z": 100 },
+			"rotation": { "x": -52, "y": -110, "z": -180 },
+			"origin": { "x": 0.56, "y": 0.35, "z": 0.31 },
+			"scale": 1.75			
+		},
+		"*-titanbronze": {
+			"translation": { "x": 0, "y": 0, "z": 100 },
+			"rotation": { "x": -52, "y": -110, "z": -180 },
+			"origin": { "x": 0.56, "y": 0.42, "z": 0.43 },
+			"scale": 2.70
+		},
+		"*": {
+			"translation": { "x": 0, "y": 0, "z": 100 },
+			"rotation": { "x": -52, "y": -110, "z": -180 },
+			"origin": { "x": 0.56, "y": 0.51, "z": 0.31 },
+			"scale": 3			
+		}
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0.3, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 0.81, "y": 0.45, "z": 0.42 },
+		"scale": 3.5
+	},
+	"tpHandTransform": {
+		"translation": { "x": -0.1, "y": -0.76, "z": -0.04 },
+		"rotation": { "x": 90, "y": -29, "z": 0 },
+		"scale": 1
+	}
+}

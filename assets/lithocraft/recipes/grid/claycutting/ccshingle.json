@@ -1,0 +1,13 @@
+[
+	{
+		"ingredientPattern": "T,C",
+		"ingredients": {
+			"T": { "type": "item", "code": "claycutter-*-shingle", "isTool": true, "name": "material", "attributes": { "readyToUse": true } },
+			"C": { "type": "item", "code": "game:clay-*", "name": "clay", "quantity": 4 }
+		},
+		"shapeless": true,
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:shingle-raw-{clay}", "quantity": 12 }
+	}
+]

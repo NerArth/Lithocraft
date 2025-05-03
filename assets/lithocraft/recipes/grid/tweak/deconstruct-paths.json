@@ -1,0 +1,210 @@
+[
+	{
+		"code": "decon-path-vanilla",
+		"recipeGroup": 2,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "game:stonepath-*", "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-granite", "quantity": 4 }
+	},
+	{
+		"code": "decon-pathslab-vanilla",
+		"recipeGroup": 2,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "game:stonepathslab-*", "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-granite", "quantity": 2 }
+	},
+	{
+		"code": "decon-pathstair-vanilla",
+		"recipeGroup": 2,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "game:stonepathstairs-up-north-free", "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-granite", "quantity": 4 }
+	},
+	{
+		"code": "decon-path-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stonepath-*-free", "quantity": 1, "name": "rock" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-{rock}", "quantity": 4 }
+	},
+	{
+		"code": "decon-pathslab-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stonepathslab-*-free", "quantity": 1, "name": "rock" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-{rock}", "quantity": 2 }
+	},
+	{
+		"code": "decon-pathstair-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stonepathstairs-*-up-north-free", "quantity": 1, "name": "rock" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-{rock}", "quantity": 3 }
+	},
+	{
+		"code": "decon-footpath-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stonefootpath-*-ns", "quantity": 1, "name": "rock" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-{rock}", "quantity": 1 }
+	},
+	{
+		"code": "decon-pathbrick-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stoneroad-*-free", "quantity": 1, "name": "brick" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:burnedbrick-{brick}", "quantity": 1 }
+	},
+	{
+		"code": "decon-pathbrickslab-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stoneroadslab-*-free", "quantity": 2, "name": "brick" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:burnedbrick-{brick}", "quantity": 1 }
+	},
+	{
+		"code": "decon-pathbrickstair-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stoneroadstairs-*-up-north-free", "quantity": 1, "name": "brick" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:burnedbrick-{brick}", "quantity": 1 }
+	},
+	{
+		"code": "decon-path2-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stoneroad2-*-free", "quantity": 1, "name": "brick" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-{brick}", "quantity": 1 }
+	},
+	{
+		"code": "decon-path2slab-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stoneroad2slab-*-free", "quantity": 2, "name": "brick" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-{brick}", "quantity": 1 }
+	},
+	{
+		"code": "decon-path2stair-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stoneroad2stairs-*-up-north-free", "quantity": 1, "name": "brick" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-{brick}", "quantity": 1 }
+	},
+	{
+		"code": "decon-path3-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stoneroad3-*-free", "quantity": 1, "name": "brick" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-{brick}", "quantity": 1 }
+	},
+	{
+		"code": "decon-path3slab-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stoneroad3slab-*-free", "quantity": 2, "name": "brick" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-{brick}", "quantity": 1 }
+	},
+	{
+		"code": "decon-path3stair-moreroads",
+		"recipeGroup": 20,
+		"ingredientPattern": "PB",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"B": { "type": "block", "code": "moreroads:stoneroad3stairs-*-up-north-free", "quantity": 1, "name": "brick" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-{brick}", "quantity": 1 }
+	}
+]

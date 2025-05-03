@@ -1,0 +1,113 @@
+{
+	"enabled": true,
+	"code": "hoe",
+	"class": "ItemHoe",
+	"heldTpUseAnimation": "hoe",
+	"behaviors": [{ 
+		"name": "GroundStorable",
+		"properties": {
+			"layout": "WallHalves",
+			"wallOffY": 1,
+			"sprintKey": true,
+			"selectionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1 },
+			"collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0 }
+		}
+	}],
+	"attributes": {
+		"heldItemPitchFollow": 0.5,
+		"groundStorageTransformByType": {
+			"*": {
+				"translation": { "x": 0, "y": 0.04, "z": -0.23 },
+				"rotation": { "x": 23, "y": 87, "z": -90 },
+				"scale": 0.88
+			}
+		},
+		"handbook": {
+			"groupBy": ["hoe-*"]
+		},
+		"toolrackTransformByType": {
+			"*": {
+				"rotation": { "y": 1, "z": -1 },
+				"translation": { "x": -0.25, "y": 0.6 },
+				"scale": 1.25
+			}
+		}
+	},
+	"variantGroups": [
+		{ "code": "material", "loadFromProperties": "lithocraft:block/metal" }
+	],
+	"damagedBy": ["blockbreaking", "attacking"],
+	"shapeByType": {
+		"*": { "base": "game:item/tool/hoe-copper" }
+	},
+	"heldTpHitAnimation": "breaktool",
+	"texturesByType": {
+		"*": {
+			"material": { "base": "block/metal/ingot/{material}" }
+		}
+	},
+	"tool": "hoe",
+	"miningSpeedByType": {
+		"*-alum": {
+			"soil": 2.0
+		},
+		"*-berylliumbronze": {
+			"soil": 3.0
+		},
+		"*-alumbronze": {
+			"soil": 2.0
+		},
+		"*-silumin": {
+			"soil": 3.0
+		},
+		"*-orokhalkos": {
+			"soil": 4.0,
+			"plant": 2.0
+		},
+		"*-titanbronze": {
+			"soil": 5.0
+		}
+	},
+	"durabilitybytype": {
+		"*-alum": 170,
+		"*-alumbronze": 600,
+		"*-silumin": 1400,
+		"*-orokhalkos": 2400,
+		"*-titanbronze": 1600
+	},
+	"attackpowerbytype": {
+		"*-alum": 1.25,
+		"*-silumin": 2.3,
+		"*-alumbronze": 2.25,
+		"*-orokhalkos": 5,
+		"*-titanbronze": 3.0
+	},
+	"creativeinventory": { "general": ["*"], "items": ["*"], "tools": ["*"], "lithocraft": ["*"] },
+	"fpHandTransform": {
+		"translation": { "x": -0.3, "y": -0.2, "z": 0 },
+		"rotation": { "x": -7, "y": 16, "z": 90 },
+		"scale": 2.5
+	},
+	"guiTransformByType": {
+		"*": {
+			"rotate": false,
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": -56, "y": -127, "z": -180 },
+			"origin": { "x": 0.35, "y": 0, "z": 0.55 },
+			"scale": 1.43
+		}
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 3.6
+	},
+	"tpHandTransformByType": {
+		"*": {
+			"translation": { "x": -1, "y": -0.5, "z": -0.08 },
+			"rotation": { "x": 90, "y": 0, "z": -5 },
+			"scale": 1
+		}
+	}
+}

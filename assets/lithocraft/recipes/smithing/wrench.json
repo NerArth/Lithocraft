@@ -1,0 +1,10 @@
+{
+	"ingredient": { "type": "item", "code": "ingot-*", "name": "metal", "allowedVariants": ["alum", "alumbronze", "orokhalkos", "titanbronze"] },
+	"pattern": [[
+		"______###",
+		"#######__",
+		"______###"
+	]],
+	"name": "Wrench",
+	"output": { "type": "item", "code": "wrench-{metal}"  }
+}

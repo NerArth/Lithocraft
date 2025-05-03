@@ -1,0 +1,58 @@
+{
+	"enabled": false,
+	"_comment": "Custom block class to attempt overriding stuff so it just works but not in a functional state. Just better off doing something from scratch at some point",
+	"code": "stonevat",
+	"class": "lithocraft.vat",
+	"entityClass": "Barrel",
+	"variantgroups": [
+		{ "code": "rock", "states":["whitemarble", "greenmarble", "redmarble", "suevite", "kimberlite"], "loadFromProperties": "game:block/rock" }
+	],
+	"behaviors": [ {"name": "UnstableFalling"} ],
+	"shape": { "base": "block/stone/vat/empty" },
+	"creativeinventory": { "general": ["*"], "decorative": ["*"], "lithocraft": ["*"] },
+	"blockmaterial": "Stone",
+	"replaceable": 900,
+	"resistance": 4.5,
+	"maxStackSize": 1,
+	"lightAbsorption": 1,
+	"textures": {
+		"granite1": { "base": "game:block/stone/polishedrock/{rock}" }
+	},
+	"attributes": {
+		"partialAttachable": true,
+		"capacityLitres": 640
+	},
+	"sideao": {
+		"all": false
+	},
+	"sidesolid": {
+		"all": false
+	},
+	"emitsideao": {
+		"all": false
+	},
+	"sideopaque": {
+		"all": false
+	},
+	"collisionbox": {
+		"x1": 0, "y1": 0, "z1": 0,
+		"x2": 1, "y2": 0.9375, "z2": 1
+	},
+	"selectionbox": {
+		"x1": 0, "y1": 0, "z1": 0, 
+		"x2": 1, "y2": 0.9375, "z2": 1
+	},
+	"sounds": {
+		"place": "game:block/planks",
+		"hit": "game:block/planks",
+		"break": "game:block/planks",
+		"walk": "game:walk/wood"
+	},
+	"materialDensity": 15000,
+	"heldTpIdleAnimation": "holdbothhandslarge", "heldRightReadyAnimation": "heldblockready", "heldTpUseAnimation": "twohandplaceblock",
+	"tpHandTransform": {
+		"translation": { "x": -1.7, "y": -0.95, "z": -0.69 },
+		"rotation": { "x": 12, "y": 14, "z": -81 },
+		"scale": 0.36
+	}
+}

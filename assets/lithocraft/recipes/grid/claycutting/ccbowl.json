@@ -1,0 +1,13 @@
+[
+	{
+		"ingredientPattern": "T,C",
+		"ingredients": {
+			"T": { "type": "item", "code": "claycutter-*-bowl", "isTool": true, "name": "material", "attributes": { "readyToUse": true } },
+			"C": { "type": "item", "code": "game:clay-*", "quantity": 1 }
+		},
+		"shapeless": true,
+		"width": 1,
+		"height": 2,
+		"output": { "type": "block", "code": "game:bowl-raw", "quantity": 1 }
+	}
+]

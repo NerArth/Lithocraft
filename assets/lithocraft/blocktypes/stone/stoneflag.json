@@ -1,0 +1,97 @@
+{
+	"code": "stoneflag",
+	"enabled": false,
+	"class": "BlockClutter",
+	"attributes": {
+		"mapColorCode": "settlement",
+		"partialAttachable": true,
+		"defaultType": "normal",
+		"types": ["normal"],
+		"drop": {
+			"normal": true
+		},
+		"rotatatableInterval": {
+			"normal": "22.5degnot45deg"
+		},
+		"shape": {
+			"normal-generic": "block/stone/flag/normal"
+		},
+		"variantByGroup": "side",
+		"handbook": {
+			"groupBy": ["stoneflag-*"]
+		}
+	},
+	"behaviors": [
+		{ "name": "HorizontalOrientable"},
+		{ "name": "Multiblock", "propertiesByType": {
+				"*-north": { "sizex": 2, "sizey": 1, "sizez": 1, "cposition": { "x":0, "y":0, "z":0 } },
+				"*-east": { "sizex": 1, "sizey": 1, "sizez": 2, "cposition": { "x":0, "y":0, "z":0 } },
+				"*-south": { "sizex": 2, "sizey": 1, "sizez": 1, "cposition": { "x":1, "y":0, "z":0 } },
+				"*-west": { "sizex": 1, "sizey": 1, "sizez": 2, "cposition": { "x":0, "y":0, "z":1 } }
+			}
+		}
+	],
+	"__comment": "walk speed mult doesn't seem to work with this, unsure why, possibly collision related?",
+	"walkspeedmultiplier": 1.3,
+	"variantGroups": [
+		{ "code": "rock", "loadFromProperties": "block/rockwithdeposit" },
+		{ "code": "side", "loadFromProperties": "abstract/horizontalorientation" }
+	],
+	"creativeinventory": {  },
+	"creativeinventoryStacksByType": {
+		"*-east": [
+			{
+				"tabs": [ "general", "decorative", "lithocraft" ],
+				"stacks": [
+					{ "type": "block", "code": "stoneflag-{rock}-east", "attributes": { "type": "normal" } }
+				]
+			}
+		]
+	},
+	"heldTpIdleAnimation": "holdunderarm",
+	"shapeInventory": { "base": "block/stone/flag/normal", "rotateY": 270 },
+	"shapeByType": {
+		"*-north": { "base": "block/stone/flag/normal", "rotateY": 0 },
+		"*-east": { "base": "block/stone/flag/normal", "rotateY": 270 },
+		"*-west": { "base": "block/stone/flag/normal", "rotateY": 90 },
+		"*-south": { "base": "block/stone/flag/normal", "rotateY": 180 }
+	},
+	"textures": {
+		"stone": { "base": "game:block/stone/rock/{rock}*" }
+	},
+	"blockmaterial": "Stone",
+	"replaceable": 900,
+	"resistance": 3,
+	"lightAbsorption": 0,
+	"sideAo": { "all": false },
+	"sidesolid": {
+		"all": false
+	},
+	"sideopaque": {
+		"all": false
+	},
+	"collisionSelectionBox": {
+		"x1": 0.0625, "y1": 0, "z1": 0.0625, "x2": 1, "y2": 0.0625, "z2": 0.9375,
+		"rotateYByType": {
+			"*-east": 270,
+			"*-west": 90,
+			"*-south": 180
+		}
+	},
+	"sounds": {
+		"place": "game:block/planks",
+		"hit": "game:block/planks",
+		"break": "game:block/planks",
+		"walk": "game:walk/wood"
+	},
+	"materialDensity": 4000,
+	"tpHandTransform": {
+		"translation": { "x":-0.3, "y":-0.5, "z":-0.3 },
+		"rotation": { "x":0, "y":90, "z":-102 },
+		"scale": 0.56
+	},
+	"guiTransform": {
+		"origin": { "x":0.5, "y":0.5, "z":0.97 },
+		"scale": 0.95
+	}
+}

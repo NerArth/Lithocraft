@@ -1,0 +1,275 @@
+[
+	{
+		"recipeGroup": 2,
+		"enabled": false,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-*-*",
+				"name": "ungraded",
+				"allowedVariants": [
+				"sulfur",
+				"quartz",
+				"flint",
+				"alum",
+				"stibnite",
+				"lignite",
+				"bituminouscoal",
+				"anthracite",
+				"borax",
+				"kernite",
+				"graphite",
+				"cinnabar",
+				"corundum",
+				"lapislazuli",
+				"olivine",
+				"fluorite",
+				"phosphorite"
+				]
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-{ungraded}", "quantity": 2 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-sulfur-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-sulfur", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-quartz-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-quartz", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-flint-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:flint", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-alum-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-alum", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-lignite-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-lignite", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-bituminouscoal-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-bituminouscoal", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-anthracite-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-anthracite", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-borax-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-borax", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-kernite-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-kernite", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-graphite-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-graphite", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-cinnabar-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-cinnabar", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-corundum-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-corundum", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-lapislazuli-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-lapislazuli", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-olivine-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-olivine", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-fluorite-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-fluorite", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-phosphorite-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-phosphorite", "quantity": 3 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": {
+				"type": "block",
+				"code": "game:ore-sylvite-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:ore-sylvite", "quantity": 3 }
+	}
+]

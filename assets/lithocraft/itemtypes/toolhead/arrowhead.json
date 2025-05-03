@@ -1,0 +1,43 @@
+{
+	"enabled": false,
+	"code": "arrowhead",
+	"variantgroups": [
+		{ "code": "material", "loadFromProperties": "lithocraft:block/metal" }
+	],
+	"skipVariants": [
+		"*-mercuryamalgam"
+	],
+	"attributes": {
+		"displaycaseable": true, 
+		"shelvable": true
+	},
+	"heldTpUseAnimation": "interactstatic", "maxstacksize": 64,
+	"shapeByType": {
+		"*": { "base": "game:item/tool/arrowhead-copper" }
+	},
+	"texturesByType": {
+		"*": {
+			"material": { "base": "lithocraft:block/metal/ingot/{material}" }
+		}
+	},
+	"creativeInventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
+	"guiTransformByType": {
+		"*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": -55, "y": 27, "z": 0 },
+			"origin": { "x": 0.54, "y": 0.06, "z": 0.48 },
+			"scale": 4.2
+		}
+	},
+	"tpHandTransform": {
+		"translation": { "x": -0.67, "y": -0.7, "z": -0.15 },
+		"rotation": { "x": 90, "y": 21, "z": 0 },
+		"scale": 0.77
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 19, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 4
+	}
+}

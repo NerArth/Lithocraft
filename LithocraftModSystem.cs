@@ -1,0 +1,76 @@
+﻿using Lithocraft.CodeContent;
+using Vintagestory.API.Client;
+using Vintagestory.API.Common;
+using Vintagestory.API.Config;
+using Vintagestory.API.Server;
+using Vintagestory.GameContent;
+/*
+[
+    assembly: ModInfo(
+        "lithocraft",
+        Authors = new string[] { "NerArth" },
+        Description = "From a stone you may draw its blood after all...",
+        Version = "0.3.0"
+    )
+]
+*/
+
+namespace Lithocraft
+{
+    public class LithocraftModSystem : ModSystem
+    {
+        
+        // Called on server and client
+        // Useful for registering block/entity classes on both sides
+        public override void Start(ICoreAPI api)
+        {
+            string _shortid = Mod.Info.ModID;
+            base.Start(api); // self-memo: read the base.Start tooltip description
+
+            // remember to set commented classes to compile again when wanting to work on them
+
+            //api.Logger.Notification("Hello from template mod: " + api.Side);
+            api.Logger.Event(Mod.Info.Name + " " + Mod.Info.Version + " is registering code classes... ");
+            api.Logger.StoryEvent("Drawing blood from stones... ");
+            //api.RegisterBlockBehaviorClass(Mod.Info.ModID + ".behaviordebug", typeof(BlockBehaviorHoriAttachDebug));
+
+            api.RegisterEntity(_shortid + ".projectileexploding", typeof(EntityProjectileExploding));
+
+            // register item classes
+            api.RegisterItemClass(_shortid + ".claycutter",typeof(ItemClaycutter));
+            api.RegisterItemClass(_shortid + ".chemicalresidue", typeof(ItemChemicalResidue));
+
+            //api.RegisterItemClass(_shortid + ".handcannon", typeof(ItemHandCannon));
+            //api.RegisterItemClass(_shortid + ".cannonrocket", typeof(ItemCannonRocket));
+
+            // register block/BE paired classes
+            api.RegisterBlockClass(_shortid + ".grindstone", typeof(BlockGrindstone));
+            api.RegisterBlockEntityClass(_shortid + ".BEgrindstone", typeof(BlockEntityGrindstone));
+
+            api.RegisterBlockEntityClass(_shortid + ".BEtoolmold", typeof(BlockEntityToolMoldCustom));
+
+            //api.RegisterBlockClass(_shortid + ".vat", typeof(BlockVat));
+
+            
+        }
+
+        public override void StartServerSide(ICoreServerAPI api)
+        {
+            api.Logger.Event(Mod.Info.Name + " " + Mod.Info.Version + " is starting (server)...");
+            //api.Logger.Notification("Hello from template mod server side: " + Lang.Get("lithocraft:hello"));
+        }
+
+        public override void StartClientSide(ICoreClientAPI api)
+        {
+            api.Logger.Event(Mod.Info.Name + " " + Mod.Info.Version + " is starting (client)...");
+            api.Logger.StoryEvent("Coalescing elemental matter... ");
+            //api.Logger.Notification("Hello from template mod client side: " + Lang.Get("lithocraft:hello"));
+        }
+
+        
+    }
+    public class BlockEntityOveny : BlockEntityOven
+    {
+
+    }
+}

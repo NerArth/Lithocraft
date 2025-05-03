@@ -1,0 +1,26 @@
+[
+	{
+		"recipeGroup": 5,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": { "type": "block", "code": "game:drystonefence-*-ew-free", "quantity": 1, "name": "rock", "skipVariants": ["mixed"] }
+		},
+		"width": 2,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stone-{rock}", "quantity": 6 }
+	},
+	{
+		"recipeGroup": 5,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": { "type": "block", "code": "ashlarstonefence-*-ew-free", "quantity": 1, "name": "rock" }
+		},
+		"width": 2,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:stonebrick-{rock}", "quantity": 1 }
+	}
+]

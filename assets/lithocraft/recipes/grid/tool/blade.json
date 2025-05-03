@@ -1,0 +1,37 @@
+[
+	{
+		"enabled": false,
+		"ingredientPattern": "T,S",
+		"ingredients": {
+			"T": { "type": "item", "code": "bladehead-falx-*", "name": "metal"  },
+			"S": { "type": "item", "code": "game:stick" }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "blade-falx-{metal}", "quantity": 1  }
+	},
+	{
+		"enabled": false,
+		"ingredientPattern": "T,P,S",
+		"ingredients": {
+			"T": { "type": "item", "code": "bladehead-falx-orokhalkos" },
+			"S": { "type": "item", "code": "game:stick" },
+			"P": { "type": "item", "code": "metalplate-alum", "quantity": 1 },
+		},
+		"width": 1,
+		"height": 3,
+		"output": { "type": "item", "code": "blade-falx-orokhalkos", "quantity": 1  }
+	},	
+	{
+		"enabled": false,
+		"ingredientPattern": "T,P,S",
+		"ingredients": {
+			"T": { "type": "item", "code": "bladehead-falx-titanbronze" },
+			"S": { "type": "item", "code": "game:stick" },
+			"P": { "type": "item", "code": "metalplate-alum", "quantity": 1 },
+		},
+		"width": 1,
+		"height": 3,
+		"output": { "type": "item", "code": "blade-falx-titanbronze", "quantity": 1  }
+	}
+]

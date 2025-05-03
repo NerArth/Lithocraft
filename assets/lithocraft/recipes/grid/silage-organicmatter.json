@@ -1,0 +1,67 @@
+[
+	{
+		"recipeGroup": 0,
+		"code": "silage-vegetable",
+		"ingredientPattern": "GVG,VGV,GVG",
+		"ingredients": {
+			"V": { "type": "item", "code": "game:vegetable-*", "quantity": 1, "name": "vegetable" },
+			"G": { "type": "item", "code": "game:drygrass", "quantity": 1 }
+		},
+		"shapeless": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "silage-organicmatter-ud", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 1,
+		"code": "silage-legume",
+		"ingredientPattern": "GVG,VGV,GVG",
+		"ingredients": {
+			"V": { "type": "item", "code": "game:legume-*", "quantity": 2, "name": "legume" },
+			"G": { "type": "item", "code": "game:drygrass", "quantity": 1 }
+		},
+		"shapeless": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "silage-organicmatter-ud", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 2,
+		"code": "silage-grain",
+		"ingredientPattern": "GVG,VGV,GVG",
+		"ingredients": {
+			"V": { "type": "item", "code": "game:grain-*", "quantity": 8, "name": "grain" },
+			"G": { "type": "item", "code": "game:drygrass", "quantity": 1 }
+		},
+		"shapeless": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "silage-organicmatter-ud", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 3,
+		"code": "silage-generalfruit",
+		"ingredientPattern": "GVG,VGV,GVG",
+		"ingredients": {
+			"V": { "type": "item", "code": "game:fruit-*", "quantity": 3, "name": "fruit", "skipVariants": ["blueberry","cranberry","blackcurrant","whitecurrant","redcurrant","cherry","lychee"] },
+			"G": { "type": "item", "code": "game:drygrass", "quantity": 1 }
+		},
+		"shapeless": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "silage-organicmatter-ud", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 4,
+		"code": "silage-berryfruit",
+		"ingredientPattern": "GVG,VGV,GVG",
+		"ingredients": {
+			"V": { "type": "item", "code": "game:fruit-*", "quantity": 6, "name": "fruit", "allowedVariants": ["blueberry","cranberry","blackcurrant","whitecurrant","redcurrant","cherry","lychee"] },
+			"G": { "type": "item", "code": "game:drygrass", "quantity": 1 }
+		},
+		"shapeless": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "silage-organicmatter-ud", "quantity": 1 }
+	}
+]

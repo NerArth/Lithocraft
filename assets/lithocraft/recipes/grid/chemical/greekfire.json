@@ -1,0 +1,16 @@
+[
+	{
+		"ingredientPattern": "CF,QK,S_",
+		"ingredients": {
+			"C": { "type": "item", "code": "chemicalresidue-cellulose", "quantity": 4 },
+			"F": { "type": "item", "code": "game:powderedsulfur", "quantity": 2 },
+			"Q": { "type": "item", "code": "game:quicklime", "quantity": 2 },
+			"K": { "type": "item", "code": "chemicalresidue-kerogen", "quantity": 6 },
+			"S": { "type": "item", "code": "game:shovel-*", "isTool": true }
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "item", "code": "chemicalcompound-greekfire", "quantity": 10 }
+	}
+]

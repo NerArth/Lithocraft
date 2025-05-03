@@ -1,0 +1,217 @@
+[
+	{
+		"ingredientPattern": "HC,SS,SS",
+		"ingredients": {
+			"S": {
+				"type": "item",
+				"code": "game:stone-*",
+				"quantity": 1,
+				"name": "rock",
+				"allowedVariants": [
+					"limestone",
+					"sandstone",
+					"claystone",
+					"bauxite",
+					"chert",
+					"whitemarble",
+					"greenmarble",
+					"redmarble"
+				]
+			},
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "item", "code": "stonetablet-{rock}-ornate", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HC,SS,SS",
+		"ingredients": {
+			"S": {
+				"type": "item",
+				"code": "game:stone-*",
+				"quantity": 1,
+				"name": "rock",
+				"allowedVariants": [
+					"conglomerate",
+					"shale",
+					"tuff",
+					"halite",
+					"slate",
+					"phyllite",
+					"suevite",
+					"pottery"
+				]
+			},
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "item", "code": "stonetablet-{rock}-ostraca", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HC,SS,SS",
+		"ingredients": {
+			"S": {
+				"type": "item",
+				"code": "game:stone-*",
+				"quantity": 1,
+				"name": "rock",
+				"allowedVariants": [
+					"mudstone",
+					"dolostone",
+					"siltstone",
+					"jasper",
+					"quartzite",
+					"jade"
+				]
+			},
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "item", "code": "stonetablet-{rock}-ornate", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HC,SS,SS",
+		"ingredients": {
+			"S": {
+				"type": "item",
+				"code": "game:stone-*",
+				"quantity": 1,
+				"name": "rock",
+				"allowedVariants": [
+					"schist",
+					"gneiss",
+					"migmatite",
+					"amphibolite"
+				]
+			},
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "item", "code": "stonetablet-{rock}-ostraca", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HCP",
+		"ingredients": {
+			"P": { "type": "block", "code": "game:hardenedclay-*", "quantity": 1, "name": "clay" },
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"recipeGroup": 2,
+		"width": 3,
+		"height": 1,
+		"shapeless": true,
+		"output": {	"type": "item", "code": "stonetablet-pottery-ostraca", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HCP",
+		"ingredients": {
+			"P": { "type": "block", "code": "game:flowerpot-*", "quantity": 1, "name": "clay", "skipVariants": [ "raw" ] },
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"recipeGroup": 2,
+		"width": 3,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "item", "code": "stonetablet-pottery-ostraca", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HCP",
+		"ingredients": {
+			"P": { "type": "block", "code": "game:claypot-*", "quantity": 1, "name": "clay", "skipVariants": [ "raw" ] },
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"recipeGroup": 2,
+		"width": 3,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "item", "code": "stonetablet-pottery-ostraca", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HCP",
+		"ingredients": {
+			"P": { "type": "block", "code": "game:clayplanter-*", "quantity": 1, "name": "clay", "skipVariants": [ "raw" ] },
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"recipeGroup": 2,
+		"width": 3,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "item", "code": "stonetablet-pottery-ostraca", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HCP",
+		"ingredients": {
+			"P": { "type": "block", "code": "game:storagevessel-*", "quantity": 1, "name": "clay", "skipVariants": [ "raw" ] },
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"recipeGroup": 2,
+		"width": 3,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "item", "code": "stonetablet-pottery-ostraca", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HCP",
+		"ingredients": {
+			"P": { "type": "block", "code": "game:wateringcan-*", "quantity": 1, "name": "clay", "skipVariants": [ "raw" ] },
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"recipeGroup": 2,
+		"width": 3,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "item", "code": "stonetablet-pottery-ostraca", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HCP",
+		"ingredients": {
+			"P": { "type": "block", "code": "game:jug-*", "quantity": 1, "name": "clay", "skipVariants": [ "raw" ] },
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"recipeGroup": 2,
+		"width": 3,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "item", "code": "stonetablet-pottery-ostraca", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HCP",
+		"ingredients": {
+			"P": { "type": "block", "code": "game:bowl-*", "quantity": 1, "name": "clay", "skipVariants": [ "raw" ] },
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"recipeGroup": 2,
+		"width": 3,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "item", "code": "stonetablet-pottery-ostraca", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "HCP",
+		"ingredients": {
+			"P": { "type": "block", "code": "game:crock-*", "quantity": 1, "name": "clay", "skipVariants": [ "raw" ] },
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true }
+		},
+		"recipeGroup": 2,
+		"width": 3,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "item", "code": "stonetablet-pottery-ostraca", "quantity": 1 }
+	}
+]

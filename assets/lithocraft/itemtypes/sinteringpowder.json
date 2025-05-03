@@ -1,0 +1,68 @@
+{
+	"code": "sinteringpowder",
+	"variantGroups": [
+        {
+            "code": "metal",
+            "states": [
+				"silumin",
+				"titanbronze"
+            ]
+        }
+	],
+	"heldTpIdleAnimation": "holdbothhands",
+	"heldRightReadyAnimation": "holdbothhands",
+	"shapeByType": {
+		"*": {
+			"base": "item/resource/chemicalresidue/medium" 
+		}
+	},
+	"texturesByType": {
+			"*": {
+				"lumpy": { "base": "item/sintering/{metal}_lumpy"},
+				"dusty": { "base": "item/sintering/{metal}_dusty"}
+			}
+		},
+	"creativeInventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
+	"attributes": {
+		"handbook": {
+			"extraSectionsByType": {
+				"*": [{ "title": "game:handbooktitle-trivia", "text": "game:trivia-sinteringpowder" }]
+			}
+		}
+	},
+	"maxStackSizeByType": {
+		"*": 16
+	},
+	"materialDensityByType": {
+		"*-silumin": 1000,
+		"*-titanbronze": 1000
+	},
+	"guiTransformByType": {
+		"*": {
+			"translation": { "x": 0, "y": 0, "z": 100 },
+			"rotation": { "x": -31, "y": -1, "z": -180 },
+			"origin": { "x": 0.55, "y": 0.45, "z": 1 },
+			"scale": 1.84
+		}
+	},
+	"fpHandTransformByType": {
+		"*": {
+			"rotation": { "x": 54, "y": 95, "z": -31 },
+			"scale": 1.34
+		}
+	},
+	"tpHandTransformByType": {
+		"*": {
+			"translation": { "x": -1.4, "y": -0, "z": -0.9 },
+			"rotation": { "x": 70, "y": 11, "z": -76 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 0.41
+		}
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0.2, "z": 0 },
+		"rotation": { "x": -4, "y": 8, "z": 0 },
+		"origin": { "x": 0.5, "y": 0.5, "z": 0.5299 },
+		"scale": 1.92
+	}
+}

@@ -1,0 +1,190 @@
+{
+	"enabled": true,
+	"code": "knife",
+	"__comment": "ItemKnife contains code for harvesting animal carcasses",
+	"class": "ItemKnife",
+	"damagedBy": ["blockbreaking", "attacking"],
+	"tool": "knife",
+	"attributes": {
+		"heldItemPitchFollow": 1,
+		"knifeHitBlockAnimation": "knifecut",
+		"knifeHitEntityAnimation": "knifestab",
+		"handbook": {
+			"groupBy": ["knife-*"]
+		},
+		"toolrackTransformByType": {
+			"*-dagger-*": {
+				"translation": { "x": 0, "y": 0.6, "z": -0.1 },
+				"rotation": { "x": 122, "y": 180, "z": 3 },
+				"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+				"scale": 1.44
+			},
+			"*-khanjar-*": {
+				"translation": { "x": 0.1, "y": 0.6, "z": -0.1 },
+				"rotation": { "x": 97, "y": 180, "z": 3 },
+				"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+				"scale": 1.8
+			},
+			"*-baselard-*": {
+				"translation": { "x": 0.1, "y": 0.6, "z": -0.1 },
+				"rotation": { "x": 69, "y": 180, "z": 0 },
+				"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+				"scale": 1.72
+			},
+			"*": {
+				"translation": { "x": -0.3, "y": 0.6, "z": -0.1 },
+				"rotation": { "x": 97, "y": 180, "z": 3 },
+				"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+				"scale": 1.8
+			}
+		},
+		"groundStorageTransformByType": {
+			"*-khanjar-*": {
+				"translation": { "x": 0, "y": 0.065, "z": -0.145 },
+				"rotation": { "x": 26, "y": 88, "z": -97 },
+				"scale": 1
+			},
+			"*-baselard-*": {
+				"translation": { "x": 0, "y": 0.3, "z": -0.09 },
+				"rotation": { "x": 26, "y": 90, "z": -87 },
+				"scale": 1
+			},
+			"*-dagger-*": {
+				"translation": { "x": 0, "y": 0.18, "z": -0.147 },
+				"rotation": { "x": 26, "y": 88, "z": -101 },
+				"scale": 1
+			},
+			"*": {
+				"translation": { "x": 0, "y": 0.01, "z": -0.044 },
+				"rotation": { "x": 26, "y": 88, "z": -87 },
+				"scale": 1
+			}
+		}
+	},
+	"behaviors": [{ 
+		"name": "GroundStorable",
+		"properties": {
+			"layout": "WallHalves",
+			"wallOffY": 1,
+			"sprintKey": true,
+			"selectionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1 },
+			"collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0 },
+		}
+	},{ "name": "AnimationAuthoritative" }],
+	"variantGroups": [
+		{ "code": "type", "states": ["generic", "dagger", "khanjar", "baselard"] },
+		{ "code": "material", "loadFromProperties": "lithocraft:block/metal" }
+	],
+	"allowedVariants": [
+		"knife-generic-alum",
+		"knife-baselard-alumbronze",
+		"knife-baselard-silumin",
+		"knife-khanjar-orokhalkos",
+		"knife-baselard-titanbronze"
+	],
+	"shapeByType": {
+		"*-generic-*": { "base": "game:item/tool/knife/copper" },
+		"*": { "base": "game:item/tool/knife/ruined/{type}" }
+	},
+	"heldTpHitAnimation": "knifestab",
+	"texturesByType": {
+		"*": {
+			"material": { "base": "block/metal/ingot/{material}" }
+		}
+	},
+	"durabilityByType": {
+        "*-alum": 150,
+        "*-alumbronze": 175,
+        "*-silumin": 300,
+        "*-orokhalkos": 450,
+        "*-titanbronze": 500
+	},
+	"miningSpeedByType": {
+		"*-alum": { "plant":2 },
+        "*-alumbronze": { "plant":2 },
+        "*-silumin": { "plant":2 },
+        "*-orokhalkos": { "plant":2 },
+        "*-titanbronze": { "plant":2 }
+	},
+	"attackPowerByType": {
+		"*-alum": 2,
+        "*-alumbronze": 2,
+        "*-silumin": 2,
+        "*-orokhalkos": 2,
+        "*-titanbronze": 2
+	},
+	"creativeinventory": { "general": ["*"], "items": ["*"], "tools": ["*"], "lithocraft": ["*"] },
+	"fpHandTransformByType": {
+		"@*-(dagger|stiletto|khanjar|baselard)-*": {
+			"translation": { "x": 0.2, "y": 0, "z": 0.5 },
+			"rotation": { "x": 140, "y": 93, "z": -75 },
+			"scale": 2.5
+		},
+		"*-generic-*": {
+			"translation": { "x": 0.2, "y": 0.1, "z": 0.5 },
+			"rotation": { "x": 140, "y": 93, "z": -75 },
+			"scale": 2.5
+		}
+	},
+	"guiTransformByType": {
+		"*-dagger-*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": -168, "y": 0, "z": 43 },
+			"origin": { "x": 0.48, "y": 0.1, "z": 0.5 },
+			"scale": 1.84
+		},
+		"*-stiletto-*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": -161, "y": 11, "z": 56 },
+			"origin": { "x": 0.58, "y": 0.1, "z": 0.5 },
+			"scale": 2.25
+		},
+		"*-khanjar-*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": -158, "y": 0, "z": 40 },
+			"origin": { "x": 0.75, "y": 0.4, "z": 1.24 },
+			"scale": 1.8
+		},
+		"*-baselard-*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": -158, "y": 0, "z": 48 },
+			"origin": { "x": 0.78, "y": 0.2, "z": 0.9 },
+			"scale": 2.09
+		},
+		"*": {
+			"rotate": false,
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": -158, "y": 0, "z": 48 },
+			"origin": { "x": 0.48, "y": 0.1, "z": 0.5 },
+			"scale": 2.41
+		}
+	},
+	"groundTransform": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": -90, "y": 0, "z": 0 },
+			"origin": { "x": 0.5, "y": 0.5, "z": 0.45 },
+			"scale": 3.6
+	},
+	"tpHandTransformByType": {
+		"*-dagger-*": {
+			"translation": { "x": -0.82, "y": -0.04, "z": -0.55 },
+			"rotation": { "x": 0, "y": 0, "z": -3 },
+			"scale": 0.9
+		},
+		"*-stiletto-*": {
+			"translation": { "x": -0.63, "y": 0.01, "z": -0.65 },
+			"rotation": { "x": -18, "y": 0, "z": -3 },
+			"scale": 1
+		},
+		"*-baselard-*": {
+			"translation": { "x": -0.66, "y": -0.01, "z": -0.66 },
+			"rotation": { "x": -19, "y": 0, "z": 0 },
+			"scale": 1
+		},
+		"*": {
+			"translation": { "x": -0.84, "y": -0.11, "z": -0.48 },
+			"rotation": { "x": 0, "y": 0, "z": -15 },
+			"scale": 1
+		}
+	}
+}

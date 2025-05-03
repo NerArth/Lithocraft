@@ -1,0 +1,47 @@
+[
+	{
+		"code": "strongsodiumsalt",
+		"sealHours": 48,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 5 },
+			{ "type": "item", "code": "game:salt", "quantity": 6 }
+		],
+		"output": { "type": "item", "code": "chemicalportion-strongsodium", "litres": 5 }
+	},
+	{
+		"code": "strongsodiumhalite",
+		"sealHours": 48,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 5 },
+			{ "type": "item", "code": "game:stone-halite", "quantity": 15 }
+		],
+		"output": { "type": "item", "code": "chemicalportion-strongsodium", "litres": 5 }
+	},
+	{
+		"code": "strongsodiumhaliteblock",
+		"sealHours": 48,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 5 },
+			{ "type": "block", "code": "game:rock-halite", "quantity": 1 }
+		],
+		"output": { "type": "item", "code": "chemicalportion-strongsodium", "litres": 5 }
+	},
+	{
+		"code": "strongsodiumhaliteblockcracked",
+		"sealHours": 48,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 5 },
+			{ "type": "block", "code": "game:crackedrock-halite", "quantity": 2 }
+		],
+		"output": { "type": "item", "code": "chemicalportion-strongsodium", "litres": 5 }
+	},
+	{
+		"code": "strongsodiumseawater",
+		"sealHours": 48,
+		"ingredients": [
+			{ "type": "item", "code": "game:saltwaterportion", "litres": 5 },
+			{ "type": "item", "code": "game:stone-halite", "quantity": 2 }
+		],
+		"output": { "type": "item", "code": "chemicalportion-strongsodium", "litres": 5 }
+	}
+]

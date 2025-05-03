@@ -1,0 +1,26 @@
+[
+	{
+		"ingredientPattern": "CP,SW,_W",
+		"ingredients": {
+			"W": { "type": "item", "code": "game:plank-*", "quantity": 1 },
+			"P": { "type": "item", "code": "game:ore-graphite", "quantity": 1 },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"S": { "type": "item", "code": "game:saw-*", "isTool": true }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "item", "code": "pencil-graphite", "quantity": 8 }
+	},
+	{
+		"ingredientPattern": "CP,SW,_W",
+		"ingredients": {
+			"W": { "type": "item", "code": "game:plank-*", "quantity": 1 },
+			"P": { "type": "item", "code": "game:metalbit-*", "quantity": 1, "name": "pigment", "allowedVariants": ["lead", "silver", "gold", "electrum", "copper", "bismuth", "molybdochalkos"] },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"S": { "type": "item", "code": "game:saw-*", "isTool": true }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "item", "code": "pencil-{pigment}", "quantity": 8 }
+	}
+]

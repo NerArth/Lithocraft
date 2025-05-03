@@ -1,0 +1,93 @@
+{
+    "code": "grindstone",
+    "__comment": "code sample: grindstone-ceramic-north; want to add a tool to the validTools list? just add the first part of the itemcode, as with the default examples below; don't include the modid if adding a mod item to the list",
+    "enabled": true,
+    "class": "lithocraft.grindstone",
+    "entityClass": "lithocraft.BEgrindstone",
+    "attributes": {
+        "validToolsByType":{
+            "*": [
+                "axe",
+                "pickaxe",
+                "prospectingpick",
+                "shovel",
+                "blade",
+                "hoe",
+                "knife",
+                "scythe",
+                "shears",
+                "chisel",
+                "saw",
+                "spear",
+                "cleaver",
+                "handplaner",
+                "handwedge",
+                "truechisel",
+                "paintscraper"
+            ]
+        },
+        "handbook": {
+            "groupBy": [ "grindstone-*" ],
+            "extraSectionsByType": {
+				"*": [{ "title": "handbooktitle-tip", "text": "tip-grindstone" }]
+			}
+        }
+    },
+    "behaviors": [
+        { "name": "HorizontalOrientable" }
+    ],
+    "entityBehaviors": [
+        { "name": "Animatable" }
+    ],
+    "variantGroups": [
+        { "code": "type", "states": ["stone", "ceramic", "diamond" ] },
+		{ "code": "side", "loadFromProperties": "abstract/horizontalorientation" }
+    ],
+    "creativeInventory": {
+        "general":  [ "*-north" ],
+        "lithocraft": [ "*-north" ],
+        "construction": [ "*-north" ]
+    },
+    "shapeByType": {
+		"*-north": { "base": "block/stone/grindstone", "rotateY": 0 },
+		"*-east": { "base": "block/stone/grindstone", "rotateY": 270 },
+		"*-west": { "base": "block/stone/grindstone", "rotateY": 90 },
+		"*-south": { "base": "block/stone/grindstone", "rotateY": 180 }
+    },
+    "sideSolid": { "all": false },
+    "sideOpaque": { "all": false },
+    "blockMaterial": "Stone",
+    "replaceable": 600,
+    "resistance": 4,
+    "materialDensity": 40000,
+    "lightAbsorption": 0,
+    "texturesByType": {
+        "*-stone-*": {
+            "iron": { "base":"game:block/metal/plate/iron" },
+		    "stone": { "base": "game:block/stone/rock/andesite1" },
+		    "pine1": { "base":"game:block/wood/planks/pine1"}
+            },
+        "*-ceramic-*": {
+            "iron": { "base":"game:block/metal/plate/iron" },
+		    "stone": { "base": "block/stone/special/grit/grit-{type}alt" },
+		    "pine1": { "base":"game:block/wood/planks/pine1"}
+            },
+        "*": {
+            "iron": { "base":"game:block/metal/plate/iron" },
+		    "stone": { "base": "block/stone/special/grit/grit-{type}" },
+		    "pine1": { "base":"game:block/wood/planks/pine1"}
+            }
+        },
+    "sounds": {
+        "walk": "game:walk/stone",
+        "place": "game:block/ceramicplace"
+    },
+    "heldTpIdleAnimation": "holdbothhandslarge",
+    "heldRightReadyAnimation": "heldblockready",
+    "heldTpUseAnimation": "twohandplaceblock",
+    "tpHandTransform": {
+        "translation": { "x": -1.23, "y": -0.91, "z": -0.8 },
+        "rotation": { "x": -2, "y": 25, "z": -78 },
+        "scale": 0.4
+    }
+}

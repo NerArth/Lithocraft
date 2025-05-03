@@ -1,0 +1,91 @@
+{
+	"code": "silage",
+	"shape": { "base": "game:block/basic/cube" },
+	"drawtype": "cube",
+	"attributes": {
+		"foodTagsByType": {
+			"*-normal-*": ["grass"],
+			"*-organicmatter-*": ["nibbleCrop","fruitmash"]
+		},
+		"handbook": {
+		}
+	},
+	"behaviors": [{"name": "Pillar"}],
+	"variantgroups": [
+		{ "code": "type", "states": ["normal", "rotting", "organicmatter"] },
+		{ "code": "rotation", "states": ["ud", "ns", "we"] }
+	],
+	"creativeinventory": { "general": ["*-ud"], "construction": ["*"], "flora": ["*-ud"], "decorative": ["*-ud"], "lithocraft": ["*-ud"] },
+	"blockmaterial": "Plant",
+	"replaceable": 900,
+	"lightAbsorption": 99,
+	"texturesByType": {
+		"*-ud": {
+			"horizontals": { "base": "block/hay/{type}-side" },
+			"verticals": { "base": "block/hay/{type}-top" }
+		},
+		"*-ns": {
+			"all": { "base": "block/hay/{type}-side", "rotation": 90 },
+			"west": { "base": "block/hay/{type}-side", "rotation": 270 },
+			"up": { "base": "block/hay/{type}-side" },
+			"down": { "base": "block/hay/{type}-side", "rotation": 90 },
+
+			"north": { "base": "block/hay/{type}-top" },
+			"south": { "base": "block/hay/{type}-top" }
+		},
+		"*-we": {
+			"all": { "base": "block/hay/{type}-side", "rotation": 270 },
+			"south": { "base": "block/hay/{type}-side", "rotation": 90 },
+			"up": { "base": "block/hay/{type}-side", "rotation": 270 },
+
+			"west": { "base": "block/hay/{type}-top" },
+			"east": { "base": "block/hay/{type}-top" }
+		}
+	},
+	"resistance": 1.0,
+	"sideopaque": {
+		"all": true
+	},
+	"sounds": {
+		"place": "game:block/plant",
+		"break": "game:block/plant",
+		"hit": "game:block/plant"
+	},
+	"materialDensity": 800,
+	"combustiblePropsByType": {
+		"*-normal-*": {
+			"burnTemperature": 600,
+			"burnDuration": 20
+		},
+		"*-organicmatter-*": {
+			"burnTemperature": 600,
+			"burnDuration": 30
+		}
+	},
+	"transitionablePropsByType": {
+		"*-normal-*":[{
+			"type": "Perish",
+			"freshHours": { "avg": 432 },
+			"transitionHours": { "avg": 24 },
+			"transitionedStack": { "type": "block", "code": "lithocraft:silage-rotting-{rotation}" },
+			"transitionRatio": 1.0
+		}],
+		"*-rotting-*":[{
+			"type": "Perish",
+			"freshHours": { "avg": 72 },
+			"transitionHours": { "avg": 72 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 8.0
+		}],
+		"*-organicmatter-*":[{
+			"type": "Perish",
+			"freshHours": { "avg": 216 },
+			"transitionHours": { "avg": 24 },
+			"transitionedStack": { "type": "block", "code": "lithocraft:silage-rotting-{rotation}" },
+			"transitionRatio": 1.0
+		}]
+	},
+	"drops": [{ "type": "block", "code": "silage-{type}-ud"}],
+	"heldTpIdleAnimation": "holdbothhandslarge", "heldRightReadyAnimation": "heldblockready", 
+	"heldTpUseAnimation": "twohandplaceblock"
+}

@@ -1,0 +1,205 @@
+{
+	"code": "axe",
+	"damagedBy": ["blockbreaking", "attacking"],
+	"tool": "axe",
+	"class": "ItemAxe",
+	"attributes": {
+		"heldItemPitchFollow": 0.9,
+		"handbook": {
+			"groupBy": ["axe-*"]
+		},
+		"toolrackTransformByType": {
+			"axe-bardiche-*": {
+				"translation": { "x": 0, "y": 0.7, "z": 0.2 },
+				"rotation": { "x": 22, "y": 1, "z": -1 },
+				"scale": 1.25
+			},
+			"axe-battle-*": {
+				"translation": { "x": -0.2, "y": 0.7, "z": 0.1 },
+				"rotation": { "x": 12, "y": 1, "z": -1 },
+				"scale": 1.25
+			},
+			"axe-double-*": {
+				"translation": { "x": 0, "y": 0.7, "z": -0.2 },
+				"rotation": { "x": -12, "y": 1, "z": -1 },
+				"scale": 1.25
+			},
+			"axe-bearded-*": {
+				"translation": { "x": -0.3, "y": 0.7, "z": 0 },
+				"rotation": { "x": 0, "y": 1, "z": -1 },
+				"scale": 1.25
+			},
+			"*": {
+				"rotation": { "y": 1, "z": -1 },
+				"translation": { "x": -0.3, "y": 0.6 },
+				"scale": 1.25
+			}
+		},
+		"groundStorageTransformByType": {
+			"axe-bearded-*": {
+				"translation": { "x": 0, "y": 0.2, "z": -0.1435 },
+				"rotation": { "x": 26, "y": 88, "z": -94 },
+				"scale": 0.88
+			},
+			"axe-battle-*": {
+				"translation": { "x": 0.45, "y": -0.1, "z": 0.22 },
+				"rotation": { "x": 34, "y": 0, "z": -90 },
+				"scale": 0.88
+			},
+			"axe-bardiche-*": {
+				"translation": { "x": 0.45, "y": -0.1, "z": -0.02 },
+				"rotation": { "x": 26, "y": 0, "z": -87 },
+				"scale": 0.88
+			},
+			"axe-double-*": {
+				"translation": { "x": -0.1, "y": 0.14, "z": -0.34 },
+				"rotation": { "x": 26, "y": 110, "z": -87 },
+				"scale": 0.88
+			},
+			"*": {
+				"translation": { "x": 0, "y": 0.19, "z": -0.125 },
+				"rotation": { "x": 26, "y": 88, "z": -87 },
+				"scale": 0.88
+			}
+		}
+	},
+	"behaviors": [
+	{ 
+		"name": "GroundStorable",
+		"properties": {
+			"layout": "WallHalves",
+			"wallOffYByType": {
+				"axe-bardiche-ruined": 2,
+				"axe-double-ruined": 2,
+				"*": 1
+			},
+			"sprintKey": true,
+			"selectionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1 },
+			"collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0 }
+		}
+	},
+	{ "name": "AnimationAuthoritative", "properties": { "onlyOnEntity": true } }
+	],
+	"variantGroups": [
+		{ "code": "type", "states": ["felling", "bearded", "battle", "bardiche", "double" ] },
+		{ "code": "material", "loadFromProperties": "lithocraft:block/metal" }
+	],
+	"allowedVariants": [
+		"axe-felling-alum",
+		"axe-bearded-alumbronze",
+		"axe-battle-silumin",
+		"axe-bardiche-orokhalkos",
+		"axe-double-titanbronze"
+	],
+	"shapeByType": {
+		"*-felling-*": { "base": "game:item/tool/axe/iron" },
+		"*": { "base": "game:item/tool/axe/{type}" }
+	},
+
+	"heldRightReadyAnimationByType": {
+		"axe-felling-*": "axeready",
+		"axe-double-*": "axeready",
+		"axe-bardiche-*": "axeready",
+		"*": "beginholditem"
+	},
+	"heldTpHitAnimationByType": {
+		"axe-felling-*": "axechop",
+		"axe-double-*": "axechop",
+		"axe-bardiche-*": "axechop",
+		"*": "breaktool"
+	},
+	"texturesByType": {
+		"*": {
+			"material": { "base": "lithocraft:block/metal/ingot/{material}" },
+			"handle": { "base":"game:block/wood/planks/pine1"}
+		}
+	},
+	"attackRangeByType": {
+		"*-bardiche-*": 3.5,
+		"*": 2
+	},
+	"toolTierByType": {
+		"*-alum": 3,
+		"*-alumbronze": 4,
+		"*-silumin": 5,
+		"*-orokhalkos": 8,
+		"*-titanbronze": 6
+	},
+	"miningSpeedByType": {
+		"axe-*-alum": {
+			"wood": 5.2,
+			"plant": 2.8,
+			"leaves": 2.4
+		},
+		"axe-*-alumbronze": {
+			"wood": 8,
+			"plant": 4.5,
+			"leaves": 3
+		},
+		"axe-*-silumin": {
+			"wood": 10,
+			"plant": 5.5,
+			"leaves": 4
+		},
+		"axe-*-orokhalkos": {
+			"wood": 12,
+			"plant": 8,
+			"leaves": 8
+		},
+		"axe-*-titanbronze": {
+			"wood": 16,
+			"plant": 7.5,
+			"leaves": 6
+		}
+	},
+	"durabilityByType": {
+		"axe-*-alum": 380,
+		"axe-*-berylliumbronze": 680,
+		"axe-*-alumbronze": 850,
+		"axe-*-silumin": 1600,
+		"axe-*-orokhalkos": 4400,
+		"axe-*-titanbronze": 2600
+	},
+	"attackPowerbyType": {
+		"axe-*-alum": 1.8,
+		"axe-*-berylliumbronze": 4.1,
+		"axe-*-alumbronze": 2.8,
+		"axe-*-silumin": 3.8,
+		"axe-*-orokhalkos": 5.3,
+		"axe-*-titanbronze": 5.3
+	},
+	"creativeinventory": { "general": ["*"], "items": ["*"], "tools": ["*"], "lithocraft": ["*"] },
+	"guiTransformByType": {
+		"*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": -63, "y": -123, "z": -180 },
+			"origin": { "x": 0.61, "y": 0, "z": 0.47 },
+			"scale": 1.58
+		}
+	},
+	"groundTransformByType": {
+		"*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": 0, "y": 0, "z": 0 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 3.6
+		}
+	},
+	"tpHandTransformByType": {
+		"axe-bardiche-*": {
+			"translation": { "x": -1.09, "y": -0.5, "z": -0.03 },
+			"rotation": { "x": 90, "y": 0, "z": -2 },
+			"scale": 0.95
+		},
+		"axe-battle-*": {
+			"translation": { "x": -0.69, "y": -0.5, "z": -0.03 },
+			"rotation": { "x": 90, "y": 0, "z": -2 },
+			"scale": 0.95
+		},
+		"*": {
+			"translation": { "x": -0.43, "y": -0.52, "z": -0.07 },
+			"rotation": { "x": 90, "y": 0, "z": 0 },
+			"scale": 0.95
+		}
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"enabled": false,
+	"code": "arrow",
+	"class": "ItemArrow",
+	"variantGroups": [
+		{ "code": "material", "loadFromProperties": "lithocraft:block/metal" }
+	],
+	"maxStackSize": 64,
+	"storageFlags": 513,
+	"shapeByType": {
+		"arrow-orokhalkos": { "base": "game:item/tool/arrow-gold" },
+		"arrow-titanbronze": { "base": "game:item/tool/arrow-silver" },
+		"*": { "base": "game:item/tool/arrow-copper" }
+	},
+	"texturesByType": {
+		"*": {
+			"material": { "base": "block/metal/ingot/{material}" }
+		}
+	},
+	"creativeInventory": { "general": [ "*" ], "items": [ "*" ], "tools": [ "*" ], "lithocraft": [ "*" ] },
+	"guiTransform": {
+		"rotation": { "x": -23, "y": -45, "z": -145 },
+		"origin": { "x": 0.7, "y": -0.45, "z": 0 },
+		"scale": 1.44
+	},
+	"tpHandTransform": {
+		"translation": { "x": -1.05, "y": -0.4599, "z": -0.87 },
+		"rotation": { "x": 0, "y": 2, "z": 3 },
+		"scale": 0.55
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": -0.03, "z": 0.5 },
+		"scale": 2.64
+	},
+	"attributes": {
+		"damageByType": {
+			"*-berylliumbronze": 2.25,
+			"*-alumbronze": 2,
+			"*-silumin": 2.25,
+			"*-orokhalkos": 3.25,
+			"*-titanbronze": 2.75
+		},
+		"breakChanceOnImpactByType": {
+			"*-berylliumbronze": 0.15,
+			"*-alumbronze": 0.125,
+			"*-silumin": 0.09,
+			"*-orokhalkos": 0.05,
+			"*-titanbronze": 0.09
+		},
+		"handbook": {
+			"groupBy": [ "arrow-*" ]
+		}
+	}
+}
