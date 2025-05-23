@@ -41,4 +41,18 @@
 		</ItemGroup>
 		<Delete Files="@(ArtifactsToDelete)" />
 	</Target>
+
+	<Target Name="PackageOutputAsZip" AfterTargets="Build">
+		<PropertyGroup>
+			<ZipOutputDir>$(OutputPath)</ZipOutputDir>
+			<ZipFileName>$(MSBuildProjectDirectory)\bin\$(Configuration)\Lithocraft-Core-$(Version).zip</ZipFileName>
+		</PropertyGroup>
+		<ItemGroup>
+			<FilesToZip Include="$(ZipOutputDir)**\*" />
+		</ItemGroup>
+		<ZipDirectory
+		  SourceDirectory="$(ZipOutputDir)"
+		  DestinationFile="$(ZipFileName)"
+		  Overwrite="true" />
+	</Target>
 </Project>
