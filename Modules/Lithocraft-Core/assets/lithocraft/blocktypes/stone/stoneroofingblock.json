@@ -1,0 +1,33 @@
+{
+	"code": "stoneroofingblock",	
+	"attributes": {
+		"handbook": {
+			"groupBy": ["game:clayshingleblock-*"]
+		}
+	},
+	"variantGroups": [
+		{ "code":"type", "states": ["slate"] }
+	],
+	"creativeInventory": { "lithocraft": ["stoneroofingblock-*"], "construction": ["stoneroofingblock-*"] },
+	"shape": { "base": "game:block/basic/cube" },
+	"drawType": "Cube",
+	"sideSolid": { "all": true },
+	"sideOpaque": { "all": true },
+	"blockMaterial": "Stone",
+	"replaceable": 600,
+	"resistance": 2.5,
+	"lightAbsorption": 99,
+	"textures": {
+		"all": { "base": "game:block/stone/shingles/{type}*" }
+	},
+	"sounds": {
+		"walk": "game:walk/stone",
+		"place": "game:block/ceramicplace"
+	},
+	"heldTpIdleAnimation": "holdbothhandslarge", "heldRightReadyAnimation": "heldblockready", "heldTpUseAnimation": "twohandplaceblock",
+	"tpHandTransform": {
+		"translation": { "x":-1.23, "y":-0.91, "z":-0.8 },
+		"rotation": { "x":-2, "y":25, "z":-78 },
+		"scale": 0.4
+	}
+}

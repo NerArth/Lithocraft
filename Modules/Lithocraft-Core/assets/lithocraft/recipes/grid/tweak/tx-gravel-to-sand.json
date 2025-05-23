@@ -1,0 +1,26 @@
+[
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "GS",
+		"ingredients": {
+			"G": { "type": "block", "code": "game:gravel-*", "name": "rock", "allowedVariants": ["andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite"] },
+			"S": { "type": "block", "code": "game:sieve-*", "isTool": true }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "block", "code": "game:sand-{rock}", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "GS",
+		"ingredients": {
+			"G": { "type": "block", "code": "game:gravel-*", "name": "rock", "allowedVariants": ["amphibolite", "diorite", "dolostone", "gabbro", "gneiss", "jade", "jasper", "migmatite", "mudstone", "pumice", "quartzite", "rhyolite", "schist", "siltstone"] },
+			"S": { "type": "block", "code": "game:sieve-*", "isTool": true }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "block", "code": "game:sand-{rock}", "quantity": 1 }
+	}	
+]

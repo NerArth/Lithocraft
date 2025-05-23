@@ -1,0 +1,10 @@
+{
+	"ingredientPattern": "CSS,_SS",
+	"ingredients": {
+		"C": { "type": "item", "code": "game:clay-*", "quantity": 1 },
+		"S": { "type": "item", "code": "game:stone-*", "quantity": 1, "name": "rock", "allowedVariants": ["slate"] }
+	},
+	"width": 3,
+	"height": 2,
+	"output": { "type": "block", "code": "stoneroofingblock-{rock}", "quantity": 2 }
+}

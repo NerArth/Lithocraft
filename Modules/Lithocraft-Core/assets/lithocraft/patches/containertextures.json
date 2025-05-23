@@ -1,0 +1,90 @@
+[
+  {
+    "op": "addmerge",
+    "path": "/attributes/inContainerTexture",
+    "value": { "base": "game:block/soil/peatpile/sides" },
+    "file": "game:blocktypes/soil/peatbrick.json",
+    "side": "Server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/inContainerTexture",
+    "value": { "base": "game:block/stone/sand/{rock}" },
+    "file": "game:blocktypes/stone/sand.json",
+    "side": "Server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/inContainerTexture",
+    "value": { "base": "game:block/coal/charcoal" },
+    "file": "game:itemtypes/resource/charcoal.json",
+    "side": "Server"
+  },
+  {
+	"op": "addmerge",
+    "path": "/attributes/inContainerTextureByType",
+    "value": {
+		"*-lignite": { "base": "game:block/coal/lignite" },
+		"*-bituminouscoal": { "base": "game:block/coal/bituminous" },
+		"*-anthracite": { "base": "game:block/coal/anthracite" }
+	},
+    "file": "game:itemtypes/resource/ore-ungraded.json",
+    "side": "Server" 
+  },
+  {
+	"op": "addmerge",
+    "path": "/attributes/inContainerTextureByType",
+    "value": {
+		"*-lapislazuli": { "base": "block/stone/special/lapislazuli" }
+	},
+    "file": "game:itemtypes/resource/ore-ungraded.json",
+    "side": "Server" 
+  },
+  {
+	"op": "addmerge",
+    "path": "/attributes/inContainerTextureByType",
+    "value": {
+		"*-alum": { "base": "game:block/stone/gravel/chalk" },
+		"*-cinnabar": { "base": "game:item/resource/ungraded/cinnabar" },
+		"*-sulfur": { "base": "game:item/resource/ungraded/sulfur" },
+		"*-sylvite": { "base": "game:item/resource/ungraded/sylvite" },
+		"*-borax": { "base": "game:item/resource/ungraded/borax" }
+	},
+    "file": "game:itemtypes/resource/ore-ungraded.json",
+    "side": "Server" 
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": {
+      "inContainerTextureByType": {
+        "*": { "base": "game:block/stone/rock/{rock}1" }
+      }
+    },
+    "file": "game:itemtypes/resource/stone.json",
+    "side": "Server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": {
+      "inContainerTextureByType": {
+        "*": { "base": "game:block/soil/{type}clay" }
+      }
+    },
+    "file": "game:itemtypes/resource/clay.json",
+    "side": "Server"
+  }
+  ,
+  {
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": {
+      "inContainerTextureByType": {
+        "*": { "base": "game:block/clay/shingles/{type}" }
+      }
+    },
+    "file": "game:itemtypes/resource/shingle.json",
+    "side": "Server"
+  }
+]

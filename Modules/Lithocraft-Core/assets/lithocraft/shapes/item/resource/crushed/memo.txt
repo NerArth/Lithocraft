@@ -1,0 +1,1 @@
+The normal.json here is just a modification of the vanilla crushed/normal.json because I needed a differentiation of texture assignment for the "dusty" part

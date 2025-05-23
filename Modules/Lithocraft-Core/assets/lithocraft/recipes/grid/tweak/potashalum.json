@@ -1,0 +1,14 @@
+[
+	{
+		"ingredientPattern": "AFS",
+		"ingredients": {
+			"A": { "type": "item", "code": "game:crushed-alum", "quantity": 1 },
+			"F": { "type": "item", "code": "game:powderedsulfur", "quantity": 1 },
+			"S": { "type": "block", "code": "game:sieve-*", "isTool": true },
+		},
+		"width": 1,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:potash", "quantity": 3 }
+	}
+]

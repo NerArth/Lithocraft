@@ -1,0 +1,290 @@
+[
+	{
+		"enabled": false,
+		"recipeGroup": 0,
+		"code": "compost-vegetable-coppersulfate",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "item", "code": "game:vegetable-*", "quantity": 3 },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 0.1, "consumelitres": 0.1 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 1,
+		"code": "compost-vegetable-water",
+		"sealHours": 240,
+		"ingredients": [
+			{ "type": "item", "code": "game:vegetable-*", "quantity": 3 },
+			{ "type": "item", "code": "game:waterportion", "litres": 2, "consumelitres": 2 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 0,
+		"code": "compost-legume-coppersulfate",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "item", "code": "game:legume-*", "quantity": 6 },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 0.2, "consumelitres": 0.2 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 1,
+		"code": "compost-legume-water",
+		"sealHours": 240,
+		"ingredients": [
+			{ "type": "item", "code": "game:legume-*", "quantity": 6 },
+			{ "type": "item", "code": "game:waterportion", "litres": 2, "consumelitres": 2 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 0,
+		"code": "compost-grain-coppersulfate",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "item", "code": "game:grain-*", "quantity": 4 },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 0.1, "consumelitres": 0.1 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 1,
+		"code": "compost-grain-water",
+		"sealHours": 240,
+		"ingredients": [
+			{ "type": "item", "code": "game:grain-*", "quantity": 4 },
+			{ "type": "item", "code": "game:waterportion", "litres": 2, "consumelitres": 2 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 0,
+		"code": "compost-generalfruit-coppersulfate",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "item", "code": "game:fruit-*", "quantity": 12, "skipVariants": ["*currant","*berry","cherry"] },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 0.2, "consumelitres": 0.2 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 1,
+		"code": "compost-generalfruit-water",
+		"sealHours": 240,
+		"ingredients": [
+			{ "type": "item", "code": "game:fruit-*", "quantity": 12, "skipVariants": ["*currant","*berry","cherry"] },
+			{ "type": "item", "code": "game:waterportion", "litres": 2, "consumelitres": 2 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 0,
+		"code": "compost-berryfruit-coppersulfate",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "item", "code": "game:fruit-*", "quantity": 24, "allowedVariants": ["*currant","*berry","cherry"] },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 0.2, "consumelitres": 0.2 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 1,
+		"code": "compost-berryfruit-water",
+		"sealHours": 240,
+		"ingredients": [
+			{ "type": "item", "code": "game:fruit-*", "quantity": 24, "allowedVariants": ["*currant","*berry","cherry"] },
+			{ "type": "item", "code": "game:waterportion", "litres": 2, "consumelitres": 2 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"enabled": false,
+		"recipeGroup": 0,
+		"code": "compost-dough-coppersulfate",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "item", "code": "game:dough-*", "quantity": 6 },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 0.1, "consumelitres": 0.1 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 1,
+		"code": "compost-dough-water",
+		"sealHours": 240,
+		"ingredients": [
+			{ "type": "item", "code": "game:dough-*", "quantity": 6 },
+			{ "type": "item", "code": "game:waterportion", "litres": 2, "consumelitres": 2 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 0,
+		"code": "compost-bread-coppersulfate",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "item", "code": "game:bread-*", "quantity": 6 },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 0.1, "consumelitres": 0.1 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 1,
+		"code": "compost-bread-water",
+		"sealHours": 240,
+		"ingredients": [
+			{ "type": "item", "code": "game:bread-*", "quantity": 6 },
+			{ "type": "item", "code": "game:waterportion", "litres": 2, "consumelitres": 2 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 0,
+		"code": "compost-hidesmall-coppersulfate",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "item", "code": "game:hide-raw-small", "quantity": 32 },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 1, "consumelitres": 1 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 5 }
+	},
+	{
+		"recipeGroup": 1,
+		"code": "compost-hidesmall-water",
+		"sealHours": 240,
+		"ingredients": [
+			{ "type": "item", "code": "game:hide-raw-small", "quantity": 32 },
+			{ "type": "item", "code": "game:waterportion", "litres": 25, "consumelitres": 25 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 5 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 0,
+		"code": "compost-hidemedium-coppersulfate",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "item", "code": "game:hide-raw-medium", "quantity": 16 },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 1, "consumelitres": 1 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 5 }
+	},
+	{
+		"recipeGroup": 1,
+		"code": "compost-hidemedium-water",
+		"sealHours": 240,
+		"ingredients": [
+			{ "type": "item", "code": "game:hide-raw-medium", "quantity": 16 },
+			{ "type": "item", "code": "game:waterportion", "litres": 25, "consumelitres": 25 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 5 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 0,
+		"code": "compost-hidelarge-coppersulfate",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "item", "code": "game:hide-raw-large", "quantity": 8 },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 1, "consumelitres": 1 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 5 }
+	},
+	{
+		"recipeGroup": 1,
+		"code": "compost-hidelarge-water",
+		"sealHours": 240,
+		"ingredients": [
+			{ "type": "item", "code": "game:hide-raw-large", "quantity": 8 },
+			{ "type": "item", "code": "game:waterportion", "litres": 25, "consumelitres": 25 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 5 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 0,
+		"code": "compost-hidehuge-coppersulfate",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "item", "code": "game:hide-raw-huge", "quantity": 4 },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 1, "consumelitres": 1 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 5 }
+	},
+	{
+		"recipeGroup": 1,
+		"code": "compost-hidehuge-water",
+		"sealHours": 240,
+		"ingredients": [
+			{ "type": "item", "code": "game:hide-raw-huge", "quantity": 4 },
+			{ "type": "item", "code": "game:waterportion", "litres": 25, "consumelitres": 25 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 5 }
+	},
+	{
+		"recipeGroup": 0,
+		"code": "compost-silagenorm-coppersulfate",
+		"sealHours": 72,
+		"ingredients": [
+			{ "type": "block", "code": "silage-normal-ud", "quantity": 2 },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 0.2, "consumelitres": 0.2 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 1,
+		"code": "compost-silagenorm-water",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "block", "code": "silage-normal-ud", "quantity": 2 },
+			{ "type": "item", "code": "game:waterportion", "litres": 10, "consumelitres": 10 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"recipeGroup": 0,
+		"code": "compost-silagerotting-coppersulfate",
+		"sealHours": 24,
+		"ingredients": [
+			{ "type": "block", "code": "silage-rotting-ud", "quantity": 8 },
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 0.1, "consumelitres": 0.1 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 1,
+		"code": "compost-silagerotting-standing",
+		"sealHours": 48,
+		"ingredients": [
+			{ "type": "block", "code": "silage-rotting-ud", "quantity": 8 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 1,
+		"code": "compost-organicmatter-standing",
+		"sealHours": 120,
+		"ingredients": [
+			{ "type": "block", "code": "silage-organicmatter-ud", "quantity": 1 }
+		],
+		"output": { "type": "item", "code": "game:compost", "quantity": 2 }
+	}
+]

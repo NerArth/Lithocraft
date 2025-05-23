@@ -1,0 +1,128 @@
+{
+    "code": "stonepainting",
+	"__comment": "sample code: stonepainting-stonehenge-1x1-north ; a lot of this is quite messy but it's probably the simplest way I can think of to accomplish what was intended",
+	"behaviorsByType": {
+		"@stonepainting-(rock|memory|realfern)-1x2-.*": [
+			{ "name": "HorizontalAttachable" }, 
+			{ "name": "Multiblock", "propertiesByType": {
+					"*-north": { "sizex": 1, "sizey": 2, "sizez": 1, "cposition": { "x": 0, "y": 0, "z": 0 } },
+					"*-east": { "sizex": 1, "sizey": 2, "sizez": 1, "cposition": { "x": 0, "y": 0, "z": 0 } },
+					"*-south": { "sizex": 1, "sizey": 2, "sizez": 1, "cposition": { "x": 0, "y": 0, "z": 0 } },
+					"*-west": { "sizex": 1, "sizey": 2, "sizez": 1, "cposition": { "x": 0, "y": 0, "z": 0 } } 
+				}
+			} 
+		],
+		"@stonepainting-(canyon|desert|river)-2x1-.*": [
+			{ "name": "HorizontalAttachable" }, 
+			{ "name": "Multiblock", "propertiesByType": {
+					"*-north": { "sizex": 2, "sizey": 1, "sizez": 1, "cposition": { "x": 0, "y": 0, "z": 0 } },
+					"*-east": { "sizex": 1, "sizey": 1, "sizez": 2, "cposition": { "x": 0, "y": 0, "z": 0 } },
+					"*-south": { "sizex": 2, "sizey": 1, "sizez": 1, "cposition": { "x": 1, "y": 0, "z": 0 } },
+					"*-west": { "sizex": 1, "sizey": 1, "sizez": 2, "cposition": { "x": 0, "y": 0, "z": 1 } } 
+				}
+			} 
+		],
+		"@stonepainting-(monolith|shadow|rust|rockydesert)-2x3-.*": [
+			{ "name": "HorizontalAttachable" }, 
+			{ "name": "Multiblock", "propertiesByType": {
+					"*-north": { "sizex": 2, "sizey": 3, "sizez": 1, "cposition": { "x": 0, "y": 0, "z": 0 } },
+					"*-east": { "sizex": 1, "sizey": 3, "sizez": 2, "cposition": { "x": 0, "y": 0, "z": 0 } },
+					"*-south": { "sizex": 2, "sizey": 3, "sizez": 1, "cposition": { "x": 1, "y": 0, "z": 0 } },
+					"*-west": { "sizex": 1, "sizey": 3, "sizez": 2, "cposition": { "x": 0, "y": 0, "z": 1 } } 
+				}
+			} 
+		],
+		"*": [
+			{ "name": "HorizontalAttachable" }
+		]
+	},
+	"attributes": {
+		"handbook": {
+			"groupBy": ["stonepainting-{painting}-{size}-*"],
+			"extraSectionsByType": {
+				"*": [{ "title": "handbooktitle-tip", "text": "tip-stonepainting" },{ "title": "handbooktitle-trivia", "text": "trivia-stonepainting" }]
+			},
+			"excludeByType": {
+				"@*-(shadow|rust|monolith)-2x3-.*": true
+			}
+		}
+	},
+	"variantGroups": [
+		{ "code":"painting", "states": [
+				"tower","stonehenge","space","jupiter",
+				"rock","memory","realfern",
+				"canyon","desert","river",
+				"monolith","shadow","rust","rockydesert"
+			] 
+		},
+		{ "code":"size", "states": ["1x1","1x2","2x1","2x3"] },
+		{ "code":"side", "loadFromProperties": "abstract/horizontalorientation" }
+	],
+	"allowedVariants": [
+		"*-tower-1x1-*", "*-stonehenge-1x1-*", "*-space-1x1-*", "*-jupiter-1x1-*",
+		"*-rock-1x2-*", "*-memory-1x2-*", "*-realfern-1x2-*",
+		"*-canyon-2x1-*", "*-desert-2x1-*", "*-river-2x1-*",
+		"*-monolith-2x3-*", "*-shadow-2x3-*", "*-rust-2x3-*", "*-rockydesert-2x3-*"
+	],
+	"creativeInventory": { "general": ["*-north"], "decorative": ["*-north"], "lithocraft": ["*-north"] },
+	"shapeByType": {
+		"@stonepainting-(rock|memory|realfern)-1x2-.*":
+		{ "base": "block/painting/painting1x2", "rotateYByType": { "*-north": 180, "*-east": 90, "*-south": 0, "*-west": 270 } },
+		"@stonepainting-(canyon|desert|river)-2x1-.*":
+		{ "base": "block/painting/painting2x1", "rotateYByType": { "*-north": 180, "*-east": 90, "*-south": 0, "*-west": 270 } },
+		"@stonepainting-(monolith|shadow|rust|rockydesert)-2x3-.*":
+		{ "base": "block/painting/painting2x3", "rotateYByType": { "*-north": 180, "*-east": 90, "*-south": 0, "*-west": 270 } },
+		"*":
+		{ "base": "block/painting/painting1x1", "rotateYByType": { "*-north": 180, "*-east": 90, "*-south": 0, "*-west": 270 } }
+	},
+	"blockMaterial": "Stone",
+	"lightAbsorption": 0,
+	"faceCullMode": "NeverCull",
+	"textures": {
+		"material": { "base": "block/painting/sp_{painting}" }
+	},
+	"sideSolid": {
+		"all": false
+	},
+	"sideOpaque": {
+		"all": false
+	},
+	"sideAO": { "all": false },
+	"replaceable": 5001,
+	"resistance": 0.2,
+	"collisionBox": null,
+	"selectionBox": {
+		"x1": 0, "y1": 0, "z1": 0, 
+		"x2": 1, "y2": 1, "z2": 0.0625,
+		"rotateYByType": {
+			"*-east": 270,
+			"*-south": 180,
+			"*-west": 90,
+			"*-north": 0
+		}
+	},
+	"sounds": {
+		"place": "game:block/ceramicplace",
+		"break": "game:block/ceramicplace",
+		"hit": "game:block/ceramicplace"
+	},
+	"rainPermeable": true,
+	"materialDensity": 10000,
+	"guiTransform": {
+		"rotation": { "x": -22.6, "y": 25, "z": 0 },
+		"origin": { "x": 0.5, "y": 0.5, "z": 0 },
+		"scale": 1.39
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": -90, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0 },
+		"scale": 2.5
+	},
+	"tpHandTransform": {
+		"translation": { "x": -1, "y": -0.29, "z": 0.05 },
+		"rotation": { "x": 3, "y": 12, "z": -25 },
+		"origin": { "x": 0.5, "y": 0.5, "z": 0 },
+		"scale": 0.6
+	}
+}

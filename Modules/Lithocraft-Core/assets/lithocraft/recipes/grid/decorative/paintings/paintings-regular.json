@@ -1,0 +1,147 @@
+[
+	{
+		"code": "painting-tower",
+		"ingredientPattern": "FCF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-greenmarble" },
+			"D": { "type": "item", "code": "game:cloth-brown" },
+			"C": { "type": "item", "code": "game:cloth-blue" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-tower-1x1-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-stonehenge",
+		"ingredientPattern": "FCF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-limestone" },
+			"D": { "type": "item", "code": "game:cloth-orange" },
+			"C": { "type": "item", "code": "game:cloth-black" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-stonehenge-1x1-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-space",
+		"ingredientPattern": "FCF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-suevite" },
+			"D": { "type": "item", "code": "game:cloth-white" },
+			"C": { "type": "item", "code": "game:cloth-black" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-space-1x1-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-jupiter",
+		"ingredientPattern": "FCF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-basalt" },
+			"D": { "type": "item", "code": "game:cloth-orange" },
+			"C": { "type": "item", "code": "game:cloth-blue" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-jupiter-1x1-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-rock",
+		"ingredientPattern": "FCF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-phyllite" },
+			"D": { "type": "item", "code": "game:cloth-green" },
+			"C": { "type": "item", "code": "game:cloth-brown" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-rock-1x2-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-memory",
+		"ingredientPattern": "FCF,FDF,FGF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-chalk" },
+			"D": { "type": "item", "code": "game:cloth-pink" },
+			"C": { "type": "item", "code": "game:cloth-black" },
+			"G": { "type": "item", "code": "game:cloth-green" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-memory-1x2-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-realfern",
+		"ingredientPattern": "FCF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-claystone" },
+			"D": { "type": "item", "code": "game:cloth-blue" },
+			"C": { "type": "item", "code": "game:cloth-green" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-realfern-1x2-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-canyon",
+		"ingredientPattern": "FFF,CDC,FFF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-sandstone" },
+			"D": { "type": "item", "code": "game:cloth-yellow" },
+			"C": { "type": "item", "code": "game:cloth-brown" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-canyon-2x1-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-desert",
+		"ingredientPattern": "FFF,CDC,FFF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-shale" },
+			"D": { "type": "item", "code": "game:cloth-blue" },
+			"C": { "type": "item", "code": "game:cloth-orange" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-desert-2x1-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-river",
+		"ingredientPattern": "FFF,CDC,FFF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-chert" },
+			"D": { "type": "item", "code": "game:cloth-blue" },
+			"C": { "type": "item", "code": "game:cloth-green" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-river-2x1-north", "quantity": 1 }
+	},
+	{
+		"code": "painting-rockydesert",
+		"ingredientPattern": "FBF,FDF,FCF",
+		"ingredients": {
+			"F": { "type": "item", "code": "game:stone-shale" },
+			"D": { "type": "item", "code": "game:cloth-brown" },
+			"C": { "type": "item", "code": "game:cloth-yellow" },
+			"B": { "type": "item", "code": "game:cloth-blue" }
+		},
+		"enabled": true,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "stonepainting-rockydesert-2x3-north", "quantity": 1 }
+	}
+]

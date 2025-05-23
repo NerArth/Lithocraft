@@ -1,0 +1,20 @@
+{
+    "textures": {
+		"all": "game:unknown"
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ],
+            "faces": {
+                "north": { "reflectiveMode": 1, "texture": "#north", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "reflectiveMode": 2, "texture": "#east", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "reflectiveMode": 3, "texture": "#south", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "reflectiveMode": 4, "texture": "#west", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "up": { "reflectiveMode": 1, "texture": "#up", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "reflectiveMode": 2, "texture": "#down", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}

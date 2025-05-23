@@ -1,0 +1,15 @@
+[
+	{
+		"code": "bonestone-gravel",
+		"ingredientPattern": "BBB,GSG,BBB",
+		"ingredients": {
+			"B": { "type": "item", "code": "game:bone" },
+			"G": { "type": "item", "code": "game:resin" },
+			"S": { "type": "block", "code": "game:gravel-*", "quantity": 4, "name": "rock", "skipVariants": ["whitemarble","redmarble","greenmarble","suevite","kimberlite"] }
+		},
+		"enabled": false,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "bonestone-{rock}", "quantity": 6 }
+	}
+]

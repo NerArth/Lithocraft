@@ -1,60 +1,118 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-	<OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
-	<AnalysisLevel>latest-recommended</AnalysisLevel>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>Lithocraft</RootNamespace>
+		<AssemblyName>Lithocraft</AssemblyName>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
+		<AnalysisLevel>latest-recommended</AnalysisLevel>
+		<Configurations>Debug;Release</Configurations>
+		<Module>none</Module>
+		<ReleaseVersion>0.0.0</ReleaseVersion>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Reference Include="VintagestoryAPI">
-      <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="VSSurvivalMod">
-      <HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-	<Reference Include="VSCreativeMod">
-		<HintPath>$(VINTAGE_STORY)/Mods/VSCreativeMod.dll</HintPath>
-		<Private>False</Private>
-	</Reference>
-    <Reference Include="VSEssentials">
-      <HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="0Harmony">
-      <HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="VintagestoryLib">
-      <HintPath>$(VINTAGE_STORY)/VintagestoryLib.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="protobuf-net">
-      <HintPath>$(VINTAGE_STORY)/Lib/protobuf-net.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="cairo-sharp">
-      <HintPath>$(VINTAGE_STORY)/Lib/cairo-sharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
+	<!-- Custom build targets for each module -->
+    <Target Name="BuildCore" DependsOnTargets="Build">  
+    <Message Importance="high" Text="Building Core Module..." />  
+    <Exec Command="dotnet build -c Release . -o bin\Release\lithocraft-Core --no-incremental --no-restore" />  
+    <Exec Command="xcopy lithocraft-core\assets bin\Release\Lithocraft-Core\assets /E /Y" />  
+    <Exec Command="xcopy modinfo-core.json bin\Release\Lithocraft-Core\modinfo.json /E /Y" />  
+    </Target>
+
+    <Target Name="BuildDecorative" DependsOnTargets="Build">  
+    <Message Importance="high" Text="Building Decorative Module..." />  
+    <Exec Command="dotnet build -c Release . -o bin\Release\lithocraft-Decorative --no-incremental --no-restore" />  
+    <Exec Command="xcopy lithocraft-decorative\assets bin\Release\Lithocraft-Decorative\assets /E /Y" />  
+    </Target>
+
+    <Target Name="BuildTools" DependsOnTargets="Build">  
+    <Message Importance="high" Text="Building Tools Module..." />  
+    <Exec Command="dotnet build -c Release . -o bin\Release\lithocraft-Tools --no-incremental --no-restore" />  
+    <Exec Command="xcopy lithocraft-tools\assets bin\Release\Lithocraft-Tools\assets /E /Y" />  
+    </Target>
+
+    <Target Name="BuildChemistry" DependsOnTargets="Build">  
+    <Message Importance="high" Text="Building Chemistry Module..." />  
+    <Exec Command="dotnet build -c Release . -o bin\Release\lithocraft-Chemistry --no-incremental --no-restore" />  
+    <Exec Command="xcopy lithocraft-chemistry\assets bin\Release\Lithocraft-Chemistry\assets /E /Y" />  
+    <Exec Command="xcopy modinfo-chemistry.json bin\Release\Lithocraft-Chemistry\modinfo.json /E /Y" />  
+    </Target>
+
+    <Target Name="BuildPatches" DependsOnTargets="Build">  
+    <Message Importance="high" Text="Building Patches Module..." />  
+    <Exec Command="dotnet build -c Release . -o bin\Release\lithocraft-Patches --no-incremental --no-restore" />  
+    <Exec Command="xcopy lithocraft-patches\assets bin\Release\Lithocraft-Patches\assets /E /Y" />  
+    </Target>
+
+	<!-- Custom target to build all modules -->
+	<Target Name="BuildAllModules" DependsOnTargets="BuildCore;BuildDecorative;BuildTools;BuildChemistry;BuildPatches">
+		<Message Importance="high" Text="All modules built successfully!" />
+	</Target>
 
 	<ItemGroup>
-		<Compile Remove="Abstract\AbstractAnimationHelper.cs" />
-		<Compile Remove="BlockBehavior\BlockBehaviorDebug.cs" />
-		<Compile Remove="BlockEntity\BEVat.cs" />
-		<Compile Remove="BlockEntity\NecessariesBEGrindstoneREFONLY.cs" />
-		<Compile Remove="Blocks\BlockGrindstone - Copy.cs" />
-		<Compile Remove="Blocks\BlockVat.cs" />
-		<Compile Remove="Items\ItemCannonRocket.cs" />
-		<Compile Remove="Items\ItemHandCannon.cs" />
+	<!-- VINTAGE STORY DEPENDENCIES -->
+		<Reference Include="VintagestoryAPI">
+			<HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="VSSurvivalMod">
+			<HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="VSCreativeMod">
+			<HintPath>$(VINTAGE_STORY)/Mods/VSCreativeMod.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="VSEssentials">
+			<HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="VintagestoryLib">
+			<HintPath>$(VINTAGE_STORY)/VintagestoryLib.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="protobuf-net">
+			<HintPath>$(VINTAGE_STORY)/Lib/protobuf-net.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="cairo-sharp">
+			<HintPath>$(VINTAGE_STORY)/Lib/cairo-sharp.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- LITHOCRAFT MODULES -->
+		<!-- Core Module -->
+		<Compile Include="lithocraft-core\**\*.cs" />
+		<!-- Metals Module -->
+		<Compile Include="lithocraft-metals\**\*.cs" />
+		<!-- Decorative Module -->
+		<Compile Include="lithocraft-decorative\**\*.cs" />
+		<!-- Tools Module -->
+		<Compile Include="lithocraft-tools\**\*.cs" />
+		<!-- Chemistry Module -->
+		<Compile Include="lithocraft-chemistry\**\*.cs" />
+		<!-- Patches Module -->
+		<Compile Include="lithocraft-patches\**\*.cs" />
+	</ItemGroup>
+
+	<!-- Add resources dynamically (e.g., assets for each module) -->
+	<ItemGroup>
+		<EmbeddedResource Include="assets\lithocraft-core\**\*.*" />
+		<EmbeddedResource Include="assets\lithocraft-decorative\**\*.*" />
+		<EmbeddedResource Include="assets\lithocraft-tools\**\*.*" />
+		<EmbeddedResource Include="assets\lithocraft-chemistry\**\*.*" />
+		<EmbeddedResource Include="assets\lithocraft-patches\**\*.*" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -64,7 +122,13 @@
 		<Content Include="modicon.png">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="modinfo.json">
+		<Content Include="modinfo-patches.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="modinfo-chemistry.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="modinfo-core.json">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 		<Content Include="changelog.md">
@@ -76,20 +140,38 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="Abstract\AbstractAnimationHelper.cs" />
-	  <None Include="BlockBehavior\BlockBehaviorDebug.cs" />
-	  <None Include="BlockEntity\BEVat.cs" />
-	  <None Include="Blocks\BlockGrindstone - Copy.cs" />
-	  <None Include="Blocks\BlockVat.cs" />
-	  <None Include="C:\J\VintageStoryModsDev\Lithocraft\.editorconfig" />
-	  <None Include="Items\ItemCannonRocket.cs" />
-	  <None Include="Items\ItemHandCannon.cs" />
+		<!-- EXCLUSIONS -->
+		<Compile Remove="Abstract\AbstractAnimationHelper.cs" />
+		<Compile Remove="BlockBehavior\BlockBehaviorDebug.cs" />
+		<Compile Remove="BlockEntity\BEVat.cs" />
+		<Compile Remove="BlockEntity\NecessariesBEGrindstoneREFONLY.cs" />
+		<Compile Remove="Blocks\BlockGrindstone - Copy.cs" />
+		<Compile Remove="Blocks\BlockVat.cs" />
+		<Compile Remove="Items\ItemCannonRocket.cs" />
+		<Compile Remove="Items\ItemHandCannon.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- EXCLUSIONS -->
+		<None Include="Abstract\AbstractAnimationHelper.cs" />
+		<None Include="BlockBehavior\BlockBehaviorDebug.cs" />
+		<None Include="BlockEntity\BEVat.cs" />
+		<None Include="Blocks\BlockGrindstone - Copy.cs" />
+		<None Include="Blocks\BlockVat.cs" />
+		<None Include="C:\J\VintageStoryModsDev\Lithocraft\.editorconfig" />
+		<None Include="Items\ItemCannonRocket.cs" />
+		<None Include="Items\ItemHandCannon.cs" />
 	</ItemGroup>
 
 	<ProjectExtensions><VisualStudio><UserProperties assets_4lithocraft_4lang_4en_1json__JsonSchema="..\..\..\schemas\game\lang.json" /></VisualStudio></ProjectExtensions>
 
 	<ItemGroup>
 	  <EditorConfigFiles Remove="C:\J\VintageStoryModsDev\Lithocraft\.editorconfig" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Modules\Lithocraft-Chem\assets\" />
+	  <Folder Include="Modules\Lithocraft-Metal\assets\" />
 	</ItemGroup>
 
 </Project>

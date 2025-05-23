@@ -1,0 +1,27 @@
+[
+    {
+        "ingredientPattern": "I,S,T",
+        "ingredients": {
+	        "I": { "type": "item", "code": "game:solderingiron", "isTool": true },
+	        "S": { "type": "item", "code": "game:solderbar-*" },
+            "T": { "type": "item", "code": "claycutter-*-shingle", "name": "metal", "skipVariants": [ "corundum", "diamond" ], "attributes": { "readyToUse": false } }
+        },
+        "shapeless": true,
+        "width": 1,
+        "height": 3,
+        "output": { "type": "item", "code": "claycutter-{metal}-shingle", "attributes": { "readyToUse": true }  }
+    },
+    {
+        "ingredientPattern": "I,S,T",
+        "ingredients": {
+	        "I": { "type": "item", "code": "game:solderingiron", "isTool": true },
+	        "S": { "type": "item", "code": "game:solderbar-*" },
+            "T": { "type": "item", "code": "claycutter-*-bowl", "name": "metal", "skipVariants": [ "corundum", "diamond" ], "attributes": { "readyToUse": false }
+            }
+        },
+        "shapeless": true,
+        "width": 1,
+        "height": 3,
+        "output": { "type": "item", "code": "claycutter-{metal}-bowl", "attributes": { "readyToUse": true }  }
+    }
+]

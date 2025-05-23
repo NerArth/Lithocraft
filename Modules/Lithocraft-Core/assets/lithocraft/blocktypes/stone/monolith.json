@@ -1,0 +1,106 @@
+{
+	"code": "monolith",
+	"__comment": "Originally was going to use stackaware fence class but there seem to be hardcoded things with the class that caused severe rendering issues, so had to abandon the implementation. This implementation is not ideal but it's good enough. Ner' August 2024.",
+	"behaviors": [
+		{"name": "CanAttach", "properties": { "sides": ["up", "down"] } },
+		{
+			"name": "OmniRotatable",
+			"properties": {
+				"rotateSides": true,
+				"facing": "block"
+			}
+		},
+		{ "name": "WrenchOrientable", "properties": { "baseCode": "monolith-{material}-*" } }
+	],
+	"attributes": {
+		"mapColorCode": "settlement",
+		"handbook": {
+			"groupBy": ["monolith-*"],
+			"extraSectionsByType": {
+				"*": [{ "title": "handbooktitle-tip", "text": "tip-wrench" }]
+			}
+		}
+	},
+	"variantGroups": [
+		{ "code": "material", "states": ["halite", "sulfur", "obsidian", "greenmarble","whitemarble", "redmarble", "emerald", "diamond", "olivine_peridot", "amethyst", "rosequartz", "clearquartz", "smokyquartz", "quartz", "lapislazuli"] },
+		{ "code": "type", "states": ["body", "up", "down"] }
+	],
+	"creativeInventory": { "general": ["monolith-*"], "decorative": ["monolith-*"], "lithocraft": ["monolith-*"] },
+	"shapeByType": {
+		"*-body": { "base": "block/stone/gem/monopentagon" },
+		"*-up": { "base": "block/stone/gem/monopentagon-up" },
+		"*-down": { "base": "block/stone/gem/monopentagon-down" }
+	},
+	"storageFlags": 5,
+	"drawType": "JSON",
+	"vertexFlags": {
+		"zOffsetByType": {
+			"*-quartz-*": 2,
+			"*-rosequartz-*": 2,
+			"*-clearquartz-*": 2,
+			"*-smokyquartz-*": 2,
+			"*-diamond-*": 2,
+			"*-olivine_peridot-*": 2,
+		},
+		"reflectiveByType": {
+			"*-sulfur-*": false,
+			"*": true
+		}
+	},	
+	"blockMaterial": "Stone",
+	"textures": {
+		"wall": { "base": "block/stone/special/{material}" }
+	},
+	"sideSolid": {
+		"all": false,
+	},
+	"sideOpaque": {
+		"all": false
+	},
+	"renderPassByType": {
+		"*-quartz-*": "Transparent",
+		"*-rosequartz-*": "Transparent",
+		"*-clearquartz-*": "Transparent",
+		"*-smokyquartz-*": "Transparent",
+		"*-diamond-*": "Transparent",
+		"*-olivine_peridot-*": "Transparent"
+	},
+	"faceCullModeByType": {
+		"*-quartz-*": "MergeMaterial",
+		"*-rosequartz-*": "MergeMaterial",
+		"*-clearquartz-*":"MergeMaterial",
+		"*-smokyquartz-*": "MergeMaterial",
+		"*-diamond-*": "MergeMaterial",
+		"*-olivine_peridot-*": "MergeMaterial"
+	},
+	"resistance": 2.5,
+	"materialDensity": 9001,
+	"lightAbsorption": 0,
+	"sounds": {
+		"walk": "game:walk/stone",
+		"break": "game:block/ceramicplace",
+		"byTool": {
+			"Pickaxe": { "hit": "game:block/rock-hit-pickaxe", "break": "game:block/rock-break-pickaxe" }
+		}
+	},
+	"selectionboxByType": {
+		"*": { x1: 0.34, y1: 0, z1: 0.28, x2: 0.75, y2: 1.05, z2: 0.72 },
+	},	
+	"collisionboxByType": {
+		"*": { x1: 0.34, y1: 0, z1: 0.28, x2: 0.75, y2: 1.05, z2: 0.72 },
+	},
+	"guiTransform": {
+		"scale": 1.50
+	},
+	"tpHandTransform": {
+		translation: { x: -1.5, y: -1, z: -1.2 },
+		rotation: { x: 5, y: -3, z: -96 },
+		scale: 0.4
+	},
+	"groundTransform": {
+		translation: { x: 0, y: 0.05, z: 0 },
+		rotation: { x: 90, y: -45, z: 0 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 2.07
+	}
+}

@@ -1,0 +1,44 @@
+[
+	{
+		"recipeGroup": 0,
+		"code": "bauxicash-standard",
+		"ingredientPattern": "T,S,B",
+		"ingredients": {
+			"B": { "type": "block", "code": "game:sand-bauxite", "quantity": 1 },
+			"S": { "type": "item", "code": "chemicalresidue-sodash", "quantity": 4 },
+			"T": { "type": "item", "code": "game:shovel-*", "isTool": true }
+		},
+		"width": 1,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "item", "code": "chemicalresidue-bauxicash", "quantity": 4 }
+	},
+	{
+		"recipeGroup": 1,
+		"code": "bauxicash-crushedalum",
+		"ingredientPattern": "T,S,B",
+		"ingredients": {
+			"B": { "type": "item", "code": "game:crushed-alum", "quantity": 1 },
+			"S": { "type": "item", "code": "chemicalresidue-sodash", "quantity": 4 },
+			"T": { "type": "item", "code": "game:shovel-*", "isTool": true }
+		},
+		"width": 1,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "item", "code": "chemicalresidue-bauxicash", "quantity": 6 }
+	},
+	{
+		"recipeGroup": 2,
+		"code": "bauxicash-crushedbaux",
+		"ingredientPattern": "T,S,B",
+		"ingredients": {
+			"B": { "type": "item", "code": "game:crushed-bauxite", "quantity": 1 },
+			"S": { "type": "item", "code": "chemicalresidue-sodash", "quantity": 4 },
+			"T": { "type": "item", "code": "game:shovel-*", "isTool": true }
+		},
+		"width": 1,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "item", "code": "chemicalresidue-bauxicash", "quantity": 8 }
+	}
+]

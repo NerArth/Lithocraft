@@ -1,0 +1,32 @@
+[
+	{
+		"ingredientPattern": "T,S",
+		"ingredients": {
+			"T": { "type": "item", "code": "knifeblade-*", "name": "material", "allowedVariants": ["alum"] },
+			"S": { "type": "item", "code": "game:stick" }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "knife-generic-{material}", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "T,S",
+		"ingredients": {
+			"T": { "type": "item", "code": "knifeblade-*", "name": "material", "allowedVariants": ["orokhalkos"] },
+			"S": { "type": "item", "code": "game:stick" }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "knife-khanjar-{material}", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "T,S",
+		"ingredients": {
+			"T": { "type": "item", "code": "knifeblade-*", "name": "material", "allowedVariants": ["alumbronze","silumin","titanbronze"] },
+			"S": { "type": "item", "code": "game:stick" }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "knife-baselard-{material}", "quantity": 1 }
+	}
+]

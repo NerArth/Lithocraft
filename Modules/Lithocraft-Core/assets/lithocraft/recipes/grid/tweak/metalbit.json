@@ -1,0 +1,63 @@
+[
+	{
+		"ingredientPattern": "C,I",
+		"recipeGroup": 1,
+		"ingredients": {
+			"C": { "type": "item", "code": "*:chisel-*", "isTool": true},
+			"I": { "type": "item", "code": "ingot-*", "name": "metal" }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "metalbit-{metal}", "quantity": 100 }
+	},
+	{
+		"ingredientPattern": "C,I",
+		"recipeGroup": 2,
+		"ingredients": {
+			"C": { "type": "item", "code": "*:chisel-*", "isTool": true},
+			"I": { "type": "item", "code": "metalplate-*", "name": "metal" }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "metalbit-{metal}", "quantity": 200 }
+	},
+	{
+		"enabled": true,
+		"recipeGroup": 7,
+		"ingredientPattern": "C,G",
+		"ingredients": {
+			"C": { "type": "item", "code": "*:chisel-*", "isTool": true },
+			"G": { "type": "block", "code": "metalgrate-*-big-down", "quantity": 1, "name": "metal" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:metalbit-{metal}", "quantity": 13 }
+	},
+	{
+		"enabled": true,
+		"recipeGroup": 7,
+		"ingredientPattern": "C,G",
+		"ingredients": {
+			"C": { "type": "item", "code": "*:chisel-*", "isTool": true },
+			"G": { "type": "block", "code": "metalgrate-*-fancy-down", "quantity": 1, "name": "metal" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:metalbit-{metal}", "quantity": 13 }
+	},
+	{
+		"enabled": true,
+		"recipeGroup": 7,
+		"ingredientPattern": "C,G",
+		"ingredients": {
+			"C": { "type": "item", "code": "*:chisel-*", "isTool": true },
+			"G": { "type": "block", "code": "metalgrate-*-small-down", "quantity": 1, "name": "metal" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:metalbit-{metal}", "quantity": 13 }
+	}
+]

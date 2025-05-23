@@ -1,0 +1,167 @@
+[
+	{
+		"recipeGroup": 3,
+		"code": "monolithgem-canjewel-standard-flawed",
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-flawed-*", "quantity": 1, "name": "material", "allowedVariants": ["diamond","emerald","lapislazuli","quartz","amethyst"] }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "monolith-{material}-up", "quantity": 6 }
+	},
+	{
+		"recipeGroup": 3,
+		"code": "monolithgem-canjewel-standard-chipped",
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-chipped-*", "quantity": 1, "name": "material", "allowedVariants": ["diamond","emerald","lapislazuli","quartz","amethyst"] }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "monolith-{material}-up", "quantity": 6 }
+	},
+	{
+		"recipeGroup": 3,
+		"code": "monolithgem-canjewel-standard-normal",
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-normal-*", "quantity": 1, "name": "material", "allowedVariants": ["diamond","emerald","lapislazuli","quartz","amethyst"] }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "monolith-{material}-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithgem-canjewel-ruby-flawed",
+		"recipeGroup": 3,
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-flawed-ruby", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "monolith-corundumruby-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithgem-canjewel-ruby-chipped",
+		"recipeGroup": 3,
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-chipped-ruby", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "monolith-corundumruby-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithgem-canjewel-ruby-normal",
+		"recipeGroup": 3,
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-normal-ruby", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "monolith-corundumruby-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithgem-canjewel-sapphire-flawed",
+		"recipeGroup": 3,
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-flawed-corundum", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "monolith-corundumsapphire-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithgem-canjewel-sapphire-chipped",
+		"recipeGroup": 3,
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-chipped-corundum", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "monolith-corundumsapphire-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithgem-canjewel-sapphire-normal",
+		"recipeGroup": 3,
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-normal-corundum", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "monolith-corundumsapphire-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithgem-canjewel-olivine-flawed",
+		"recipeGroup": 3,
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-flawed-olivine", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "monolith-olivine_peridot-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithgem-canjewel-olivine-chipped",
+		"recipeGroup": 3,
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-chipped-olivine", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "monolith-olivine_peridot-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithgem-canjewel-olivine-normal",
+		"recipeGroup": 3,
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "canjewelry:gem-rough-normal-olivine", "quantity": 1}
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "monolith-olivine_peridot-up", "quantity": 6 }
+	}
+]

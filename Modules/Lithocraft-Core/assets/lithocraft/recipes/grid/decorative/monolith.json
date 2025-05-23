@@ -1,0 +1,146 @@
+[
+	{
+		"code": "monolithgem",
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "game:gem-*-rough", "quantity": 1, "name": "material", "allowedVariants": ["emerald", "diamond", "olivine_peridot"] }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "monolith-{material}-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithgeoadd",
+		"recipeGroup": 1,
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "game:gem-*-rough", "quantity": 1, "name": "material", "allowedVariants": ["berylaquamarine", "berylbixbite","corundumruby", "corundumsapphire", "garnetalmandine", "garnetandradite", "garnetgrossular", "garnetpyrope", "garnetspessartine", "garnetuvarovite", "spinelred", "topazamber", "topazblue", "topazpink", "tourmalineschorl", "tourmalineverdelite", "tourmalinewatermelon"] }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "monolith-{material}-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithore",
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "game:ore-*", "quantity": 1, "name": "material", "allowedVariants": ["quartz", "lapislazuli", "sulfur"] }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "monolith-{material}-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithquartzamethyst",
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "game:amethyst", "quantity": 1 }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "monolith-amethyst-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithquartzrose",
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "game:rosequartz", "quantity": 1 }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "monolith-rosequartz-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithquartzclear",
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "game:clearquartz", "quantity": 1 }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "monolith-clearquartz-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithquartzsmoky",
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "game:smokyquartz", "quantity": 1 }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "monolith-smokyquartz-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithsalt",
+		"recipeGroup": 2,
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "item", "code": "game:stone-halite", "quantity": 1 }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "monolith-halite-up", "quantity": 6 }
+	},
+	{
+		"code": "monolithrock",
+		"recipeGroup": 2,
+		"ingredientPattern": "HG,CG,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"G": { "type": "block", "code": "game:rock-*", "quantity": 1, "name": "material", "allowedVariants": ["obsidian", "greenmarble", "whitemarble", "redmarble"] }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "monolith-{material}-up", "quantity": 8 }
+	},
+	{
+		"recipeGroup": 11,
+		"ingredientPattern": "B",
+		"ingredients": {
+			"B": { "type": "block", "code": "monolith-*-up", "quantity": 1, "name": "material" }
+		},
+		"width": 1,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "block", "code": "monolith-{material}-body", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 12,
+		"ingredientPattern": "B",
+		"ingredients": {
+			"B": { "type": "block", "code": "monolith-*-body", "quantity": 1, "name": "material" }
+		},
+		"width": 1,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "block", "code": "monolith-{material}-down", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 13,
+		"ingredientPattern": "B",
+		"ingredients": {
+			"B": { "type": "block", "code": "monolith-*-down", "quantity": 1, "name": "material" }
+		},
+		"width": 1,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "block", "code": "monolith-{material}-up", "quantity": 1 }
+	}
+]

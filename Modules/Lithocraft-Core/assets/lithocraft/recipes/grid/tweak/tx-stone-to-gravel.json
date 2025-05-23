@@ -1,0 +1,14 @@
+[
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PSS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": { "type": "item", "code": "game:stone-*", "quantity": 2, "name": "rock", "skipVariants": ["bogiron", "meteorite-iron", "obsidian", "kimberlite", "scoria", "tuff", "halite", "suevite", "whitemarble", "redmarble", "greenmarble"] }
+		},
+		"width": 3,
+		"height": 1,
+		"shapeless": true,
+		"output": { "type": "block", "code": "game:gravel-{rock}", "quantity": 1 }
+	}
+]

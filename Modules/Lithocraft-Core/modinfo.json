@@ -1,10 +1,10 @@
 {
-    "Type": "code",
+    "Type": "content",
     "TextureSize": 32,
-    "Name": "Lithocraft",
-    "Version": "0.4.0",
+    "Name": "Medieval Industry: Core",
+    "Version": "0.5.0",
     "NetworkVersion": null,
-    "Description": "From a stone you may draw its blood after all...",
+    "Description": "Gameplay utilities, new processes, decorative blocks, and more. Previously known as Lithocraft.",
     "Website": "https://mods.vintagestory.at/lithocraft",
     "CoreMod": false,
     "ModID": "lithocraft",
@@ -18,7 +18,5 @@
     "RequiredOnClient": true,
     "RequiredOnServer": true,
     "Dependencies": {
-        "lavoisier": "1.3.0",
-        "chemistrylib": "1.1.5"
     }
 }

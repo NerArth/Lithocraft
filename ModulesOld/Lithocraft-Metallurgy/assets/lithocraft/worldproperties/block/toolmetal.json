@@ -1,0 +1,10 @@
+{
+	"code": "toolmetal",
+	"variants": [
+		{ "code": "alum" },
+		{ "code": "alumbronze" },
+		{ "code": "silumin" },
+		{ "code": "orokhalkos" },
+		{ "code": "titanbronze" }
+	]
+}

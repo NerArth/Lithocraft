@@ -1,0 +1,13 @@
+[
+	{
+		"ingredientPattern": "HCS",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"S": { "type": "block", "code": "rockpolished-ultra-plain-*", "name": "rock", "skipVariants": ["halite", "tuff", "scoria", "obsidian"] },
+		},
+		"width": 3,
+		"height": 1,
+		"output": { "type": "block", "code": "rockpolished-ultra-bevel-{rock}", "quantity": 1 }
+	}
+]

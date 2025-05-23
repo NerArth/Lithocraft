@@ -1,0 +1,103 @@
+[
+	{
+		"code": "decogem",
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "game:gem-*-rough", "quantity": 1, "name": "material", "allowedVariants": ["emerald", "diamond", "olivine_peridot"] }
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-{material}-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-geoadd",
+		"recipeGroup": 1,
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "game:gem-*-rough", "quantity": 1, "name": "material", "allowedVariants": ["berylaquamarine", "berylbixbite","corundumruby", "corundumsapphire", "garnetalmandine", "garnetandradite", "garnetgrossular", "garnetpyrope", "garnetspessartine", "garnetuvarovite", "spinelred", "topazamber", "topazblue", "topazpink", "tourmalineschorl", "tourmalineverdelite", "tourmalinewatermelon", "tourmalinerubellite"] }
+		},
+		"width": 2,
+		"height": 3,
+		"shapeless": true,
+		"output": { "type": "block", "code": "decorativegem-{material}-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-ore",
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "game:ore-*", "quantity": 1, "name": "material", "allowedVariants": ["quartz", "lapislazuli"] }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "decorativegem-{material}-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-ame",
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "game:amethyst", "quantity": 1 }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "decorativegem-amethyst-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-rose",
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "game:rosequartz", "quantity": 1 }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "decorativegem-rosequartz-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-clear",
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "game:clearquartz", "quantity": 1 }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "decorativegem-clearquartz-simple", "quantity": 4 }
+	},
+	{
+		"code": "decogem-smoky",
+		"ingredientPattern": "HB,CR,_G",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"R": { "type": "item", "code": "game:resin" },
+			"B": { "type": "item", "code": "game:stonebrick-*", "quantity": 4 },
+			"G": { "type": "item", "code": "game:smokyquartz", "quantity": 1 }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "decorativegem-smokyquartz-simple", "quantity": 4 }
+	}
+]

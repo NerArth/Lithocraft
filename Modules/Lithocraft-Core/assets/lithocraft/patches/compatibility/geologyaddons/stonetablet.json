@@ -1,0 +1,188 @@
+[
+    {
+        "file": "lithocraft:recipes/grid/stonetablet.json",
+        "op": "addmerge",
+        "path": "/2/enabled",
+        "value": "false",
+        "side": "server",
+        "dependsOn": [
+            {
+                "modid": "geoaddons",
+                "invert": true
+            }
+        ]
+    },
+    {
+        "file": "lithocraft:recipes/grid/stonetablet.json",
+        "op": "addmerge",
+        "path": "/3/enabled",
+        "value": "false",
+        "side": "server",
+        "dependsOn": [
+            {
+                "modid": "geoaddons",
+                "invert": true
+            }
+        ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "mudstone",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "dolostone",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "siltstone",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "jasper",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "schist",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "gneiss",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "migmatite",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "amphibolite",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "quartzite",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/variantGroups/0/states/-",
+        "value": "jade",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/allowedVariants/-",
+        "value": "*-mudstone-ornate",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/allowedVariants/-",
+        "value": "*-dolostone-ornate",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/allowedVariants/-",
+        "value": "*-siltstone-ornate",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/allowedVariants/-",
+        "value": "*-jasper-ornate",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/allowedVariants/-",
+        "value": "*-schist-ostraca",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/allowedVariants/-",
+        "value": "*-gneiss-ostraca",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/allowedVariants/-",
+        "value": "*-migmatite-ostraca",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/allowedVariants/-",
+        "value": "*-amphibolite-ostraca",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/allowedVariants/-",
+        "value": "*-quartzite-ornate",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    },
+    {
+        "file": "lithocraft:itemtypes/stonetablet.json",
+        "op": "addmerge",
+        "path": "/allowedVariants/-",
+        "value": "*-jade-ornate",
+        "side": "server",
+        "dependsOn": [ { "modid": "geoaddons" } ]
+    }
+]

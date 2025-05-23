@@ -1,0 +1,24 @@
+[
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": { "type": "block", "code": "game:rock-*", "name": "rock" },
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:stone-{rock}", "quantity": 8 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "PS",
+		"ingredients": {
+			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+			"S": { "type": "block", "code": "game:crackedrock-*", "name": "rock" },
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:stone-{rock}", "quantity": 4 }
+	}
+]

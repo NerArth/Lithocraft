@@ -1,0 +1,10 @@
+[
+	{
+		"code": "aluox-solution-standing",
+		"sealHours": 48,
+		"ingredients": [
+			{ "type": "item", "code": "chemicalportion-alumsolution", "litres": 0.1 }
+		],
+		"output": { "type": "item", "code": "chemicalresidue-aluox", "quantity": 4 }
+	}
+]

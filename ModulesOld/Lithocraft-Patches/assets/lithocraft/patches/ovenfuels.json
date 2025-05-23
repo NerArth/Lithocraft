@@ -1,0 +1,27 @@
+[
+  {
+    "op": "addmerge",
+    "path": "/attributes/isClayOvenFuel",
+    "value": true,
+    "file": "game:itemtypes/resource/charcoal.json",
+    "side": "Server"
+  },
+  {
+	"op": "addmerge",
+    "path": "/attributes/isClayOvenFuelByType",
+    "value": {
+		"*-bituminouscoal": true,
+		"*-lignite": true
+	},
+    "file": "game:itemtypes/resource/ore-ungraded.json",
+    "side": "Server" 
+  },
+  {
+    "enabled": false,
+	"op": "addmerge",
+    "path": "/attributes/isClayOvenFuel",
+    "value": true,
+    "file": "game:blocktypes/soil/peatbrick.json",
+    "side": "Server" 
+  }
+]

@@ -1,0 +1,23 @@
+{
+    "Type": "code",
+    "TextureSize": 32,
+    "Name": "Medieval Alchemy: Chemistry",
+    "Version": "0.1.0",
+    "NetworkVersion": null,
+    "Description": "From a stone you may draw its blood after all...",
+    "Website": "https://mods.vintagestory.at/lithocraft",
+    "CoreMod": false,
+    "ModID": "lithocraft-chemistry",
+    "Authors": [
+        "NerArth"
+    ],
+    "Contributors": [
+
+    ],
+    "Side": "Universal",
+    "RequiredOnClient": true,
+    "RequiredOnServer": true,
+    "Dependencies": {
+        "lithocraft": "*"
+    }
+}

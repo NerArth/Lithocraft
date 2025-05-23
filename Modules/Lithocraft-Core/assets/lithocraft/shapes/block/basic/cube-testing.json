@@ -1,0 +1,33 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"ammonia": "block/liquid/ammonia",
+		"waterportion": "block/liquid/waterportion",
+		"forge": "block/stone/forge/forge",
+		"suevite2": "block/stone/rock/suevite2",
+		"amethyst": "block/stone/special/amethyst",
+		"garnetspessartine": "block/stone/special/garnetspessartine"
+	},
+	"elements": [
+		{
+			"name": "Cube2",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 16.0, 16.0, 16.0 ],
+			"renderPass": 1,
+			"faces": {
+				"north": { "texture": "#amethyst", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+				"east": { "texture": "#garnetspessartine", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+				"south": { "texture": "#suevite2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+				"west": { "texture": "#forge", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+				"up": { "texture": "#waterportion", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+				"down": { "texture": "#ammonia", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+			}
+		}
+	]}
