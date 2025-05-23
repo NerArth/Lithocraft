@@ -6,19 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lithocraft", "Lithocraft.csproj", "{6D9EE3C4-22A6-46B4-A0B4-7E7B37FBE8B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lithocraft-Core", "Modules\Lithocraft-Core\Lithocraft-Core.csproj", "{1F0088C3-E4FB-4DA5-83A7-BE395AE5013E}"
-	ProjectSection(ProjectDependencies) = postProject
-		{6D9EE3C4-22A6-46B4-A0B4-7E7B37FBE8B7} = {6D9EE3C4-22A6-46B4-A0B4-7E7B37FBE8B7}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lithocraft-Chem", "Modules\Lithocraft-Chem\Lithocraft-Chem.csproj", "{89593B71-342C-4456-A122-3C1E8B924441}"
-	ProjectSection(ProjectDependencies) = postProject
-		{1F0088C3-E4FB-4DA5-83A7-BE395AE5013E} = {1F0088C3-E4FB-4DA5-83A7-BE395AE5013E}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lithocraft-Metal", "Modules\Lithocraft-Metal\Lithocraft-Metal.csproj", "{551029FF-AA04-4015-9C0C-9BC847C76C00}"
-	ProjectSection(ProjectDependencies) = postProject
-		{1F0088C3-E4FB-4DA5-83A7-BE395AE5013E} = {1F0088C3-E4FB-4DA5-83A7-BE395AE5013E}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
 		<RootNamespace>Lithocraft_Core</RootNamespace>
-		<ImplicitUsings>enable</ImplicitUsings>
+		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 	
@@ -14,6 +14,18 @@
 		<Content Include="modinfo.json">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
+		<Content Include="modicon.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
 	</ItemGroup>
+
+	<Target Name="DeleteMainArtifacts" AfterTargets="Build">
+		<ItemGroup>
+			<ArtifactsToDelete Include="$(OutputPath)Lithocraft-Core.dll" />
+			<ArtifactsToDelete Include="$(OutputPath)Lithocraft-Core.pdb" />
+			<ArtifactsToDelete Include="$(OutputPath)Lithocraft-Core.deps.json" />
+		</ItemGroup>
+		<Delete Files="@(ArtifactsToDelete)" />
+	</Target>
 
 </Project>
