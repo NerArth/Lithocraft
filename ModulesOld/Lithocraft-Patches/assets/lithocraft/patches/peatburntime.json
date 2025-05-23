@@ -1,9 +1,0 @@
-[
-  {
-    "op": "replace",
-    "path": "/combustibleProps/burnDuration",
-    "value": 122,
-    "file": "game:blocktypes/soil/peatbrick.json",
-    "side": "Server"
-  }
-]

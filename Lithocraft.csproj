@@ -134,6 +134,9 @@
 		<Content Include="changelog.md">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
+		<Content Include="Modules\Lithocraft-Core\modicon.png">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
 		<Content Include="specialthanks.md">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
@@ -172,6 +175,7 @@
 	<ItemGroup>
 	  <Folder Include="Modules\Lithocraft-Chem\assets\" />
 	  <Folder Include="Modules\Lithocraft-Metal\assets\" />
+	  <Folder Include="Code\" />
 	</ItemGroup>
 
 </Project>
