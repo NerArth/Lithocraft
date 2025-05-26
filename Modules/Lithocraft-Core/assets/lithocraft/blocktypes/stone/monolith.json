@@ -40,7 +40,7 @@
 			"*-clearquartz-*": 2,
 			"*-smokyquartz-*": 2,
 			"*-diamond-*": 2,
-			"*-olivine_peridot-*": 2,
+			"*-olivine_peridot-*": 2
 		},
 		"reflectiveByType": {
 			"*-sulfur-*": false,

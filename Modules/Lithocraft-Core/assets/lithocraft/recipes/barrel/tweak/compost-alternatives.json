@@ -111,7 +111,6 @@
 	},
 	{
 		"enabled": false,
-		"enabled": false,
 		"recipeGroup": 0,
 		"code": "compost-dough-coppersulfate",
 		"sealHours": 120,
@@ -239,6 +238,7 @@
 		"output": { "type": "item", "code": "game:compost", "quantity": 5 }
 	},
 	{
+        "enabled": false,
 		"recipeGroup": 0,
 		"code": "compost-silagenorm-coppersulfate",
 		"sealHours": 72,

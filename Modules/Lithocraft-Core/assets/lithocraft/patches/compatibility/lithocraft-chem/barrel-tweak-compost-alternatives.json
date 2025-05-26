@@ -1,0 +1,10 @@
+[
+    {
+        "file": "lithocraft:recipes/barrel/tweak/compost-alternatives.json",
+        "op": "addmerge",
+        "path": "/0/enabled",
+        "value": "true",
+        "side": "server",
+        "dependsOn": [ { "modid": "lithocraft-chem" } ]
+    }
+]

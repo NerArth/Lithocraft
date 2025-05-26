@@ -13,7 +13,7 @@
     "side": "Server"
   },
   {
-    "op": "add",
+    "op": "addmerge",
     "path": "/attributes/contentConfig/-",
     "value": {
 				"code": "silage-organic",

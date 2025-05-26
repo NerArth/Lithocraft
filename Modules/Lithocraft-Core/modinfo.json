@@ -1,8 +1,8 @@
 {
-    "Type": "content",
+    "Type": "code",
     "TextureSize": 32,
     "Name": "Medieval Industry: Core",
-    "Version": "0.5.0",
+    "Version": "0.5.1",
     "NetworkVersion": null,
     "Description": "Gameplay utilities, new processes, decorative blocks, and more. Previously known as Lithocraft.",
     "Website": "https://mods.vintagestory.at/lithocraft",

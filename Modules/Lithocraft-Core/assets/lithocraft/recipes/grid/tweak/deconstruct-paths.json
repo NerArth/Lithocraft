@@ -96,7 +96,7 @@
 		"ingredientPattern": "PB",
 		"ingredients": {
 			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"B": { "type": "block", "code": "moreroads:stoneroad-*-free", "quantity": 1, "name": "brick" }
+			"B": { "type": "block", "code": "moreroads:stoneroad-*-free", "quantity": 1, "name": "brick", "skipVariants": ["blue"] }
 		},
 		"width": 1,
 		"height": 2,
@@ -109,7 +109,7 @@
 		"ingredientPattern": "PB",
 		"ingredients": {
 			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"B": { "type": "block", "code": "moreroads:stoneroadslab-*-free", "quantity": 2, "name": "brick" }
+			"B": { "type": "block", "code": "moreroads:stoneroadslab-*-free", "quantity": 2, "name": "brick", "skipVariants": ["blue"] }
 		},
 		"width": 1,
 		"height": 2,
@@ -122,7 +122,7 @@
 		"ingredientPattern": "PB",
 		"ingredients": {
 			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"B": { "type": "block", "code": "moreroads:stoneroadstairs-*-up-north-free", "quantity": 1, "name": "brick" }
+			"B": { "type": "block", "code": "moreroads:stoneroadstairs-*-up-north-free", "quantity": 1, "name": "brick", "skipVariants": ["blue"] }
 		},
 		"width": 1,
 		"height": 2,

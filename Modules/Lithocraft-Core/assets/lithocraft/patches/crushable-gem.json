@@ -9,7 +9,8 @@
 			    "hardnessTier": 3
 		    }
         },
-        "side": "server"
+        "side": "server",
+        "dependsOn": [{ "modid": "lithocraft-chem" , "invert": false}]
     },
     {
         "file": "game:itemtypes/resource/gem-rough.json",
@@ -26,6 +27,6 @@
 		    }
         },
         "side": "server",
-        "dependsOn": [{ "modid": "geoaddons" , "invert": false}]
+        "dependsOn": [{ "modid": "geoaddons" , "invert": false}, { "modid": "lithocraft-chem" , "invert": false}]
     }
 ]

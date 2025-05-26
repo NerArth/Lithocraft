@@ -34,20 +34,20 @@ namespace Lithocraft
             api.Logger.StoryEvent("Drawing blood from stones... ");
             //api.RegisterBlockBehaviorClass(Mod.Info.ModID + ".behaviordebug", typeof(BlockBehaviorHoriAttachDebug));
 
-            api.RegisterEntity(_shortid + ".projectileexploding", typeof(EntityProjectileExploding));
+            //api.RegisterEntity(_shortid + ".projectileexploding", typeof(EntityProjectileExploding));
 
             // register item classes
             api.RegisterItemClass(_shortid + ".claycutter",typeof(ItemClaycutter));
-            api.RegisterItemClass(_shortid + ".chemicalresidue", typeof(ItemChemicalResidue));
+            //api.RegisterItemClass(_shortid + ".chemicalresidue", typeof(ItemChemicalResidue));
 
             //api.RegisterItemClass(_shortid + ".handcannon", typeof(ItemHandCannon));
             //api.RegisterItemClass(_shortid + ".cannonrocket", typeof(ItemCannonRocket));
 
             // register block/BE paired classes
-            api.RegisterBlockClass(_shortid + ".grindstone", typeof(BlockGrindstone));
-            api.RegisterBlockEntityClass(_shortid + ".BEgrindstone", typeof(BlockEntityGrindstone));
+            //api.RegisterBlockClass(_shortid + ".grindstone", typeof(BlockGrindstone));
+            //api.RegisterBlockEntityClass(_shortid + ".BEgrindstone", typeof(BlockEntityGrindstone));
 
-            api.RegisterBlockEntityClass(_shortid + ".BEtoolmold", typeof(BlockEntityToolMoldCustom));
+            //api.RegisterBlockEntityClass(_shortid + ".BEtoolmold", typeof(BlockEntityToolMoldCustom));
 
             //api.RegisterBlockClass(_shortid + ".vat", typeof(BlockVat));
 
