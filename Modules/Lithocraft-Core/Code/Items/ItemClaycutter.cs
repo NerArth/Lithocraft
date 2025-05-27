@@ -10,6 +10,7 @@ namespace Lithocraft.CodeContent
 {
     internal class ItemClaycutter : Item // mostly copied the ItemGem class
     {
+        // note that this class is not a subclass of ItemTool, and so doesn't seem to benefit from world tool durability settings
         public override TransitionState[] UpdateAndGetTransitionStates(IWorldAccessor world, ItemSlot inslot)
         {
             /* probably don't need this but actually kind of useful if it sets the default attribute,
