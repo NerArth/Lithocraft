@@ -185,6 +185,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Modules\Lithocraft-Core\assets\lithocraft\itemtypes\resource\" />
 	  <Folder Include="Modules\Lithocraft-Core\assets\lithocraft\patches\compatibility\lithocraft-chem\" />
 	  <Folder Include="Modules\Lithocraft-Core\assets\lithocraft\patches\grinding\" />
 	  <Folder Include="Modules\Lithocraft-Metal\assets\" />
