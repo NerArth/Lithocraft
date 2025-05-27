@@ -1,0 +1,19 @@
+{
+	"ingredient": { "type": "item", "code": "game:ingot-*", "name": "metal", "allowedVariants": ["tinbronze", "bismuthbronze", "blackbronze", "iron", "steel"] },
+	"pattern": 
+	[
+		[
+		"#########",
+		"#_______#",
+		"#_______#",
+		"#_______#",
+		"#_______#",
+		"#_______#",
+		"#_______#",
+		"#_______#",
+		"#########"
+		]
+	],
+	"name": "Claycutter flat",
+	"output": { "type": "item", "code": "claycutter-{metal}-flat", "attributes": { "readyToUse": false }  }
+}
