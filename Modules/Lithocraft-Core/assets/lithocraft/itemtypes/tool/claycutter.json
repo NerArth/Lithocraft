@@ -1,7 +1,7 @@
 {
     "code": "claycutter",
     "class": "lithocraft.claycutter",
-    "__comment": "sample code :: claycutter-tinbronze-shingle",
+    "__sample": "claycutter-tinbronze-shingle",
     "attributes": {
         "handbook": {
             "groupBy": [ "claycutter-*" ],
@@ -18,7 +18,7 @@
         },
         {
             "code": "form",
-            "states": [ "shingle", "bowl" ]
+            "states": [ "shingle", "bowl", "strip", "flat" ]
         }
     ],
     "durabilityByType": {
