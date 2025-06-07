@@ -97,9 +97,6 @@
 		<ItemGroup>
 			<FilesToZip Include="$(ZipOutputDir)**\*" />
 		</ItemGroup>
-		<ZipDirectory
-		  SourceDirectory="$(ZipOutputDir)"
-		  DestinationFile="$(ZipFileName)"
-		  Overwrite="true" />
+		<ZipDirectory SourceDirectory="$(ZipOutputDir)" DestinationFile="$(ZipFileName)" Overwrite="true" />
 	</Target>
 </Project>
