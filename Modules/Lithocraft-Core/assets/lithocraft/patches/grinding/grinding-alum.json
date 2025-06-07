@@ -1,12 +1,12 @@
 [
   {
-    "enabled":  false,
+    "enabled":  true,
     "op": "addmerge",
     "path": "/grindingPropsByType/*-alum",
     "value": {
         "groundStack": { "type": "item", "code": "game:powder-alum", "stacksize": 2 }
     },
-    "file": "game:itemtypes/resource/ore-ungraded.json",
+    "file": "game:itemtypes/resource/crushed/crushed.json",
     "side": "Server"
   }
 ]
