@@ -1,0 +1,10 @@
+[
+ {
+  "file": "lithocraft:patches/grinding/powderable-crushed-alum.json",
+    "op": "addmerge", 
+    "path": "/0/enabled", 
+    "value": "false",
+    "side": "server",
+    "dependsOn": [{ "modid": "em" }]
+ }
+]
