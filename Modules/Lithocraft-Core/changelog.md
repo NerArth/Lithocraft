@@ -16,6 +16,7 @@ New claycutters, recipes and related items, to allow for claycutting larger/more
     - Flat cutter.
     - Strips cutter.
 - Smithing patterns revised, added smithing patterns for new cutter variants.
+    - Patterns are slightly more complex to follow the physical logic. Shingle cutters are an exception.
 
 ### Handbook:
 - Claycutters now mention the soldering process in more detail, just as a redundancy.
