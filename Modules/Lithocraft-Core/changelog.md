@@ -3,7 +3,27 @@
 
 ## v0.5.2
 ### Overview:
-Refactoring of locale and handbook.
+Refactoring of locale and handbook; however, only some additions are listed below. Additional gameplay tweaks.
+
+New claycutters, recipes and related items, to allow for claycutting larger/more complex shapes.
+
+### Items:
+- New item: Trimmed clay
+    - Made by cutting clay with new claycutter variants.
+    - Used to craft more complex clay shapes, such as storage vessels.
+#### Claycutters:
+- New variants:
+    - Flat cutter.
+    - Strips cutter.
+- Smithing patterns revised, added smithing patterns for new cutter variants.
+
+### Handbook:
+- Claycutters now mention the soldering process in more detail, just as a redundancy.
+
+### Tweaks:
+- Crushed alum can now be ground into powder.
+    - If Expanded Matter is also installed, its recipe will take precedence instead.
+
 
 ## v0.5.1
 ### Overview:
