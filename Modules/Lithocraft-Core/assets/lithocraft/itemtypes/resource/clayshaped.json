@@ -1,6 +1,5 @@
 {
     "code": "clayshaped",
-    "class": "ItemClay",
     "attributes": {
         "displayCaseable": true,
         "shelvable": true,
@@ -18,6 +17,10 @@
         {
             "code": "type",
             "states": [ "blue" ]
+        },
+        {
+            "code": "form",
+            "states": [ "strip", "flat" ]
         }
     ],
     "shape": { "base": "game:item/resource/clayraw" },
