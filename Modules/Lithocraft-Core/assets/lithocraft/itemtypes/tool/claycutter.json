@@ -11,7 +11,7 @@
             ]
         }
     },
-    "variantgroups": [
+    "variantGroups": [
         {
             "code": "material",
             "states": [ "tinbronze", "bismuthbronze", "blackbronze", "iron", "steel", "corundum", "diamond" ]
@@ -34,7 +34,7 @@
     "shapeByType": {
         "*": { "base": "item/tool/claycutter/cutter-{form}" }
     },
-    "creativeinventoryStacksByType": {
+    "creativeInventoryStacksByType": {
         "*": [
             {
                 "tabs": [ "general", "items", "lithocraft" ],
@@ -50,7 +50,7 @@
             }
         ]
     },
-    "texturesbyType": {
+    "texturesByType": {
         "*-corundum-*": {
             "tinbronze": { "base": "block/stone/special/grit/grit-{material}" }
         },
@@ -88,5 +88,19 @@
             "origin": { "x": 0.5, "y": 0.1, "z": 0.52 },
             "scale": 3.61
         }
-    }
+    },
+    "groundTransformByType": {
+        "*": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": 180, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0.1, "z": 0.5299 },
+            "scale": 2.01
+        },
+        "*-bowl": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": 0, "y": 0, "z": 2 },
+            "origin": { "x": 0.5, "y": -0, "z": 0.5299 },
+            "scale": 4.1
+        }  
+    }  
 }

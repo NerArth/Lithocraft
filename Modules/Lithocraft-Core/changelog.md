@@ -25,6 +25,9 @@ New claycutters, recipes and related items, to allow for claycutting larger/more
 - Crushed alum can now be ground into powder.
     - If Expanded Matter is also installed, its recipe will take precedence instead.
 
+### Fixes:
+- Fixed visuals for dropped claycutters.
+
 
 ## v0.5.1
 ### Overview:
