@@ -611,6 +611,9 @@
   "claycutter-ready-true": "Ready for cutting.",
 
 
+  "item-clayshaped-*-strip": "Trimmed clay strips",
+  "item-clayshaped-*-flat": "Trimmed flat clay",
+
 
   "block-stonepainting-tower-*": "Painting (Tower)",
   "block-stonepainting-stonehenge-*": "Painting (Stonehenge)",
