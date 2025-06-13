@@ -19,7 +19,11 @@ namespace Lithocraft
 {
     public class LithocraftModSystem : ModSystem
     {
-        
+        public override void StartPre(ICoreAPI api)
+        {
+
+        }
+
         // Called on server and client
         // Useful for registering block/entity classes on both sides
         public override void Start(ICoreAPI api)
@@ -29,9 +33,9 @@ namespace Lithocraft
 
             // remember to set commented classes to compile again when wanting to work on them
 
-            //api.Logger.Notification("Hello from template mod: " + api.Side);
-            api.Logger.Event(Mod.Info.Name + " " + Mod.Info.Version + " is registering code classes... ");
-            api.Logger.StoryEvent("Drawing blood from stones... ");
+            //Mod.Logger.Notification("Hello from template mod: " + api.Side);
+            Mod.Logger.Event(Mod.Info.Name + " " + Mod.Info.Version + " is registering code classes... ");
+            Mod.Logger.StoryEvent("Drawing blood from stones... ");
             //api.RegisterBlockBehaviorClass(Mod.Info.ModID + ".behaviordebug", typeof(BlockBehaviorHoriAttachDebug));
 
             //api.RegisterEntity(_shortid + ".projectileexploding", typeof(EntityProjectileExploding));
@@ -56,18 +60,16 @@ namespace Lithocraft
 
         public override void StartServerSide(ICoreServerAPI api)
         {
-            api.Logger.Event(Mod.Info.Name + " " + Mod.Info.Version + " is starting (server)...");
-            //api.Logger.Notification("Hello from template mod server side: " + Lang.Get("lithocraft:hello"));
+            Mod.Logger.Event(Mod.Info.Name + " " + Mod.Info.Version + " is starting (server)...");
+            //Mod.Logger.Notification("Hello from template mod server side: " + Lang.Get("lithocraft:hello"));
         }
 
         public override void StartClientSide(ICoreClientAPI api)
         {
-            api.Logger.Event(Mod.Info.Name + " " + Mod.Info.Version + " is starting (client)...");
-            api.Logger.StoryEvent("Coalescing elemental matter... ");
-            //api.Logger.Notification("Hello from template mod client side: " + Lang.Get("lithocraft:hello"));
+            Mod.Logger.Event(Mod.Info.Name + " " + Mod.Info.Version + " is starting (client)...");
+            Mod.Logger.StoryEvent("Coalescing elemental matter... ");
+            //Mod.Logger.Notification("Hello from template mod client side: " + Lang.Get("lithocraft:hello"));
         }
-
-        
     }
     public class BlockEntityOveny : BlockEntityOven
     {
