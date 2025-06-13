@@ -607,8 +607,8 @@
   "game:trivia-claycutter": "In <a href=\"handbooksearch://Medieval Industry\">Medieval Industry</a>, clay cutters are a bit of misnomer as it would probably be more accurate to call them moulds. In Ancient Greece and in Classical Roman times clay-shaping moulds were put into use for making roofing tiles and other types of mostly-flat items.<br><br>Here in the mod, the clay cutters are presented as a somewhat hybrid take between modernity and antiquity on clay forming moulds, and would be the equivalent of using modern cookie cutter shapes on clay, but the process is the same at heart.<br><br>As a result of this more modern take, simple open shapes like bowls are assumed to be possible by cutting out most of the undesired material and it is assumed that the player character would also have to do a bit of final hand shaping after the primary cuts.<br><br>It's also assumed that the cutters would actually be made with sheet metal rather than by forging, hence the further requirement of soldering in-game.",
   "game:howto-claycutter": "Claycutters must be made through smithing:<br><br>- To make a cutter, place an appropriate metal ingot on an anvil.<br><br>Once the metal cutter is formed, it has to be soldered in the crafting grid - by using a soldering iron, some solder, and a the cutter to be soldered - before it's ready to be used.<br><br>Corundum and diamond cutters are NYI!",
 
-  "claycutter-ready-false": "Not soldered, can't be used",
-  "claycutter-ready-true": "Soldered, ready for cutting",
+  "claycutter-ready-false": "NOT soldered, can't be used!",
+  "claycutter-ready-true": "Ready for cutting.",
 
 
 

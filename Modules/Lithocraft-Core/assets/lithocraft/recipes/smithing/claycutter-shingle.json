@@ -15,5 +15,5 @@
 		]
 	],
 	"name": "Claycutter shingle",
-	"output": { "type": "item", "code": "claycutter-{metal}-shingle", "attributes": { "readyToUse": false }  }
+	"output": { "type": "item", "code": "claycutter-{metal}-shingle", "attributes": { "readyToUse": true }  }
 }
