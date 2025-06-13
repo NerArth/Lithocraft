@@ -23,7 +23,7 @@
             "states": [ "strip", "flat" ]
         }
     ],
-    "shape": { "base": "game:item/resource/clayraw" },
+    "shape": { "base": "item/resource/clayshaped-{form}" },
     "textures": { "clay": { "base": "game:block/soil/{type}clay" } },
     "creativeInventory": {
         "general": [ "*" ],
@@ -43,10 +43,12 @@
         "rotation": { "x": -31, "y": 11, "z": -98 },
         "scale": 0.38
     },
-    "groundTransform": {
-        "translation": { "x": 0, "y": 0.17, "z": 0 },
-        "rotation": { "x": -1, "y": 0, "z": 0 },
-        "origin": { "x": 0.5, "y": 0.17, "z": 0.5 },
-        "scale": 5
+    "groundTransformByType": {
+        "*": {
+            "translation": { "x": 0, "y": 0.17, "z": 0 },
+            "rotation": { "x": -1, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0.17, "z": 0.5 },
+            "scale": 5
+        }
     }
 }

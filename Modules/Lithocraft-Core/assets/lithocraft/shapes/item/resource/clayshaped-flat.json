@@ -1,0 +1,28 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"blueclay": "block/clay/blueclay"
+	},
+	"elements": [
+		{
+			"name": "Clay",
+			"from": [ 2.0, 0.0, 2.0 ],
+			"to": [ 14.0, 1.0, 14.0 ],
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#blueclay", "uv": [ 2.0, 6.0, 14.0, 7.0 ] },
+				"east": { "texture": "#blueclay", "uv": [ 2.5, 9.0, 14.5, 10.0 ] },
+				"south": { "texture": "#blueclay", "uv": [ 2.0, 9.0, 14.0, 10.0 ] },
+				"west": { "texture": "#blueclay", "uv": [ 2.0, 13.0, 14.0, 14.0 ] },
+				"up": { "texture": "#blueclay", "uv": [ 1.5, 3.0, 13.5, 15.0 ] },
+				"down": { "texture": "#blueclay", "uv": [ 0.5, 0.0, 12.5, 12.0 ] }
+			}
+		}
+	]}
