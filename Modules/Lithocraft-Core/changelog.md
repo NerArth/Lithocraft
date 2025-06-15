@@ -5,7 +5,7 @@
 ### Overview:
 Refactoring of locale and handbook; however, only some additions are listed below. Additional gameplay tweaks.
 
-New claycutters, recipes and related items, to allow for claycutting larger/more complex shapes.
+New claycutter variants, recipes and related items, to allow for claycutting larger/more complex shapes.
 
 ### Items:
 - New item: Trimmed clay
