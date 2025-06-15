@@ -12,7 +12,10 @@
             "scale": 0.55
         }
     },
-    "maxStackSize": 64,
+    "maxStackSizeByType":{
+        "*": 64,
+        "*-flat": 16
+    },
     "variantGroups": [
         {
             "code": "type",
