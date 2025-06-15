@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<Import Project="Version.props" Condition="Exists('Version.props')" />
 	
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
 		<RootNamespace>Lithocraft_Chem</RootNamespace>
-		<AssemblyName>Lithocraft</AssemblyName>
+		<AssemblyName>Lithocraft.Chem</AssemblyName>
 		<FriendlyName>Lithocraft-Chem</FriendlyName>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<Nullable>enable</Nullable>
@@ -76,6 +76,10 @@
 		<Content Include="changelog.md">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Lithocraft-Core\Lithocraft-Core.csproj" />
 	</ItemGroup>
 
 	<Target Name="PackageOutputAsZip" AfterTargets="Build">

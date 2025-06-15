@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 
-namespace Lithocraft.CodeContent
+namespace Lithocraft.Items
 {
     internal class ItemClaycutter : Item // mostly copied the ItemGem class
     {
