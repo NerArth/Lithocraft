@@ -1,0 +1,13 @@
+{
+    {
+		"ingredientPattern": "K,C",
+		"ingredients": {
+			"K": { "type": "item", "code": "game:knife-*", "isTool": true, "name": "tool" },
+			"C": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 1 }
+		},
+		"shapeless": true,
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "clayshaped-*-strip", "quantity": 4 }
+	}
+}
