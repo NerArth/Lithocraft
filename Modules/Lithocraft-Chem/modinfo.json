@@ -1,0 +1,23 @@
+{
+    "Type": "code",
+    "TextureSize": 32,
+    "Name": "Medieval Industry: Chem",
+    "Version": "0.0.0",
+    "NetworkVersion": null,
+    "Description": "Gameplay utilities, new processes, decorative blocks, and more. Previously known as Lithocraft.",
+    "Website": "https://mods.vintagestory.at/lithocraft-chem",
+    "CoreMod": false,
+    "ModID": "lithocraftchem",
+    "Authors": [
+        "NerArth"
+    ],
+    "Contributors": [
+
+    ],
+    "Side": "Universal",
+    "RequiredOnClient": true,
+    "RequiredOnServer": true,
+    "Dependencies": {
+        "lithocraft": ">=0.5.2"
+    }
+}
