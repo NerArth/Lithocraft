@@ -1,0 +1,13 @@
+{
+    {
+		"ingredientPattern": "_F_,S_S,SFS",
+		"ingredients": {
+			"F": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 1 },
+			"S": { "type": "item", "code": "clayshaped-*-strip", "name": "clay", "quantity": 4 }
+		},
+		"shapeless": false,
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "game:storagevessel-raw", "quantity": 1 }
+	}
+}

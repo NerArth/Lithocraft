@@ -1,0 +1,13 @@
+{
+    {
+		"ingredientPattern": "S_S,SFS",
+		"ingredients": {
+			"F": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 1 },
+			"S": { "type": "item", "code": "clayshaped-*-strip", "name": "clay", "quantity": 2 }
+		},
+		"shapeless": false,
+		"width": 3,
+		"height": 2,
+		"output": { "type": "block", "code": "game:planter-raw", "quantity": 1 }
+	}
+}
