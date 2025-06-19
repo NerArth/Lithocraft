@@ -19,6 +19,7 @@ New claycutter variants, recipes and related items, to allow for claycutting lar
     - Patterns are slightly more complex to follow the physical logic. Shingle cutters are an exception and are now ready to use when made.
 
 ### Handbook:
+- General refactoring; reorganised chapters and sections.
 - Claycutters now mention the soldering process in more detail, just as a redundancy.
 
 ### Tweaks:
