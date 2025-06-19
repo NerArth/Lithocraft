@@ -4,6 +4,7 @@
 
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
+		<!-- Memo: net8.0 after Vintage Story 1.21.x -->
 		<RootNamespace>Lithocraft_Core</RootNamespace>
 		<AssemblyName>Lithocraft</AssemblyName>
 		<FriendlyName>Lithocraft-Core</FriendlyName>
