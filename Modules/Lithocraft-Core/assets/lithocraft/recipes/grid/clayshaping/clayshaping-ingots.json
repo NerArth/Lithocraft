@@ -1,0 +1,13 @@
+[
+    {
+        "ingredientPattern": "S,F",
+        "ingredients": {
+            "F": { "type": "item", "code": "clayshaped-*-flat", "name": "clayflat", "quantity": 1 },
+			"S": { "type": "item", "code": "clayshaped-*-strip", "name": "claystrip", "quantity": 10 }
+        },
+        "shapeless": false,
+        "width": 1,
+        "height": 2,
+        "output": { "type": "block", "code": "game:ingotmold-raw", "quantity": 4 }
+    }
+]
