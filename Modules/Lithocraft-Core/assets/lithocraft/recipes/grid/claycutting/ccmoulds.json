@@ -2,7 +2,7 @@
     {
         "ingredientPattern": "K,C",
         "ingredients": {
-            "K": { "type": "item", "code": "game:axehead-*", "name": "head" },
+            "K": { "type": "item", "code": "game:axehead-*", "name": "head", "returnedStack": { "type": "item", "code": "game:axehead-{head}" } },
             "C": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 2 }
         },
         "shapeless": true,
@@ -13,7 +13,7 @@
     {
         "ingredientPattern": "K,C",
         "ingredients": {
-            "K": { "type": "item", "code": "game:pickaxehead-*", "name": "head" },
+            "K": { "type": "item", "code": "game:pickaxehead-*", "name": "head", "returnedStack": { "type": "item", "code": "game:pickaxehead-{head}" } },
             "C": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 2 }
         },
         "shapeless": true,
@@ -24,7 +24,7 @@
     {
         "ingredientPattern": "K,C",
         "ingredients": {
-            "K": { "type": "item", "code": "game:shovelhead-*", "name": "head" },
+            "K": { "type": "item", "code": "game:shovelhead-*", "name": "head", "returnedStack": { "type": "item", "code": "game:shovelhead-{head}" } },
             "C": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 2 }
         },
         "shapeless": true,
@@ -35,7 +35,7 @@
     {
         "ingredientPattern": "K,C",
         "ingredients": {
-            "K": { "type": "item", "code": "game:blade-falxhead-*", "name": "head" },
+            "K": { "type": "item", "code": "game:blade-falxhead-*", "name": "head", "returnedStack": { "type": "item", "code": "game:blade-falxhead-{head}" } },
             "C": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 2 }
         },
         "shapeless": true,
@@ -46,7 +46,7 @@
     {
         "ingredientPattern": "K,C",
         "ingredients": {
-            "K": { "type": "item", "code": "game:hammerhead-*", "name": "head" },
+            "K": { "type": "item", "code": "game:hammerhead-*", "name": "head", "returnedStack": { "type": "item", "code": "game:hammerhead-{head}" } },
             "C": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 2 }
         },
         "shapeless": true,
@@ -57,7 +57,7 @@
     {
         "ingredientPattern": "K,C",
         "ingredients": {
-            "K": { "type": "item", "code": "game:helvehammerhead-*", "name": "head" },
+            "K": { "type": "item", "code": "game:helvehammerhead-*", "name": "head", "returnedStack": { "type": "item", "code": "game:helvehammerhead-{head}" } },
             "C": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 2 }
         },
         "shapeless": true,
@@ -68,7 +68,7 @@
     {
         "ingredientPattern": "K,C",
         "ingredients": {
-            "K": { "type": "item", "code": "game:hoehead-*", "name": "head" },
+            "K": { "type": "item", "code": "game:hoehead-*", "name": "head", "returnedStack": { "type": "item", "code": "game:hoehead-{head}" } },
             "C": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 2 }
         },
         "shapeless": true,
@@ -79,7 +79,7 @@
     {
         "ingredientPattern": "K,C",
         "ingredients": {
-            "K": { "type": "item", "code": "game:prospectingpickhead-*", "name": "head" },
+            "K": { "type": "item", "code": "game:prospectingpickhead-*", "name": "head", "returnedStack": { "type": "item", "code": "game:prospectingpickhead-{head}" } },
             "C": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 2 }
         },
         "shapeless": true,
@@ -90,7 +90,7 @@
     {
         "ingredientPattern": "K,C",
         "ingredients": {
-            "K": { "type": "item", "code": "game:metallamellae-*", "name": "head" },
+            "K": { "type": "item", "code": "game:metallamellae-*", "name": "head", "returnedStack": { "type": "item", "code": "game:metallamellae-{head}" } },
             "C": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 2 }
         },
         "shapeless": true,
