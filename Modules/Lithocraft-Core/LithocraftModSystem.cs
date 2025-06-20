@@ -2,7 +2,9 @@
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
+using Vintagestory.API.Datastructures;
 using Vintagestory.API.Server;
+using Vintagestory.API.Util;
 using Vintagestory.GameContent;
 /*
 [
@@ -55,7 +57,7 @@ namespace Lithocraft
 
             //api.RegisterBlockClass(_shortid + ".vat", typeof(BlockVat));
 
-            
+
         }
 
         public override void StartServerSide(ICoreServerAPI api)
@@ -69,6 +71,13 @@ namespace Lithocraft
             Mod.Logger.Event(Mod.Info.Name + " " + Mod.Info.Version + " is starting (client)...");
             Mod.Logger.StoryEvent("Coalescing elemental matter... ");
             //Mod.Logger.Notification("Hello from template mod client side: " + Lang.Get("lithocraft:hello"));
+
+            //foreach (GuiDialogHandbook dialog in api.Gui.LoadedGuis)
+            //{
+            //    //dialog.on
+
+            //    //if (page.PageCode == )
+            //}
         }
     }
     public class BlockEntityOveny : BlockEntityOven
