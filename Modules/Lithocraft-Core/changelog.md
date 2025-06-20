@@ -20,6 +20,7 @@ New claycutter variants, recipes and related items, to allow for claycutting lar
 
 ### Handbook:
 - General refactoring; reorganised chapters and sections.
+    - Individual chapters for each module.
 - Claycutters now mention the soldering process in more detail, just as a redundancy.
 
 ### Tweaks:
