@@ -1,0 +1,54 @@
+[
+    {
+		"recipeGroup": 0,
+		"ingredientPattern": "K,C",
+		"ingredients": {
+			"K": { "type": "item", "code": "claycutter-*-flat", "isTool": true, "name": "tool" },
+			"C": { "type": "item", "code": "game:clay-*", "name": "clay", "quantity": 6 }
+		},
+		"shapeless": true,
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "clayshaped-blue-flat", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 0,
+		"ingredientPattern": "K,C",
+		"ingredients": {
+			"K": { "type": "item", "code": "claycutter-*-strip", "isTool": true, "name": "tool" },
+			"C": { "type": "item", "code": "game:clay-*", "name": "clay", "quantity": 1 }
+		},
+		"shapeless": true,
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "clayshaped-blue-strip", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 1,
+		"comment": "NYI, pending 1.21.x",
+        "enabled": false,
+		"ingredientPattern": "K,C",
+		"ingredients": {
+			"K": { "type": "item", "code": "claycutter-*-flat", "isTool": true, "name": "tool" },
+			"C": { "type": "item", "code": "game:clay-*", "name": "clay", "quantity": 6 }
+		},
+		"shapeless": true,
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "clayshaped-{clay}-flat", "quantity": 1 }
+	},
+	{
+		"recipeGroup": 1,
+		"comment": "NYI, pending 1.21.x",
+		"enabled": false,
+		"ingredientPattern": "K,C",
+		"ingredients": {
+			"K": { "type": "item", "code": "claycutter-*-strip", "isTool": true, "name": "tool" },
+			"C": { "type": "item", "code": "game:clay-*", "name": "clay", "quantity": 1 }
+		},
+		"shapeless": true,
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "clayshaped-{clay}-strip", "quantity": 1 }
+	}
+]

@@ -1,5 +1,6 @@
 [
     {
+		"recipeGroup": 0,
 		"ingredientPattern": "K,C",
 		"ingredients": {
 			"K": { "type": "item", "code": "game:knife-*", "isTool": true, "name": "tool" },
@@ -8,9 +9,10 @@
 		"shapeless": true,
 		"width": 1,
 		"height": 2,
-		"output": { "type": "item", "code": "clayshaped-*-strip", "quantity": 4 }
+		"output": { "type": "item", "code": "clayshaped-{clay}-strip", "quantity": 6 }
 	},
 	{
+		"recipeGroup": 1,
 		"ingredientPattern": "K,C",
 		"ingredients": {
 			"K": { "type": "item", "code": "claycutter-*-strip", "isTool": true, "name": "tool" },
@@ -19,6 +21,6 @@
 		"shapeless": true,
 		"width": 1,
 		"height": 2,
-		"output": { "type": "item", "code": "clayshaped-*-strip", "quantity": 4 }
+		"output": { "type": "item", "code": "clayshaped-{clay}-strip", "quantity": 6 }
 	}
 ]

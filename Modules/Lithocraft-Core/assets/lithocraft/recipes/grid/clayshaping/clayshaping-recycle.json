@@ -1,0 +1,24 @@
+[
+    {
+		"recipeGroup": 1,
+		"ingredientPattern": "C",
+		"ingredients": {
+			"C": { "type": "item", "code": "clayshaped-*-flat", "name": "clay", "quantity": 1 }
+		},
+		"shapeless": true,
+		"width": 1,
+		"height": 1,
+		"output": { "type": "item", "code": "game:clay-{clay}", "quantity": 6 }
+	},
+	{
+		"recipeGroup": 2,
+		"ingredientPattern": "C",
+		"ingredients": {
+			"C": { "type": "item", "code": "clayshaped-*-strip", "name": "clay", "quantity": 1 }
+		},
+		"shapeless": true,
+		"width": 1,
+		"height": 1,
+		"output": { "type": "item", "code": "clayshaped-{clay}-strip", "quantity": 1 }
+	}
+]
