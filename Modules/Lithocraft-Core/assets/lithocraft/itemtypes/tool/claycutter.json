@@ -8,7 +8,8 @@
             "extraSections": [
                 { "title": "game:handbooktitle-howtocreate", "text": "game:howto-claycutter" },
                 { "title": "game:handbooktitle-trivia", "text": "game:trivia-claycutter" }
-            ]
+            ],
+            "categoryCode": "lithocraft:category"
         }
     },
     "variantGroups": [
@@ -79,6 +80,12 @@
             "rotation": { "x": -85, "y": -98, "z": 98 },
             "origin": { "x": 0, "y": 0, "z": 0 },
             "scale": 0.72
+        },
+        "*-flat": {
+            "translation": { "x": 0.3, "y": -0.2, "z": 0.8 },
+            "rotation": { "x": 18, "y": 14, "z": -22 },
+            "origin": { "x": 0, y: 0, z: 0 },
+            "scale": 0.4
         }  
     },
     "guiTransformByType": {
@@ -93,10 +100,22 @@
             "rotation": { "x": -12, "y": -72, "z": -154 },
             "origin": { "x": 0.5, "y": 0.1, "z": 0.52 },
             "scale": 3.61
-        }
+        },
+        "*-strip": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": -41, "y": 25, "z": 180 },
+            "origin": { "x": 0.41, "y": -0.2, "z": 0.18 },
+            "scale": 1.99
+        },
+        "*-flat": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": -57, "y": -7, "z": 180 },
+            "origin": { "x": 0.6, "y": -0.2, "z": 0.3 },
+            "scale": 1.58
+        }  
     },
     "groundTransformByType": {
-        "*": {
+        "*-shingle": {
             "translation": { "x": 0, "y": 0, "z": 0 },
             "rotation": { "x": 180, "y": 0, "z": 0 },
             "origin": { "x": 0.5, "y": 0.1, "z": 0.5299 },
@@ -106,7 +125,18 @@
             "translation": { "x": 0, "y": 0, "z": 0 },
             "rotation": { "x": 0, "y": 0, "z": 2 },
             "origin": { "x": 0.5, "y": -0, "z": 0.5299 },
-            "scale": 4.1
+            "scale": 4.5
+        },
+        "*-strip": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": 0, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 3.06
+        },
+        "*-flat": {
+            "translation": { "x": 0, "y": 0.02, "z": 0 },
+            "rotation": { "x": 0, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 2.28
         }  
-    }  
-}
+    }
