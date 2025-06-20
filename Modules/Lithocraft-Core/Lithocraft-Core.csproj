@@ -93,7 +93,7 @@
 	<Target Name="PackageOutputAsZip" AfterTargets="Build">
 		<PropertyGroup>
 			<ZipOutputDir>$(OutputPath)</ZipOutputDir>
-			<ZipFileName>$(MSBuildProjectDirectory)\bin\$(Configuration)\Lithocraft-Core-$(Version).zip</ZipFileName>
+			<ZipFileName>$(MSBuildProjectDirectory)\bin\$(Configuration)\$(FriendlyName)-$(Version).zip</ZipFileName>
 		</PropertyGroup>
 		<ItemGroup>
 			<FilesToZip Include="$(ZipOutputDir)**\*" />
