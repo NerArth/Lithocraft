@@ -1,7 +1,7 @@
 # Medieval Industry Changelog
 (aka Lithocraft)
 
-## v0.5.2
+## v0.6.0
 ### Overview:
 Refactoring of locale and handbook; however, only some additions are listed below. Additional gameplay tweaks.
 
