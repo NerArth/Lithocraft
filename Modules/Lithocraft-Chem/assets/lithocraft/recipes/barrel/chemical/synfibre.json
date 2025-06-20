@@ -1,0 +1,11 @@
+[
+	{
+		"code": "synfibre",
+		"sealHours": 10,
+		"ingredients": [
+			{ "type": "item", "code": "chemicalportion-cupricsolution", "litres": 0.2, "consumelitres": 0.2 },
+			{ "type": "item", "code": "chemicalresidue-synpulp", "quantity": 1 }
+		],
+		"output": { "type": "item", "code": "game:flaxfibers", "quantity": 6 }
+	}
+]

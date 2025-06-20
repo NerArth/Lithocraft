@@ -1,0 +1,22 @@
+[
+	{
+		"code": "jabirProcess",
+		"setup": [ "alembicboilingflask", "alembiccomponent-condenser", "alembicretortneck" ],
+		"ticksPerItem": 60,
+		"solidInput": {
+			"type": "item",
+			"code": "game:saltpeter",
+			"stackSize": 1
+		},
+		"endInput": {
+			"type": "item",
+			"code": "lithocraft:chemicalportion-cupricsolution",
+			"stackSize": 100
+		},
+		"product": {
+			"type": "item",
+			"code": "chemistrylib:mineralacidportion-nitric",
+			"stackSize": 200
+		}
+	}
+]

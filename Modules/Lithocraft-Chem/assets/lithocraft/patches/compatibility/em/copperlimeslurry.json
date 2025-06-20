@@ -6,5 +6,5 @@
     "value": "false",
     "side": "server",
     "dependsOn": [{ "modid": "em" , "invert": true}]
- },
+ }
 ]

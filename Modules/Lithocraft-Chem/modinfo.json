@@ -4,7 +4,7 @@
     "Name": "Medieval Industry: Chem",
     "Version": "0.0.0",
     "NetworkVersion": null,
-    "Description": "Gameplay utilities, new processes, decorative blocks, and more. Previously known as Lithocraft.",
+    "Description": "Addon to Medieval Industry. Adds a number of new chemical processes of varying complexity.",
     "Website": "https://mods.vintagestory.at/lithocraft-chem",
     "CoreMod": false,
     "ModID": "lithocraftchem",

@@ -1,0 +1,29 @@
+[
+	{
+		"code": "organicslurry-standard",
+		"sealHours": 36,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 1 },
+			{ "type": "item", "code": "chemicalresidue-biomass", "quantity": 2 }
+		],
+		"output": { "type": "item", "code": "chemicalportion-organicslurry", "litres": 3 }
+	},
+	{
+		"code": "organicslurry-silage",
+		"sealHours": 72,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 1 },
+			{ "type": "block", "code": "silage-normal-ud", "quantity": 1 }
+		],
+		"output": { "type": "item", "code": "chemicalportion-organicslurry", "litres": 4 }
+	},
+	{
+		"code": "organicslurry-organicmatter",
+		"sealHours": 72,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 1 },
+			{ "type": "block", "code": "silage-organicmatter-ud", "quantity": 1 }
+		],
+		"output": { "type": "item", "code": "chemicalportion-organicslurry", "litres": 2 }
+	}
+]

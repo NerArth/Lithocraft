@@ -1,0 +1,58 @@
+[
+	{
+		"recipeGroup": 0,
+		"code": "biomass-compost",
+		"ingredientPattern": "CN,S_",
+		"ingredients": {
+			"C": { "type": "item", "code": "game:compost", "quantity": 3 },
+			"N": { "type": "item", "code": "game:saltpeter" },
+			"S": { "type": "item", "code": "game:shovel-*", "isTool": true }
+		},
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "chemicalresidue-biomass", "quantity": 24 }
+	},
+	{
+		"recipeGroup": 1,
+		"code": "biomass-peat",
+		"ingredientPattern": "PF,S_",
+		"ingredients": {
+			"P": { "type": "block", "code": "game:peatbrick", "quantity": 2 },
+			"F": { "type": "item", "code": "game:ore-sulfur", "quantity": 1 },
+			"S": { "type": "item", "code": "game:shovel-*", "isTool": true }
+		},
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "chemicalresidue-biomass", "quantity": 12 }
+	},
+	{
+		"recipeGroup": 2,
+		"code": "biomass-silage",
+		"ingredientPattern": "HF,S_",
+		"ingredients": {
+			"H": { "type": "block", "code": "silage-normal-*", "quantity": 1 },
+			"F": { "type": "block", "code": "game:soil-*", "quantity": 4 },
+			"S": { "type": "item", "code": "game:shovel-*", "isTool": true }
+		},
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "chemicalresidue-biomass", "quantity": 8 }
+	},
+	{
+		"recipeGroup": 3,
+		"code": "biomass-organicmatter",
+		"ingredientPattern": "HF,S_",
+		"ingredients": {
+			"H": { "type": "block", "code": "silage-organicmatter-*", "quantity": 1 },
+			"F": { "type": "block", "code": "game:soil-*", "quantity": 4 },
+			"S": { "type": "item", "code": "game:shovel-*", "isTool": true }
+		},
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "chemicalresidue-biomass", "quantity": 12 }
+	}
+]
