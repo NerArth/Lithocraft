@@ -8,7 +8,7 @@
         "shapeless": true,
         "width": 1,
         "height": 2,
-        "output": { "type": "block", "code": "game:toolmold-raw-axe", "quantity": 1 }
+        "output": { "type": "block", "code": "game:toolmold-raw-axe-north", "quantity": 1 }
     },
     {
         "ingredientPattern": "K,C",
@@ -19,7 +19,7 @@
         "shapeless": true,
         "width": 1,
         "height": 2,
-        "output": { "type": "block", "code": "game:toolmold-raw-pickaxe", "quantity": 1 }
+        "output": { "type": "block", "code": "game:toolmold-raw-pickaxe-north", "quantity": 1 }
     },
     {
         "ingredientPattern": "K,C",
@@ -30,7 +30,7 @@
         "shapeless": true,
         "width": 1,
         "height": 2,
-        "output": { "type": "block", "code": "game:toolmold-raw-shovel", "quantity": 1 }
+        "output": { "type": "block", "code": "game:toolmold-raw-shovel-north", "quantity": 1 }
     },
     {
         "ingredientPattern": "K,C",
@@ -41,7 +41,7 @@
         "shapeless": true,
         "width": 1,
         "height": 2,
-        "output": { "type": "block", "code": "game:toolmold-raw-blade-falx", "quantity": 1 }
+        "output": { "type": "block", "code": "game:toolmold-raw-blade-falx-north", "quantity": 1 }
     },
     {
         "ingredientPattern": "K,C",
@@ -52,7 +52,7 @@
         "shapeless": true,
         "width": 1,
         "height": 2,
-        "output": { "type": "block", "code": "game:toolmold-raw-hammer", "quantity": 1 }
+        "output": { "type": "block", "code": "game:toolmold-raw-hammer-north", "quantity": 1 }
     },
     {
         "ingredientPattern": "K,C",
@@ -63,7 +63,7 @@
         "shapeless": true,
         "width": 1,
         "height": 2,
-        "output": { "type": "block", "code": "game:toolmold-raw-helvehammer", "quantity": 1 }
+        "output": { "type": "block", "code": "game:toolmold-raw-helvehammer-north", "quantity": 1 }
     },
     {
         "ingredientPattern": "K,C",
@@ -74,7 +74,7 @@
         "shapeless": true,
         "width": 1,
         "height": 2,
-        "output": { "type": "block", "code": "game:toolmold-raw-hoe", "quantity": 1 }
+        "output": { "type": "block", "code": "game:toolmold-raw-hoe-north", "quantity": 1 }
     },
     {
         "ingredientPattern": "K,C",
@@ -85,7 +85,7 @@
         "shapeless": true,
         "width": 1,
         "height": 2,
-        "output": { "type": "block", "code": "game:toolmold-raw-prospectingpick", "quantity": 1 }
+        "output": { "type": "block", "code": "game:toolmold-raw-prospectingpick-north", "quantity": 1 }
     },
     {
         "ingredientPattern": "K,C",
@@ -96,6 +96,6 @@
         "shapeless": true,
         "width": 1,
         "height": 2,
-        "output": { "type": "block", "code": "game:toolmold-raw-lamellae", "quantity": 1 }
+        "output": { "type": "block", "code": "game:toolmold-raw-lamellae-north", "quantity": 1 }
     }
 ]
