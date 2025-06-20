@@ -73,7 +73,13 @@
             "translation": { "x": -0.6, "y": -0.17, "z": -0.2 },
 		    "rotation": { "x": -102, "y": -112, "z": 116 },
 		    "scale": 1
-        }
+        },
+        "*-strip": {
+            "translation": { "x": -0.6, "y": -0.2, "z": 0.7 },
+            "rotation": { "x": -85, "y": -98, "z": 98 },
+            "origin": { "x": 0, "y": 0, "z": 0 },
+            "scale": 0.72
+        }  
     },
     "guiTransformByType": {
         "*-shingle": {
