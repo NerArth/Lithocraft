@@ -19,6 +19,6 @@
 		"shapeless": true,
 		"width": 1,
 		"height": 1,
-		"output": { "type": "item", "code": "clayshaped-{clay}-strip", "quantity": 1 }
+		"output": { "type": "item", "code": "game:clay-{clay}", "quantity": 1 }
 	}
 ]
