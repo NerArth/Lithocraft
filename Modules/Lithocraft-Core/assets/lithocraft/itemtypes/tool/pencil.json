@@ -1,6 +1,6 @@
 {
 	"code": "pencil",
-	"variantgroups": [
+	"variantGroups": [
 		{ "code": "type", "states": ["graphite", "lead", "silver", "gold", "electrum", "copper", "bismuth", "molybdochalkos"] }
 	],
 	"storageFlags": 257,
@@ -14,7 +14,7 @@
 			"rotation": { "x": 0, "y": 23, "z": 0 }
 		}
 	},
-	"creativeinventory": {
+	"creativeInventory": {
 		"general": [ "*" ],
 		"items": [ "*" ],
 		"tools": [ "*" ],
@@ -100,33 +100,33 @@
 		}
 	},
 	"guiTransform": {
-		"translation": { x: 0, y: 0, z: 0 },
-		"rotation": { x: -36, y: 18, z: -6 },
-		"origin": { x: 0.48, y: 0.19, z: 0.44 },
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": -36, "y": 18, "z": -6 },
+		"origin": { "x": 0.48, y: 0.19, z: 0.44 },
 		"scale": 4.05
 	},
 	"fpHandTransform": {
-		"translation": { x: 0, y: 0, z: 0 },
-		"rotation": { x: 72, y: 143, z: -30 },
-		"origin": { x: 0.5, y: 0.3, z: 0.5 },
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 72, "y": 143, "z": -30 },
+		"origin": { "x": 0.5, y: 0.3, z: 0.5 },
 		"scale": 1.53
 	},
 	"tpHandTransform": {
-		"translation": { x: -1.02, y: 0.06, z: -0.79 },
-		"rotation": { x: -6, y: 96, z: 7 },
-		"origin": { x: 0.5, y: 0, z: 0.5 },
+		"translation": { "x": -1.02, "y": 0.06, "z": -0.79 },
+		"rotation": { "x": -6, "y": 96, "z": 7 },
+		"origin": { "x": 0.5, y: 0, z: 0.5 },
 		"scale": 0.58
 	},
 	"tpOffHandTransform": {
-		"translation": { x: -1.02, y: 0.06, z: -0.99 },
-		"rotation": { x: -1, y: 83, z: -55 },
-		"origin": { x: 0.5, y: 0, z: 0.5 },
+		"translation": { "x": -1.02, "y": 0.06, "z": -0.99 },
+		"rotation": { "x": -1, "y": 83, "z": -55 },
+		"origin": { "x": 0.5, y: 0, z: 0.5 },
 		"scale": 0.5899
 	},
 	"groundTransform": {
-		"translation": { x: 0, y: 0, z: 0 },
-		"rotation": { x: 0, y: 45, z: 0 },
-		"origin": { x: 0.5, y: 0, z: 0.5 },
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 45, "z": 0 },
+		"origin": { "x": 0.5, y: 0, z: 0.5 },
 		"scale": 3.2
 	}
 }

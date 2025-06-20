@@ -1,7 +1,7 @@
 {
 	"code": "stonetablet",
 	"class": "ItemBook",
-	"maxstacksize": 1,
+	"maxStackSize": 1,
 	"behaviors": [
 		{
 			"name": "GroundStorable",
@@ -119,7 +119,7 @@
 
 		}
 	},
-	"creativeinventory": {
+	"creativeInventory": {
 		"general": [ "*" ],
 		"items": [ "*" ],
 		"lithocraft": [ "*" ]
