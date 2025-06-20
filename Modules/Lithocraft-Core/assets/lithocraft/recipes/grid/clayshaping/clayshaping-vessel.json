@@ -1,4 +1,4 @@
-{
+[
     {
 		"ingredientPattern": "_F_,S_S,SFS",
 		"ingredients": {
@@ -10,4 +10,4 @@
 		"height": 3,
 		"output": { "type": "block", "code": "game:storagevessel-raw", "quantity": 1 }
 	}
-}
+]

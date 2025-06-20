@@ -1,4 +1,4 @@
-{
+[
     {
 		"ingredientPattern": "S_S,SFS",
 		"ingredients": {
@@ -8,6 +8,6 @@
 		"shapeless": false,
 		"width": 3,
 		"height": 2,
-		"output": { "type": "block", "code": "game:planter-raw", "quantity": 1 }
+		"output": { "type": "block", "code": "game:clayplanter-raw", "quantity": 1 }
 	}
-}
+]

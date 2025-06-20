@@ -1,4 +1,4 @@
-{
+[
     {
 		"ingredientPattern": "K,C",
 		"ingredients": {
@@ -21,4 +21,4 @@
 		"height": 2,
 		"output": { "type": "item", "code": "clayshaped-*-strip", "quantity": 4 }
 	}
-}
+]
