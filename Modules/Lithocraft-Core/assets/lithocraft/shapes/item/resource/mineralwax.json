@@ -8,7 +8,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"mineralwax": "lithocraft:item/chemical/mineralwax"
+		"mineralwax": "item/chemical/mineralwax"
 	},
 	"elements": [
 		{

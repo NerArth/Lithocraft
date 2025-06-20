@@ -8,8 +8,8 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"gold": "block/metal/plate/gold",
-		"pine": "block/wood/debarked/pine"
+		"gold": "game:block/metal/plate/gold",
+		"pine": "game:block/wood/debarked/pine"
 	},
 	"elements": [
 		{

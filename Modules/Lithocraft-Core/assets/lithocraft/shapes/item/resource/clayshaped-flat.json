@@ -8,7 +8,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"blueclay": "block/clay/blueclay"
+		"blueclay": "game:block/clay/blueclay"
 	},
 	"elements": [
 		{

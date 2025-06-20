@@ -8,9 +8,9 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"molybdochalkos": "block/metal/plate/molybdochalkos",
-		"limestone-inside": "block/stone/polishedrock/limestone-inside",
-		"limestone1": "block/stone/rock/limestone1"
+		"molybdochalkos": "game:block/metal/plate/molybdochalkos",
+		"limestone-inside": "game:block/stone/polishedrock/limestone-inside",
+		"limestone1": "game:block/stone/rock/limestone1"
 	},
 	"elements": [
 		{
