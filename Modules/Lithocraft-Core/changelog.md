@@ -19,7 +19,6 @@ New claycutter variants, recipes and related items, to allow for claycutting lar
     - Flat cutter.
     - Strips cutter.
 - Smithing patterns revised, added smithing patterns for new cutter variants.
-    - Patterns are slightly more complex to follow the physical logic. Shingle cutters are an exception and are now ready to use when made.
 - Shingles cutters no longer require soldering.
 
 ### Handbook:
