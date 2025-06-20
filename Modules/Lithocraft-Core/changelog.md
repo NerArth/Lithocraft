@@ -8,15 +8,19 @@ Refactoring of locale and handbook; however, only some additions are listed belo
 New claycutter variants, recipes and related items, to allow for claycutting larger/more complex shapes.
 
 ### Items:
-- New item: Trimmed clay
+- New item: Trimmed clay shapes
     - Made by cutting clay with new claycutter variants.
     - Used to craft more complex clay shapes, such as storage vessels.
+    - Can also press tool heads and other items into flat clay shapes to make casting shapes.
+    - Can be recycled into blue clay. 
+      - Only blue clay for now due to some constraints.
 #### Claycutters:
 - New variants:
     - Flat cutter.
     - Strips cutter.
 - Smithing patterns revised, added smithing patterns for new cutter variants.
     - Patterns are slightly more complex to follow the physical logic. Shingle cutters are an exception and are now ready to use when made.
+- Shingles cutters no longer require soldering.
 
 ### Handbook:
 - General refactoring; reorganised chapters and sections.
