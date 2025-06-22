@@ -1,6 +1,26 @@
 # Medieval Industry Changelog
 (aka Lithocraft)
 
+## v0.6.1
+### Overview:
+Minor update to address some smaller issues.
+
+### Items:
+#### Claycutters:
+Durability now depends on the shape as well as the material the claycutter is made from.
+
+For each material:
+- Shingle cutter durability is unchanged.
+- Bowl cutters have about 75% of the original durability.
+- Strips cutters have about 200% of the original durability.
+- Flat cutters have about 50% of the original durability.
+
+### Handbook:
+- Added a missing link in the wiki/secondary features page.
+
+### Fixes:
+- Fixed a potential issue with claycutter itemtype file validation.
+
 ## v0.6.0
 ### Overview:
 Refactoring of locale and handbook; however, only some additions are listed below. Additional gameplay tweaks.
