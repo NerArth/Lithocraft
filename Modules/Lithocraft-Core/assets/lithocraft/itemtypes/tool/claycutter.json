@@ -23,13 +23,40 @@
         }
     ],
     "durabilityByType": {
-        "*-tinbronze-*": 120,
-        "*-bismuthbronze-*": 140,
-        "*-blackbronze-*": 160,
-        "*-iron-*": 500,
-        "*-steel-*": 600,
-        "*-corundum-*": 1000,
-        "*-diamond-*": 1500
+        "*-tinbronze-shingle": 120,
+        "*-tinbronze-bowl": 90,
+        "*-tinbronze-strip": 240,
+        "*-tinbronze-flat": 60,
+
+        "*-bismuthbronze-shingle": 140,
+        "*-bismuthbronze-bowl": 100,
+        "*-bismuthbronze-strip": 280,
+        "*-bismuthbronze-flat": 70,
+
+        "*-blackbronze-shingle": 160,
+        "*-blackbronze-bowl": 120,
+        "*-blackbronze-strip": 320,
+        "*-blackbronze-flat": 80,
+
+        "*-iron-shingle": 500,
+        "*-iron-bowl": 400,
+        "*-iron-strip": 1000,
+        "*-iron-flat": 250,
+
+        "*-steel-shingle": 600,
+        "*-steel-bowl": 500,
+        "*-steel-strip": 1200,
+        "*-steel-flat": 300,
+
+        "*-corundum-shingle": 1000,
+        "*-corundum-bowl": 800,
+        "*-corundum-strip": 2000,
+        "*-corundum-flat": 500,
+
+        "*-diamond-shingle": 1500,
+        "*-diamond-bowl": 1200,
+        "*-diamond-strip": 3000,
+        "*-diamond-flat": 750
     },
     "maxStackSize": 1,
     "shapeByType": {
