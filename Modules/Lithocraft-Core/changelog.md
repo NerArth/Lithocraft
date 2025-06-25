@@ -15,6 +15,8 @@ For each material:
 - Strips cutters have about 200% of the original durability.
 - Flat cutters have about 50% of the original durability.
 
+Claycutter ready state is now also indicated more clearly in the item tooltip.
+
 ### Handbook:
 - Added a missing link in the wiki/secondary features page.
 
