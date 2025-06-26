@@ -1,6 +1,7 @@
 {
 	"code": "chemicalresidue",
-	"__comment": "code sample: chemicalresidue-mineralwax; item class serves no function at present and is only a placeholder",
+	"__comment": "item class serves no function at present and is only a placeholder",
+	"__sample": "chemicalresidue-mineralwax",
 	"classByType": {
 		"*-alumina": "ItemNugget",
 		"*-beryllium": "ItemNugget",
