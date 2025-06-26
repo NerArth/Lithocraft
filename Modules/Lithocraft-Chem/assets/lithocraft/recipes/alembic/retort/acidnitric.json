@@ -1,6 +1,6 @@
 [
 	{
-		"code": "jabirProcess",
+		"code": "process-jabir",
 		"setup": [ "alembicboilingflask", "alembiccomponent-condenser", "alembicretortneck" ],
 		"ticksPerItem": 60,
 		"solidInput": {
