@@ -1,28 +1,28 @@
 [
-  {
-    "op": "addmerge",
-    "path": "/attributes/contentConfig/-",
-    "value": {
-				"code": "silage-normal",
-				"content": { "type": "block", "code": "lithocraft:silage-normal-ud" }, 
-				"quantityPerFillLevel": 1,
-				"maxFillLevels": 8,
-				"shapesPerFillLevel": ["block/wood/trough/large/hayfill1", "block/wood/trough/large/hayfill1", "block/wood/trough/large/hayfill2", "block/wood/trough/large/hayfill2", "block/wood/trough/large/hayfill3", "block/wood/trough/large/hayfill3", "block/wood/trough/large/hayfill4", "block/wood/trough/large/hayfill4"]
-			},
-    "file": "game:blocktypes/wood/trough-large.json",
-    "side": "Server"
-  },
-  {
-    "op": "addmerge",
-    "path": "/attributes/contentConfig/-",
-    "value": {
-				"code": "silage-organic",
-				"content": { "type": "block", "code": "lithocraft:silage-organicmatter-ud" }, 
-				"quantityPerFillLevel": 1,
-				"maxFillLevels": 8,
-				"shapesPerFillLevel": ["block/wood/trough/large/hayfill1", "block/wood/trough/large/hayfill1", "block/wood/trough/large/hayfill2", "block/wood/trough/large/hayfill2", "block/wood/trough/large/hayfill3", "block/wood/trough/large/hayfill3", "block/wood/trough/large/hayfill4", "block/wood/trough/large/hayfill4"]
-			},
-    "file": "game:blocktypes/wood/trough-large.json",
-    "side": "Server"
-  }
+	{
+		"op": "addmerge",
+		"path": "/attributes/contentConfig/-",
+		"value": {
+			"code": "silage-normal",
+			"content": { "type": "block", "code": "lithocraft:silage-normal-ud" }, 
+			"quantityPerFillLevel": 1,
+			"maxFillLevels": 8,
+			"shapesPerFillLevel": ["block/wood/trough/large/hayfill1", "block/wood/trough/large/hayfill1", "block/wood/trough/large/hayfill2", "block/wood/trough/large/hayfill2", "block/wood/trough/large/hayfill3", "block/wood/trough/large/hayfill3", "block/wood/trough/large/hayfill4", "block/wood/trough/large/hayfill4"]
+		},
+		"file": "game:blocktypes/wood/trough-large.json",
+		"side": "Server"
+	},
+	{
+		"op": "addmerge",
+		"path": "/attributes/contentConfig/-",
+		"value": {
+			"code": "silage-organic",
+			"content": { "type": "block", "code": "lithocraft:silage-organicmatter-ud" }, 
+			"quantityPerFillLevel": 1,
+			"maxFillLevels": 8,
+			"shapesPerFillLevel": ["block/wood/trough/large/hayfill1", "block/wood/trough/large/hayfill1", "block/wood/trough/large/hayfill2", "block/wood/trough/large/hayfill2", "block/wood/trough/large/hayfill3", "block/wood/trough/large/hayfill3", "block/wood/trough/large/hayfill4", "block/wood/trough/large/hayfill4"]
+		},
+		"file": "game:blocktypes/wood/trough-large.json",
+		"side": "Server"
+	}
 ]
