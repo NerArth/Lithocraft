@@ -3,7 +3,7 @@
   "file": "lithocraft:recipes/grid/tweak/deconstruct-paths.json",
     "op": "addmerge", 
     "path": "/3/enabled", 
-    "value": "false",
+    "value": false,
     "side": "server",
     "dependsOn": [{ "modid": "moreroads" , "invert": true}]
  },
@@ -11,7 +11,7 @@
   "file": "lithocraft:recipes/grid/tweak/deconstruct-paths.json",
     "op": "addmerge", 
     "path": "/4/enabled", 
-    "value": "false",
+    "value": false,
     "side": "server",
     "dependsOn": [{ "modid": "moreroads" , "invert": true}]
  },
@@ -19,7 +19,7 @@
   "file": "lithocraft:recipes/grid/tweak/deconstruct-paths.json",
     "op": "addmerge", 
     "path": "/5/enabled", 
-    "value": "false",
+    "value": false,
     "side": "server",
     "dependsOn": [{ "modid": "moreroads" , "invert": true}]
  },
@@ -27,7 +27,7 @@
   "file": "lithocraft:recipes/grid/tweak/deconstruct-paths.json",
     "op": "addmerge", 
     "path": "/6/enabled", 
-    "value": "false",
+    "value": false,
     "side": "server",
     "dependsOn": [{ "modid": "moreroads" , "invert": true}]
  },
@@ -35,7 +35,7 @@
   "file": "lithocraft:recipes/grid/tweak/deconstruct-paths.json",
     "op": "addmerge", 
     "path": "/7/enabled", 
-    "value": "false",
+    "value": false,
     "side": "server",
     "dependsOn": [{ "modid": "moreroads" , "invert": true}]
  },
@@ -43,7 +43,7 @@
   "file": "lithocraft:recipes/grid/tweak/deconstruct-paths.json",
     "op": "addmerge", 
     "path": "/8/enabled", 
-    "value": "false",
+    "value": false,
     "side": "server",
     "dependsOn": [{ "modid": "moreroads" , "invert": true}]
  },
@@ -51,7 +51,7 @@
   "file": "lithocraft:recipes/grid/tweak/deconstruct-paths.json",
     "op": "addmerge", 
     "path": "/9/enabled", 
-    "value": "false",
+    "value": false,
     "side": "server",
     "dependsOn": [{ "modid": "moreroads" , "invert": true}]
  },
@@ -59,7 +59,7 @@
   "file": "lithocraft:recipes/grid/tweak/deconstruct-paths.json",
     "op": "addmerge", 
     "path": "/10/enabled", 
-    "value": "false",
+    "value": false,
     "side": "server",
     "dependsOn": [{ "modid": "moreroads" , "invert": true}]
  },
@@ -67,7 +67,7 @@
   "file": "lithocraft:recipes/grid/tweak/deconstruct-paths.json",
     "op": "addmerge", 
     "path": "/11/enabled", 
-    "value": "false",
+    "value": false,
     "side": "server",
     "dependsOn": [{ "modid": "moreroads" , "invert": true}]
  },
@@ -75,7 +75,7 @@
   "file": "lithocraft:recipes/grid/tweak/deconstruct-paths.json",
     "op": "addmerge", 
     "path": "/12/enabled", 
-    "value": "false",
+    "value": false,
     "side": "server",
     "dependsOn": [{ "modid": "moreroads" , "invert": true}]
  }

@@ -3,7 +3,7 @@
         "file": "lithocraft:recipes/grid/decorative/decorativegem.json",
         "op": "addmerge",
         "path": "/1/enabled",
-        "value": "false",
+        "value": false,
         "side": "server",
         "dependsOn": [ { "modid": "geoaddons", "invert": true } ]
     },

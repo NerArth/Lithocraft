@@ -3,7 +3,7 @@
         "file": "lithocraft:recipes/grid/stonetablet.json",
         "op": "addmerge",
         "path": "/2/enabled",
-        "value": "false",
+        "value": false,
         "side": "server",
         "dependsOn": [
             {
@@ -16,7 +16,7 @@
         "file": "lithocraft:recipes/grid/stonetablet.json",
         "op": "addmerge",
         "path": "/3/enabled",
-        "value": "false",
+        "value": false,
         "side": "server",
         "dependsOn": [
             {

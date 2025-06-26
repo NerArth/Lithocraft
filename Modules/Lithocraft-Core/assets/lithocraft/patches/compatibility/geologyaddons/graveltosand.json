@@ -3,7 +3,7 @@
   "file": "lithocraft:recipes/grid/graveltosand.json",
     "op": "addmerge", 
     "path": "/1/enabled", 
-    "value": "false",
+    "value": false,
     "side": "server",
     "dependsOn": [{ "modid": "geoaddons" , "invert": true}]
  },
