@@ -18,6 +18,6 @@
     "RequiredOnClient": true,
     "RequiredOnServer": true,
     "Dependencies": {
-        "lithocraft": ">=0.5.2"
+        "lithocraft": "0.5.2"
     }
 }

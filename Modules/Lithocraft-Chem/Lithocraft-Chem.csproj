@@ -13,6 +13,7 @@
 		<!-- Read Version from modinfo.json -->
 		<ModInfoJson>modinfo.json</ModInfoJson>
 		<OutputPath>bin\$(Configuration)\$(Version)\Lithocraft-Chem\</OutputPath>
+		<CoreBuiltPath>$(SolutionDir)\Modules\Lithocraft-Core\bin\Release\</CoreBuiltPath>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -79,7 +80,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Lithocraft-Core\Lithocraft-Core.csproj" />
+		<ProjectReference Include="..\Lithocraft-Core\Lithocraft-Core.csproj">
+			<Private>false</Private>
+		</ProjectReference>
 	</ItemGroup>
 
 	<Target Name="PackageOutputAsZip" AfterTargets="Build">
