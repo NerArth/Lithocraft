@@ -3,9 +3,10 @@
 
 ## v0.6.2
 ### Overview:
-Minor update to add some more compatibilities and convenience/recycling features.
+Minor update to add some more compatibilities, QOL, and convenience/recycling features.
 
 ### Tweaks:
+Recycling:
 - Can now recylce cobblestone, dry stone and ashlar brick blocks back into appropriate stone items.
     - This is done by placing the block in a crafting grid with a pickaxe.
     - Binding agents like mortar and clay are not returned.
@@ -14,6 +15,9 @@ Minor update to add some more compatibilities and convenience/recycling features
 - Can now recycle wooden paths into planks.
     - This is done by placing the wooden path in a crafting grid with a saw.
     - For vanilla paths, will return pine planks.
+
+QOL:
+- Make vanilla rammed earth blocks have a description, since the textures are hard to tell apart in the inventory.
 
 ### Compatibility:
 - Medieval Industry: Chem
