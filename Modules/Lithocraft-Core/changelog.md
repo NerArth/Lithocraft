@@ -1,6 +1,24 @@
 # Medieval Industry Changelog
 (aka Lithocraft)
 
+## v0.6.2
+### Overview:
+Minor update to add some more compatibilities and convenience/recycling features.
+
+### Tweaks:
+- Can now recylce cobblestone, dry stone and ashlar brick blocks back into appropriate stone items.
+    - This is done by placing the block in a crafting grid with a pickaxe.
+    - Binding agents like mortar and clay are not returned.
+- Aged stone blocks of several types can now be turned into unaged versions.
+    - This is done by placing the aged stone block in a crafting grid with a hammer and chisel.
+
+### Compatibility:
+- Medieval Industry: Chem
+    - Added compatibility for some processes that were previously part of Lithocraft (v0.3.4 and earlier).
+- MoreRoads wooden paths can now be deconstructed too.
+
+Note: The mod name has been changed simply to "Medieval Industry" due to the internal workings of the different modules, to avoid a tooltip ambiguity issue.
+
 ## v0.6.1
 ### Overview:
 Minor update to address some smaller issues.
