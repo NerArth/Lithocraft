@@ -10,6 +10,6 @@
 		},
 		"width": 1,
 		"height": 3,
-		"output": { "type": "item", "code": "game:stonebricks-{rock}", "quantity": 1 }
+		"output": { "type": "item", "code": "game:stonebrick-{rock}", "quantity": 1 }
 	}
 ]
