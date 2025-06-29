@@ -4,12 +4,12 @@
     "__sample": "claycutter-tinbronze-shingle",
     "attributes": {
         "handbook": {
-            "groupBy": [ "claycutter-*" ],
-            "extraSections": [
-                { "title": "game:handbooktitle-howtocreate", "text": "game:howto-claycutter" },
-                { "title": "game:handbooktitle-trivia", "text": "game:trivia-claycutter" }
-            ],
-            "categoryCode": "lithocraft:category"
+        "groupBy": [ "claycutter-*-form" ],
+        "extraSections": [
+            { "title": "game:handbooktitle-howtocreate", "text": "game:howto-claycutter" },
+            { "title": "game:handbooktitle-trivia", "text": "game:trivia-claycutter" }
+        ],
+        "categoryCode": "lithocraft:category"
         }
     },
     "variantGroups": [
