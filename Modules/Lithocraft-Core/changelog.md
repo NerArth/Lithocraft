@@ -6,23 +6,25 @@
 Minor update to add some more compatibilities, QOL, and convenience/recycling features.
 
 ### Tweaks:
-Recycling:
+**Recycling**:
 - Can now recylce cobblestone, dry stone and ashlar brick blocks back into appropriate stone items.
-    - This is done by placing the block in a crafting grid with a pickaxe.
+    - **Stone block + pickaxe** in crafting grid.
     - Binding agents like mortar and clay are not returned.
-- Aged stone blocks of several types can now be turned into unaged versions.
-    - This is done by placing the aged stone block in a crafting grid with a hammer and chisel.
 - Can now recycle wooden paths into planks.
-    - This is done by placing the wooden path in a crafting grid with a saw.
+    - **Wooden path + saw** in crafting grid.
     - For vanilla paths, will return pine planks.
 
-QOL:
-- Make vanilla rammed earth blocks have a description, since the textures are hard to tell apart in the inventory.
+**Conversion**:
+- Aged stone blocks of several types can now be converted into unaged versions.
+    - **Aged stone block + hammer + chisel** in crafting grid.
+
+**QOL**:
+- Gave vanilla rammed earth blocks a description. Textures are hard to tell apart in the inventory and should help with identifying.
 
 ### Compatibility:
 - Medieval Industry: Chem
     - Added compatibility for some processes that were previously part of Lithocraft (v0.3.4 and earlier).
-- MoreRoads wooden paths can now be deconstructed too.
+- MoreRoads wooden paths can be deconstructed too.
 
 Note: The in-game mod name has been changed simply to "Medieval Industry" due to the internal workings of the different modules, to avoid a tooltip ambiguity issue.
 
