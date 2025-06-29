@@ -1,80 +1,106 @@
 [
-	{
+    {
         "code": "decon-cobble-vanilla",
-		"recipeGroup": 6,
-		"ingredientPattern": "PS",
-		"ingredients": {
-			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"S": { "type": "block", "code": "game:cobblestone-*", "quantity": 1, "name": "rock" }
-		},
-		"width": 2,
-		"height": 1,
-		"shapeless": true,
-		"output": { "type": "item", "code": "game:stone-{rock}", "quantity": 4 }
-	},
-	{
+        "recipeGroup": 10,
+        "ingredientPattern": "PS",
+        "ingredients": {
+            "P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+            "S": { "type": "block", "code": "game:cobblestone-*", "quantity": 1, "name": "rock" }
+        },
+        "width": 2,
+        "height": 1,
+        "shapeless": true,
+        "output": { "type": "item", "code": "game:stone-{rock}", "quantity": 4 }
+    },
+    {
         "code": "decon-cobbleslab-vanilla",
-		"recipeGroup": 6,
-		"ingredientPattern": "PS",
-		"ingredients": {
-			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"S": { "type": "block", "code": "game:cobblestoneslab-*-down-free", "quantity": 1, "name": "rock" }
-		},
-		"width": 2,
-		"height": 1,
-		"shapeless": true,
-		"output": { "type": "item", "code": "game:stone-{rock}", "quantity": 2 }
-	},
-	{
+        "recipeGroup": 10,
+        "ingredientPattern": "PS",
+        "ingredients": {
+            "P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+            "S": { "type": "block", "code": "game:cobblestoneslab-*-down-free", "quantity": 1, "name": "rock" }
+        },
+        "width": 2,
+        "height": 1,
+        "shapeless": true,
+        "output": { "type": "item", "code": "game:stone-{rock}", "quantity": 2 }
+    },
+    {
         "code": "decon-cobblestairs-vanilla",
-		"recipeGroup": 6,
-		"ingredientPattern": "PS",
-		"ingredients": {
-			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"S": { "type": "block", "code": "game:cobblestonestairs-*-up-north-free", "quantity": 1, "name": "rock" }
-		},
-		"width": 2,
-		"height": 1,
-		"shapeless": true,
-		"output": { "type": "item", "code": "game:stone-{rock}", "quantity": 3 }
-	},
-	{
-		"code": "decon-stonebrick-vanilla",
-		"recipeGroup": 6,
-		"ingredientPattern": "PS",
-		"ingredients": {
-			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"S": { "type": "block", "code": "game:stonebricks-*", "quantity": 1, "name": "rock" }
-		},
-		"width": 2,
-		"height": 1,
-		"shapeless": true,
-		"output": { "type": "item", "code": "game:stonebrick-{rock}", "quantity": 4 }
-	},
-	{
-		"code": "decon-stonebrickslab-vanilla",
-		"recipeGroup": 6,
-		"ingredientPattern": "PS",
-		"ingredients": {
-			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"S": { "type": "block", "code": "game:stonebrickslab-*-down-free", "quantity": 1, "name": "rock" }
-		},
-		"width": 2,
-		"height": 1,
-		"shapeless": true,
-		"output": { "type": "item", "code": "game:stonebrick-{rock}", "quantity": 2 }
-	},
-	{
-		"code": "decon-stonebrickstairs-vanilla",
-		"recipeGroup": 6,
-		"ingredientPattern": "PS",
-		"ingredients": {
-			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"S": { "type": "block", "code": "game:stonebrickstairs-*-up-north-free", "quantity": 1, "name": "rock" }
-		},
-		"width": 2,
-		"height": 1,
-		"shapeless": true,
-		"output": { "type": "item", "code": "game:stonebrick-{rock}", "quantity": 3 }
-	}
+        "recipeGroup": 10,
+        "ingredientPattern": "PS",
+        "ingredients": {
+            "P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+            "S": { "type": "block", "code": "game:cobblestonestairs-*-up-north-free", "quantity": 1, "name": "rock" }
+        },
+        "width": 2,
+        "height": 1,
+        "shapeless": true,
+        "output": { "type": "item", "code": "game:stone-{rock}", "quantity": 3 }
+    },
+    {
+        "code": "decon-stonebrick-vanilla",
+        "recipeGroup": 2,
+        "ingredientPattern": "PS",
+        "ingredients": {
+            "P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+            "S": { "type": "block", "code": "game:stonebricks-*", "quantity": 1, "name": "rock" }
+        },
+        "width": 2,
+        "height": 1,
+        "shapeless": true,
+        "output": { "type": "item", "code": "game:stonebrick-{rock}", "quantity": 4 }
+    },
+    {
+        "code": "decon-stonebrickslab-vanilla",
+        "recipeGroup": 2,
+        "ingredientPattern": "PS",
+        "ingredients": {
+            "P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+            "S": { "type": "block", "code": "game:stonebrickslab-*-down-free", "quantity": 1, "name": "rock" }
+        },
+        "width": 2,
+        "height": 1,
+        "shapeless": true,
+        "output": { "type": "item", "code": "game:stonebrick-{rock}", "quantity": 2 }
+    },
+    {
+        "code": "decon-stonebrickstairs-vanilla",
+        "recipeGroup": 2,
+        "ingredientPattern": "PS",
+        "ingredients": {
+            "P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+            "S": { "type": "block", "code": "game:stonebrickstairs-*-up-north-free", "quantity": 1, "name": "rock" }
+        },
+        "width": 2,
+        "height": 1,
+        "shapeless": true,
+        "output": { "type": "item", "code": "game:stonebrick-{rock}", "quantity": 3 }
+    },
+    {
+        "code": "decon-cobblefan-vanilla",
+        "recipeGroup": 11,
+        "ingredientPattern": "PS",
+        "ingredients": {
+            "P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+            "S": { "type": "block", "code": "game:cobblestonefan-*-north", "quantity": 1, "name": "rock", "skipVariants": ["mixed"] }
+        },
+        "width": 2,
+        "height": 1,
+        "shapeless": true,
+        "output": { "type": "item", "code": "game:stone-{rock}", "quantity": 4 }
+    },
+    {
+        "code": "decon-drystone-vanilla",
+        "recipeGroup": 12,
+        "ingredientPattern": "PS",
+        "ingredients": {
+            "P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
+            "S": { "type": "block", "code": "game:drystone-*", "quantity": 1, "name": "rock" }
+        },
+        "width": 2,
+        "height": 1,
+        "shapeless": true,
+        "output": { "type": "item", "code": "game:stone-{rock}", "quantity": 4 }
+    }
 ]
