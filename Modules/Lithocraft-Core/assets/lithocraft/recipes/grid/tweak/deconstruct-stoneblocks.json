@@ -18,7 +18,7 @@
 		"ingredientPattern": "PS",
 		"ingredients": {
 			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"S": { "type": "block", "code": "game:cobblestoneslab-*", "quantity": 1, "name": "rock" }
+			"S": { "type": "block", "code": "game:cobblestoneslab-*-down-free", "quantity": 1, "name": "rock" }
 		},
 		"width": 2,
 		"height": 1,
@@ -31,7 +31,7 @@
 		"ingredientPattern": "PS",
 		"ingredients": {
 			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"S": { "type": "block", "code": "game:cobblestonestairs-*", "quantity": 1, "name": "rock" }
+			"S": { "type": "block", "code": "game:cobblestonestairs-*-up-north-free", "quantity": 1, "name": "rock" }
 		},
 		"width": 2,
 		"height": 1,
@@ -57,7 +57,7 @@
 		"ingredientPattern": "PS",
 		"ingredients": {
 			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"S": { "type": "block", "code": "game:stonebrickslab-*", "quantity": 1, "name": "rock" }
+			"S": { "type": "block", "code": "game:stonebrickslab-*-down-free", "quantity": 1, "name": "rock" }
 		},
 		"width": 2,
 		"height": 1,
@@ -70,7 +70,7 @@
 		"ingredientPattern": "PS",
 		"ingredients": {
 			"P": { "type": "item", "code": "game:pickaxe-*", "isTool": true },
-			"S": { "type": "block", "code": "game:stonebrickstairs-*", "quantity": 1, "name": "rock" }
+			"S": { "type": "block", "code": "game:stonebrickstairs-*-up-north-free", "quantity": 1, "name": "rock" }
 		},
 		"width": 2,
 		"height": 1,
