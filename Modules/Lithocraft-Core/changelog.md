@@ -7,7 +7,7 @@ Minor update to add some more compatibilities, QOL, and convenience/recycling fe
 
 ### Tweaks:
 **Recycling**:
-- Can now recylce cobblestone, dry stone and ashlar brick blocks back into appropriate stone items.
+- Can now recycle cobblestone, dry stone and ashlar brick blocks back into appropriate stone items.
     - **Stone block + pickaxe** in crafting grid.
     - Binding agents like mortar and clay are not returned.
 - Can now recycle wooden paths into planks.
