@@ -1,6 +1,10 @@
 # Medieval Industry Changelog
 (aka Lithocraft)
 
+## v0.7.0
+### Overview:
+
+
 ## v0.6.2
 ### Overview:
 Very minor update to add some more compatibilities, QOL, and convenience/recycling features.
