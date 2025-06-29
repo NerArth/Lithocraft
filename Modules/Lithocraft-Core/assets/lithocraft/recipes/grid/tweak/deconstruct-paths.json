@@ -219,5 +219,18 @@
 		"height": 2,
 		"shapeless": true,
 		"output": { "type": "item", "code": "game:plank-{wood}", "quantity": 1 }
+	},
+	{
+		"code": "decon-pathwooden-vanilla",
+		"recipeGroup": 2,
+		"ingredientPattern": "SB",
+		"ingredients": {
+			"S": { "type": "item", "code": "game:saw-*", "isTool": true },
+			"B": { "type": "block", "code": "morewoodenpath-*", "quantity": 2, "name": "wood" }
+		},
+		"width": 1,
+		"height": 2,
+		"shapeless": true,
+		"output": { "type": "item", "code": "game:plank-pine", "quantity": 1 }
 	}
 ]
