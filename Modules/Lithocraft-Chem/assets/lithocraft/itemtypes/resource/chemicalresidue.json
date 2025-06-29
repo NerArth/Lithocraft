@@ -1,195 +1,183 @@
 {
-	"code": "chemicalresidue",
-	"__comment": "item class serves no function at present and is only a placeholder",
-	"__sample": "chemicalresidue-mineralwax",
-	"classByType": {
-		"*-alumina": "ItemNugget",
-		"*-beryllium": "ItemNugget",
-		"*-mercurypaste": "ItemNugget",
-		"*": "lithocraft.chemicalresidue"
-	},
-	"variantGroups": [
+    "code": "chemicalresidue",
+    "__comment": "item class serves no function at present and is only a placeholder",
+    "__sample": "chemicalresidue-mineralwax",
+    "classByType": {
+        "*-alumina": "ItemNugget",
+        "*-beryllium": "ItemNugget",
+        "*-mercurypaste": "ItemNugget",
+        "*": "lithocraftchem.chemicalresidue"
+    },
+    "variantGroups": [
         {
             "code": "type",
             "states": [
-				"biomass",
-				"cellulose",
-				"synpulp",
-				"kerogen",
-				"mineralwax",
-				"sodash",
-				"aluox",
-				"alumsalt",
-				"alumina",
-				"bauxicash",
-				"beryllium",
-				"mercurypaste"
+                "biomass",
+                "cellulose",
+                "synpulp",
+                "kerogen",
+                "mineralwax",
+                "sodash",
+                "aluox",
+                "alumsalt",
+                "alumina",
+                "bauxicash",
+                "beryllium",
+                "mercurypaste"
             ]
         }
-	],
-	"dimensions": { "width": 0.0625, "height": 0.0625, "length": 0.0625 },
-	"heldTpIdleAnimation": "holdbothhands",
-	"heldRightReadyAnimation": "holdbothhands",
-	"shapeByType": {
-		"*-mineralwax":{
-			"base": "item/resource/mineralwax" 
-		},
-		"@*-(cellulose|synpulp)":{
-			"base": "item/resource/chemicalresidue/thin" 
-		},
-		"@*-(biomass|kerogen|aluox|alumsalt)":{
-			"base": "item/resource/chemicalresidue/large" 
-		},
-		"*-mercurypaste": {
-			"base": "game:block/clay/bowl-ground"
-		},
-		"*":{
-			"base": "item/resource/chemicalresidue/medium" 
-		}
-	},
-	"texturesByType": {
-		"*-mineralwax": {
-			"mineralwax": { "base": "item/chemical/mineralwax" }
-		},
-		"*-mercurypaste": {
-			"content": { "base": "game:block/metal/plate/platinum" }
-		},
-		"*": {
-			"lumpy": { "base": "item/chemical/{type}_lumpy" },
-			"dusty": { "base": "item/chemical/{type}_dusty" }
-		}
-	},
-	"creativeinventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
-	"attributes": {
-		"dissolveInWater": true,
-		"fertilizerPropsByType": {
-			"*-biomass": {"n": 8, "p": 3, "k": 6 },
-			"*-sodash": {"n": 8, "p": 4, "k": 4 }
-		},
-		"fertilizerTextureCodeByType": {
-			"*-biomass": "compost",
-			"*-sodash": "bonemeal"
-		},
-		"distillationPropsByType": {
-			"*-mineralwax": {
-				"distilledStack": { "type": "item", "code": "lithocraft:chemicalportion-mineraloil_impure" },
-				"ratio": 0.25
-			}
-		},
-		"inContainerTexture": { "base": "game:block/soil/fertcompost" },
-		"handbook": {
-			"extraSectionsByType": {
-				"*-kerogen": [{ "title": "handbooktitle-howtocreate", "text": "howto-chemicalresidue-kerogen" }],
-				"*-synpulp": [{ "title": "handbooktitle-trivia", "text": "trivia-chemicalresidue-synpulp" }],
-				"*-alumsalt": [{ "title": "handbooktitle-howtocreate", "text": "howto-chemicalresidue-alumsalt" }],
-				"*-mercurypaste": [{ "title": "handbooktitle-howtocreate", "text": "howto-chemicalresidue-mercurypaste" }]
-			}
-		}
-	},
-	"combustiblePropsByType": {
-		"*-biomass": {
-			"burnTemperature": 650,
-			"burnDuration": 31
-		},
-		"*-cellulose": {
-			"burnTemperature": 800,
-			"burnDuration": 30
-		},
-		"*-synpulp": {
-			"burnTemperature": 600,
-			"burnDuration": 4
-		},
-		"*-kerogen": {
-			"meltingPoint": 500,
-			"meltingDuration": 30,
-			"smeltedRatio": 1,
-			"smeltedStack": { "type": "item", "code": "chemicalresidue-mineralwax" },
-			"requiresContainer": false
-		},
-		"*-mineralwax": {
-			"burnTemperature": 200,
-			"burnDuration": 12
-		},
-		"*-aluox": {
-			"meltingPoint": 500,
-			"meltingDuration": 16,
-			"smeltedRatio": 1,
-			"smeltedStack": { "type": "item", "code": "chemicalresidue-alumina" },
-			"requiresContainer": false
-		},
-		"*-alumina": {
-			"meltingPoint": 660,
-			"meltingDuration": 24,
-			"smeltedRatio": 2,
-			"smeltedStack": { "type": "item", "code": "ingot-alum" }
-		},
-		"*-bauxicash": {
-			"meltingPoint": 1300,
-			"meltingDuration": 8,
-			"smeltedRatio": 2,
-			"smeltedStack": { "type": "item", "code": "chemicalresidue-alumsalt" },
-			"requiresContainer": false
-		},
-		"*-mercurypaste": {
-			"meltingPoint": 240,
-			"meltingDuration": 8,
-			"smeltedRatio": 2,
-			"smeltedStack": { "type": "item", "code": "ingot-mercuryamalgam" }
-		}
-	},
-	"maxStackSizeByType": {
-		"*": 128
-	},
-	"nutritionPropsByType": {
-		"*-synpulp": {
-			"health": -5,
-			"foodcategory": "NoNutrition"
-		}
-	},
-	"materialDensity": 350,
-	"guiTransformByType": {
-		"*-mineralwax": {
-			"translation": { "x": 3, "y": 7, "z": -25 },
-			"rotation": { "x": 136, "y": 12, "z": 0 },
-			"origin": { "x": 0.45, "y": -0.2, "z": 0.8 },
-			"scale": 2.36
-		},
-		"*-mercurypaste": {
-			"translation": { "x": 0, "y": 3, "z": 0 },
-			"rotation": { "x": 150, "y": 45, "z": 0 },
-			"origin": { "x": 0.45, "y": 0.06, "z": 0.5 },
-			"scale": 3
-		},
-		"*": {
-			"translation": { "x": 0, "y": 0, "z": 0 },
-			"rotation": { "x": -31, "y": -1, "z": -180 },
-			"origin": { "x": 0.55, "y": 0.45, "z": 1 },
-			"scale": 1.84
-		}
-	},
-	"tpHandTransformByType": {
-		"*-mercurypaste": {
-			"translation": { "x": -1, "y": -0.31, "z": -0.72 },
-			"rotation": { "x": -50, "y": 15, "z": -103 },
-			"origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
-			"scale": 0.66
-		},
-		"*": {
-			"translation": { "x": -1.4, "y": -0, "z": -0.9 },
-			"rotation": { "x": 70, "y": 11, "z": -76 },
-			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-			"scale": 0.41
-		}
-	},
-	"groundTransformByType": {
-		"*-mercurypaste": {
-			"scale": 3.5
-		},
-		"*": {
-			"translation": { "x": 0, "y": 0.2, "z": 0 },
-			"rotation": { "x": -4, "y": 8, "z": 0 },
-			"origin": { "x": 0.5, "y": 0.5, "z": 0.5299 },
-			"scale": 1.92
-		}
-	}
+    ],
+    "dimensions": { "width": 0.0625, "height": 0.0625, "length": 0.0625 },
+    "heldTpIdleAnimation": "holdbothhands",
+    "heldRightReadyAnimation": "holdbothhands",
+    "shapeByType": {
+        "*-mineralwax":{
+            "base": "item/resource/mineralwax" 
+        },
+        "@*-(cellulose|synpulp)":{
+            "base": "item/resource/chemicalresidue/thin" 
+        },
+        "@*-(biomass|kerogen|aluox|alumsalt)":{
+            "base": "item/resource/chemicalresidue/large" 
+        },
+        "*-mercurypaste": {
+            "base": "game:block/clay/bowl-ground"
+        },
+        "*":{
+            "base": "item/resource/chemicalresidue/medium" 
+        }
+    },
+    "texturesByType": {
+        "*-mineralwax": {
+            "mineralwax": { "base": "item/chemical/mineralwax" }
+        },
+        "*-mercurypaste": {
+            "content": { "base": "game:block/metal/plate/platinum" }
+        },
+        "*": {
+            "lumpy": { "base": "item/chemical/{type}_lumpy" },
+            "dusty": { "base": "item/chemical/{type}_dusty" }
+        }
+    },
+    "creativeinventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
+    "attributes": {
+        "dissolveInWater": true,
+        "fertilizerPropsByType": {
+            "*-biomass": {"n": 8, "p": 3, "k": 6 },
+            "*-sodash": {"n": 8, "p": 4, "k": 4 }
+        },
+        "fertilizerTextureCodeByType": {
+            "*-biomass": "compost",
+            "*-sodash": "bonemeal"
+        },
+        "distillationPropsByType": {
+            "*-mineralwax": {
+                "distilledStack": { "type": "item", "code": "lithocraft:chemicalportion-mineraloil_impure" },
+                "ratio": 0.25
+            }
+        },
+        "inContainerTexture": { "base": "game:block/soil/fertcompost" },
+        "handbook": {
+            "extraSectionsByType": {
+                "*-kerogen": [{ "title": "handbooktitle-howtocreate", "text": "howto-chemicalresidue-kerogen" }],
+                "*-synpulp": [{ "title": "handbooktitle-trivia", "text": "trivia-chemicalresidue-synpulp" }],
+                "*-alumsalt": [{ "title": "handbooktitle-howtocreate", "text": "howto-chemicalresidue-alumsalt" }],
+                "*-mercurypaste": [{ "title": "handbooktitle-howtocreate", "text": "howto-chemicalresidue-mercurypaste" }]
+            }
+        }
+    },
+    "combustiblePropsByType": {
+        "*-biomass": {
+            "burnTemperature": 650,
+            "burnDuration": 31
+        },
+        "*-cellulose": {
+            "burnTemperature": 800,
+            "burnDuration": 30
+        },
+        "*-synpulp": {
+            "burnTemperature": 600,
+            "burnDuration": 4
+        },
+        "*-kerogen": {
+            "meltingPoint": 500,
+            "meltingDuration": 30,
+            "smeltedRatio": 1,
+            "smeltedStack": { "type": "item", "code": "chemicalresidue-mineralwax" },
+            "requiresContainer": false
+        },
+        "*-mineralwax": {
+            "burnTemperature": 200,
+            "burnDuration": 12
+        },
+        "*-aluox": {
+            "meltingPoint": 500,
+            "meltingDuration": 16,
+            "smeltedRatio": 1,
+            "smeltedStack": { "type": "item", "code": "chemicalresidue-alumina" },
+            "requiresContainer": false
+        },
+        "*-bauxicash": {
+            "meltingPoint": 1300,
+            "meltingDuration": 8,
+            "smeltedRatio": 2,
+            "smeltedStack": { "type": "item", "code": "chemicalresidue-alumsalt" },
+            "requiresContainer": false
+        }
+    },
+    "maxStackSizeByType": {
+        "*": 128
+    },
+    "nutritionPropsByType": {
+        "*-synpulp": {
+            "health": -5,
+            "foodcategory": "NoNutrition"
+        }
+    },
+    "materialDensity": 350,
+    "guiTransformByType": {
+        "*-mineralwax": {
+            "translation": { "x": 3, "y": 7, "z": -25 },
+            "rotation": { "x": 136, "y": 12, "z": 0 },
+            "origin": { "x": 0.45, "y": -0.2, "z": 0.8 },
+            "scale": 2.36
+        },
+        "*-mercurypaste": {
+            "translation": { "x": 0, "y": 3, "z": 0 },
+            "rotation": { "x": 150, "y": 45, "z": 0 },
+            "origin": { "x": 0.45, "y": 0.06, "z": 0.5 },
+            "scale": 3
+        },
+        "*": {
+            "translation": { "x": 0, "y": 0, "z": 0 },
+            "rotation": { "x": -31, "y": -1, "z": -180 },
+            "origin": { "x": 0.55, "y": 0.45, "z": 1 },
+            "scale": 1.84
+        }
+    },
+    "tpHandTransformByType": {
+        "*-mercurypaste": {
+            "translation": { "x": -1, "y": -0.31, "z": -0.72 },
+            "rotation": { "x": -50, "y": 15, "z": -103 },
+            "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+            "scale": 0.66
+        },
+        "*": {
+            "translation": { "x": -1.4, "y": -0, "z": -0.9 },
+            "rotation": { "x": 70, "y": 11, "z": -76 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 0.41
+        }
+    },
+    "groundTransformByType": {
+        "*-mercurypaste": {
+            "scale": 3.5
+        },
+        "*": {
+            "translation": { "x": 0, "y": 0.2, "z": 0 },
+            "rotation": { "x": -4, "y": 8, "z": 0 },
+            "origin": { "x": 0.5, "y": 0.5, "z": 0.5299 },
+            "scale": 1.92
+        }
+    }
 }
