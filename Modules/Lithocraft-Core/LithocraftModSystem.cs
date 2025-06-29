@@ -1,4 +1,6 @@
-﻿using Lithocraft.Items;
+﻿using Lithocraft.BlockEntities;
+using Lithocraft.Blocks;
+using Lithocraft.Items;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
@@ -50,8 +52,8 @@ namespace Lithocraft
             //api.RegisterItemClass(_shortid + ".cannonrocket", typeof(ItemCannonRocket));
 
             // register block/BE paired classes
-            //api.RegisterBlockClass(_shortid + ".grindstone", typeof(BlockGrindstone));
-            //api.RegisterBlockEntityClass(_shortid + ".BEgrindstone", typeof(BlockEntityGrindstone));
+            api.RegisterBlockClass(_shortid + ".grindstone", typeof(BlockGrindstone));
+            api.RegisterBlockEntityClass(_shortid + ".BEgrindstone", typeof(BlockEntityGrindstone));
 
             //api.RegisterBlockEntityClass(_shortid + ".BEtoolmold", typeof(BlockEntityToolMoldCustom));
 

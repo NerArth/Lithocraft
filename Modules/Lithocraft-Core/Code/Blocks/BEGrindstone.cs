@@ -4,6 +4,8 @@ using System.Linq;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Text;
+using Lithocraft.Blocks;
+using Lithocraft.Util;
 using ProtoBuf;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
