@@ -26,7 +26,7 @@ namespace Lithocraft.Util
         /// <param name="errorcode"></param>
         /// <param name="feedbackmsg"></param>
         /// <param name="api"></param>
-        internal void ProvideErrorFeedback(string errorcode, string feedbackmsg, ICoreAPI api)
+        internal void ProvideErrorFeedback(string errorcode, string feedbackmsg, ICoreAPI? api)
         {
             // since we have to provide an api to the function, we better make sure the api is actually validated first
             if (api is null) return;
