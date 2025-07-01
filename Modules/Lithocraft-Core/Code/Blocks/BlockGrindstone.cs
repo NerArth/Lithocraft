@@ -21,7 +21,8 @@ namespace Lithocraft.Blocks
 {
     internal class BlockGrindstone : Block
     {
-        LangUtility _langutil = new();
+        private LangUtility _langutil = new();
+        public BlockEntityGrindstone? beGrindstone { get; private set;}
         //internal bool StopFlag;
         public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {
@@ -29,7 +30,7 @@ namespace Lithocraft.Blocks
 
             api.Logger.Debug("Grindstone interaction start");
 
-            BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
+            beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
 
             /*
             if (beGrindstone == null)
@@ -69,7 +70,7 @@ namespace Lithocraft.Blocks
         {
             api.Logger.Debug("Grindstone busy step by " + byPlayer.PlayerName);
 
-            BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
+            beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
 
             if (beGrindstone is null) return false;
             if (beGrindstone.BusyPlayer is null) return false;
@@ -96,7 +97,7 @@ namespace Lithocraft.Blocks
         {
             api.Logger.Debug("Grindstone interaction cancel");
 
-            BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
+            beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
 
             /*if (beGrindstone != null)
             {
@@ -106,7 +107,7 @@ namespace Lithocraft.Blocks
                 }
                 else
                 {*/
-                    beGrindstone.ClearData();
+            beGrindstone.ClearData();
                     beGrindstone.SetBusy(null, false);
                     beGrindstone.firstEvent = false;
                     beGrindstone.ToggleSound();
@@ -121,7 +122,7 @@ namespace Lithocraft.Blocks
         {
             api.Logger.Debug("Grindstone interaction stopped");
 
-            BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
+            beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
 
             beGrindstone.ClearData();
             beGrindstone.SetBusy(null, false);
@@ -130,7 +131,7 @@ namespace Lithocraft.Blocks
 
 
             /*
-            BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
+            beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
             
             if (beGrindstone != null)
             {
@@ -140,7 +141,7 @@ namespace Lithocraft.Blocks
             }
             */
         }
-        
+
         /*
         public override WorldInteraction[] GetPlacedBlockInteractionHelp(IWorldAccessor world, BlockSelection selection, IPlayer forPlayer)
         {
