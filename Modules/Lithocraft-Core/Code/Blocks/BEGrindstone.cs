@@ -154,7 +154,7 @@ namespace Lithocraft.BlockEntities
         }*/
 
         /// <summary>
-        /// Returns the CurrentTier, assuming it has been initialised.
+        /// <para>Returns the CurrentTier, assuming it has been initialised.</para>
         /// </summary>
         /// <returns></returns>
         public Tier GetTier()
@@ -163,7 +163,7 @@ namespace Lithocraft.BlockEntities
         }
 
         /// <summary>
-        /// Sets the BE tier; only meant for internal use but deliberately left public.
+        /// <para>Sets the BE tier; only meant for internal use but deliberately left public.</para>
         /// </summary>
         /// <param name="tier"></param>
         public void SetTier(Tier tier)
@@ -172,7 +172,7 @@ namespace Lithocraft.BlockEntities
         }
 
         /// <summary>
-        /// Returns the current StateBusy (true|false).
+        /// <para>Returns the current StateBusy (true|false).</para>
         /// </summary>
         /// <returns></returns>
         public bool GetBusy()
@@ -181,7 +181,7 @@ namespace Lithocraft.BlockEntities
         }
 
         /// <summary>
-        /// Sets BusyPlayer and StateBusy in the BE.
+        /// <para>Sets BusyPlayer and StateBusy in the BE.</para>
         /// </summary>
         /// <param name="player"></param>
         /// <param name="busy"></param>
@@ -393,13 +393,13 @@ namespace Lithocraft.BlockEntities
         }
 
         /// <summary>
-        /// Checks if an item has ever been repaired and sets things appropriately if it's a valid type.
-        /// 
-        /// Returns an ItemStack-dependent array of prevDurability, maxDurability, repairTolerance, repairAmount.
+        /// <para>Checks if an item has ever been repaired and sets things appropriately if it's a valid type.</para>
+        ///
+        /// <para>Returns an ItemStack-dependent array of prevDurability, maxDurability, repairTolerance, repairAmount.</para>
         /// </summary>
         /// <param name="stack"></param>
         /// <returns></returns>
-        private int[] CheckDurability()
+        private int[] CheckDurability() 
         {
             if (Api?.World is null) return null; if (heldStack is null) return null; if (itemSlot is null) return null;
             // init array
