@@ -21,6 +21,7 @@ namespace Lithocraft.Util
         /// <summary>
         /// <para>Triggers an in-game error message over the hotbar displaying <paramref name="feedbackmsg"/> with an internal <paramref name="errorcode"/>, requires passing-thru the <paramref name="api"/>.</para>
         /// <para><paramref name="feedbackmsg"/> should be a "lithocraft:feedback-msg" string from the locale file.</para>
+        /// <para>This method checks if <paramref name="api"/> is null.</para>
         /// </summary>
         /// <param name="errorcode"></param>
         /// <param name="feedbackmsg"></param>
