@@ -28,9 +28,9 @@ namespace Lithocraft.BlockEntities
         #region classvariables
         // variables
         //   functional
-        ICoreClientAPI capi;
-        BlockGrindstone ownBlock;
-        LangUtility _langutil = new LangUtility();
+        private ICoreClientAPI? capi;
+        public BlockGrindstone? ownBlock;
+        private LangUtility _langutil = new LangUtility();
         internal long listenerID;
         public bool StopFlag;
 
