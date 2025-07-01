@@ -39,16 +39,16 @@ namespace Lithocraft.BlockEntities
         public int[] TierRepairModifier = { 1, 2, 3 }; // originally 1, 3, 10
         public bool StateBusy;
         public bool CanRepair;
-        public IPlayer BusyPlayer;
+        public IPlayer? BusyPlayer;
 
         public bool firstEvent;
-        BlockEntityAnimationUtil animUtil
+        private BlockEntityAnimationUtil? animUtil
         {
             get { return GetBehavior<BEBehaviorAnimatable>()?.animUtil; }
         }
         Vec3f rendererRot = new Vec3f();
 
-        ILoadedSound AmbientSound;
+        private ILoadedSound? AmbientSound;
 
         public void ToggleSound()
         {
@@ -117,8 +117,8 @@ namespace Lithocraft.BlockEntities
         protected string[] ValidTools => Block.Attributes["validTools"].AsObject<string[]>();
 
         // handled item-stack
-        ItemStack heldStack;
-        public ItemSlot itemSlot;
+        public ItemStack? heldStack;
+        public ItemSlot? itemSlot;
 
         //string handledToolType; // ended up not needing
         int prevDurability;
@@ -332,7 +332,7 @@ namespace Lithocraft.BlockEntities
 
         public bool CheckRepairable(IPlayer byPlayer) // check that the repair can happen
         {
-            if (Api?.World is null) { Api.Logger.Debug("LC Grindstone: World is null?"); return false; }
+            if (Api?.World is null) { Api?.Logger.Debug("LC Grindstone: World is null?"); return false; }
             var player = byPlayer;
             if (player is null) return false;
             bool isValidTool = false;
@@ -399,7 +399,7 @@ namespace Lithocraft.BlockEntities
         /// </summary>
         /// <param name="stack"></param>
         /// <returns></returns>
-        private int[] CheckDurability() 
+        private int[]? CheckDurability() 
         {
             if (Api?.World is null) return null; if (heldStack is null) return null; if (itemSlot is null) return null;
             // init array
@@ -420,7 +420,7 @@ namespace Lithocraft.BlockEntities
             if (timesRepairedRetrieved is null || timesRepairedRetrieved == 0)
             {
                 //Api.Logger.Debug("Repair: item not previously repaired...");
-                heldStack.Attributes.SetInt("timesRepaired", 0);
+                heldStack?.Attributes.SetInt("timesRepaired", 0);
                 timesRepaired = 0;
             }
             else
@@ -438,7 +438,7 @@ namespace Lithocraft.BlockEntities
 
         public bool UpdateRepair(IPlayer byPlayer)
         {
-            if (Api?.World is null) { Api.Logger.Debug("World is null?"); return false; }
+            if (Api?.World is null) { Api?.Logger.Debug("World is null?"); return false; }
             var player = byPlayer;
 
             // then if the tool is actually repairable after all checks...
@@ -448,21 +448,21 @@ namespace Lithocraft.BlockEntities
                 {
                     //Api.Logger.Debug("Repair: Tool durability would go over max. Capping!");
                     //heldStack.Item.Durability = maxDurability;
-                    heldStack.Attributes.SetInt("durability", maxDurability);
+                    heldStack?.Attributes.SetInt("durability", maxDurability);
                     //heldStack.Attributes.SetInt("timesRepaired", timesRepaired + repairAmount - (maxDurability - prevDurability));
-                    heldStack.Attributes.SetInt("timesRepaired", timesRepaired + (maxDurability - prevDurability));
+                    heldStack?.Attributes.SetInt("timesRepaired", timesRepaired + (maxDurability - prevDurability));
                     //SetBusy(BusyPlayer,false); // we don't do this anymore
-                    itemSlot.MarkDirty(); //resync item
+                    itemSlot?.MarkDirty(); //resync item
                     ClearData();
                     return false;
                 }
                 else // otherwise, just add durability
                 {
                     //Api.Logger.Debug("Repair: Tool durability increased succesfully.");
-                    heldStack.Attributes.SetInt("durability", prevDurability + repairAmount);
-                    heldStack.Attributes.SetInt("timesRepaired", timesRepaired + repairAmount);
+                    heldStack?.Attributes.SetInt("durability", prevDurability + repairAmount);
+                    heldStack?.Attributes.SetInt("timesRepaired", timesRepaired + repairAmount);
                     //world.SpawnCubeParticles(byPlayer.SidedPos.XYZ.Add(byPlayer.SelectionBox.Y2 / 2f), heldStack, 0.25f, 30, 1f, byPlayer); //copied/modified from collectible object
-                    itemSlot.MarkDirty(); //resync item
+                    itemSlot?.MarkDirty(); //resync item
                     //CheckDurability();
                     //ClearData();
                     //return true;
