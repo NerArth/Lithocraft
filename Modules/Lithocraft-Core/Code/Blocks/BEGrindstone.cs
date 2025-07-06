@@ -55,17 +55,17 @@ namespace Lithocraft.BlockEntities
             if (AmbientSound != null && !AmbientSound.IsPlaying && firstEvent)
             {
                 AmbientSound?.Start();
-                MarkDirty();
+                MarkDirty(true);
             }
             else if (AmbientSound != null && AmbientSound.IsPlaying && !GetBusy())
             {
                 AmbientSound?.Stop();
-                MarkDirty();
+                MarkDirty(true);
             }
             else if (!GetBusy())
             {
                 AmbientSound?.Stop();
-                MarkDirty();
+                MarkDirty(true);
             }
         }
 
@@ -186,7 +186,7 @@ namespace Lithocraft.BlockEntities
         /// <param name="player"></param>
         /// <param name="busy"></param>
         /// <returns></returns>
-        public bool SetBusy(IPlayer player, bool busy)
+        public (IPlayer BusyPlayer, bool StateBusy) SetBusy(IPlayer player, bool busy)
         {
             BusyPlayer = player;
             StateBusy = busy;
@@ -208,10 +208,10 @@ namespace Lithocraft.BlockEntities
             // should probably let the client know the states have been set
             if (Api.Side == EnumAppSide.Server)
             {
-                MarkDirty();
+                MarkDirty(true);
             }
 
-            return StateBusy;
+            return (BusyPlayer, StateBusy);
         }
 
         public long LoadTickListener()
@@ -325,7 +325,7 @@ namespace Lithocraft.BlockEntities
                 if (!CheckRepairable(BusyPlayer)) { SetBusy(BusyPlayer, false); ClearData(); ToggleSound();  return; }
                 SetBusy(BusyPlayer, true);
                 UpdateRepair(BusyPlayer);
-                MarkDirty();
+                MarkDirty(true);
             }
         }
         #endregion
@@ -524,7 +524,7 @@ namespace Lithocraft.BlockEntities
             StopFlag = true;
             ClearData();
             StopFlag = false;
-            MarkDirty();
+            MarkDirty(true);
             //BlockGrindstone _block = Block as BlockGrindstone;
             //_block.StopFlag = true;
         }

@@ -1,0 +1,47 @@
+[
+	{
+		"enabled": true,
+		"code": "grindstone-stone",
+		"ingredientPattern": "CSN,HAG,WMW",
+		"ingredients": {
+			"W": { "type": "item", "code": "game:plank-*", "quantity": 2 },
+			"G": { "type": "item", "code": "game:gear-rusty", "quantity": 1 },
+			"S": { "type": "block", "code": "game:rock-*", "quantity": 1 },
+			"A": { "type": "block", "code": "game:woodenaxle-*", "quantity": 1 },
+			"M": { "type": "item", "code": "game:metalplate-iron", "quantity": 1 },
+			"N": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 4 },
+			"C": { "type": "item", "code": "game:chisel-*", "isTool": true, "toolDurabilityCost": 20 },
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true, "toolDurabilityCost": 20 }
+		},
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "grindstone-stone-north", "quantity": 1 }
+	},
+	{
+		"enabled": false,
+		"code": "grindstone-ceramic-ph",
+		"ingredientPattern": "G,R,B",
+		"ingredients": {
+			"G": { "type": "item", "code": "chemicalresidue-*", "quantity": 32, "name": "grit", "allowedVariants": ["aluox","alumina"] },
+			"R": { "type": "item", "code": "game:resin", "quantity": 10 },
+			"B": { "type": "block", "code": "grindstone-stone-north", "quantity": 1 }
+		},
+		"width": 1,
+		"height": 3,
+		"output": { "type": "block", "code": "grindstone-ceramic-north", "quantity": 1 }
+	},
+	{
+		"enabled": true,
+		"code": "grindstone-diamond-ph",
+		"ingredientPattern": "HG,_R,_B",
+		"ingredients": {
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true, "toolDurabilityCost": 20 },
+			"G": { "type": "item", "code": "game:gem-diamond-rough", "quantity": 4 },
+			"R": { "type": "item", "code": "game:resin", "quantity": 10 },
+			"B": { "type": "block", "code": "grindstone-stone-north", "quantity": 1 }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "block", "code": "grindstone-diamond-north", "quantity": 1 }
+	}
+]
