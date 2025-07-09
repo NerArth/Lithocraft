@@ -3,7 +3,22 @@
 
 ## v0.7.0
 ### Overview:
+Reintroducing the grindstone block and addition of a new item, the whetstone.
 
+### Items:
+- Whetstone (new)
+    - Made with a variety of materials. Crafting requires appropriate ground materials, a binder, wood, and an oil or fat.
+    - Can be placed in crafting grid with a tool to repair it.
+    - Has limited uses based on material it's made of, but also stacks up to 16.
+
+- Grindstone:
+    - Reintroduced, mostly as it functioned in v0.3.4.
+    - Used to repair tools.
+    - Repair amount is based on the grindstone tier.
+    - Recipes not fully implemented yet.
+
+### Compatibility:
+- Whestone recipes are compatible with some mods that add their own oils or fats.
 
 ## v0.6.2
 ### Overview:
