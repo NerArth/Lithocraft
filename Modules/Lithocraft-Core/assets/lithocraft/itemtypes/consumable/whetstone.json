@@ -1,0 +1,41 @@
+{
+    "code": "whetstone",
+    "__sample": "whetstone-flint",
+    "maxStackSize": 16,
+    "durabilityByType": {
+        "*-flint": 10,
+        "*-quartz": 20,
+        "*-amethyst": 20,
+        "*-beryl": 20,
+        "*-ceramic": 20,
+        "*-corundum": 20,
+        "*-diamond": 30,
+        "*": 20
+    },  
+    "attributes": {
+        "handbook": {
+            "groupBy": [ "whetstone-*" ],
+            "extraSections": [ { "title": "game:handbooktitle-trivia", "text": "game:trivia-whetstone" } ]
+        }
+    },
+    "materialDensity": 2500,
+    "variantGroups": [
+        {
+            "code": "material",
+            "states": [ "flint", "quartz", "amethyst", "beryl", "ceramic", "corundum", "diamond" ]
+        }
+    ],
+    "shapeByType": {
+        "*": { "base": "item/stonetablet-ornate" }
+    },
+    "texturesByType": {
+        "*": {
+            "limestone1": { "base": "game:block/stone/rock/{type}*" }
+        }
+    },
+    "creativeInventory": {
+        "general": [ "*" ],
+        "items": [ "*" ],
+        "lithocraft": [ "*" ]
+    }
+}

@@ -665,6 +665,9 @@
     "game:trivia-stonepainting": "Much like writing, artwork has been part of human expressive nature for many ages. In more recent times it has been thought, and sometimes shown, that some of the earliest depictions known of anything whatsoever really did not serve aesthetic purposes in the way we think of art now, and were more likely simply meant to transmit information in the same way that a highway pictogram does, as a sign of something literal and tangible.<br><br>Imagined and aesthetic depictions of folklore and other gestalt-type phenomenons really came into being much later and are typically associated with the so-called ancient cultures of the world, such as the regions modernly associated with Greece, Egypt, China and other cultures of ancient legacy.<br><br>Paintings and indeed art in general, have progressively refined both in cultural and technical terms as technologies and processes became more advanced.<br><br>All of the paintings added by <a href=\"handbooksearch://Medieval Industry\">Medieval Industry</a> are my own original creations, some are references, most are just something nice to look at.<br><br>The mod adds many paintings, most of them can be acquired or crafted in different ways. There are some paintings which have secret crafting recipes, but they may be bought from the appropriate trader, too.",
     "game:tip-stonepainting": "ALL paintings can be crafted or acquired from a furniture trader, however, some paintings are deliberately hidden from the handbook, in effect making their recipes secret.",
 
+    "item-whetstone-*": "Whetstone of some kind [PH]",
+    "game:trivia-whetstone": "[PH]",
+
     "game:blockdesc-rammed-light-plain": "Plain.",
     "game:blockdesc-rammed-light-thickheavy": "Thick and heavy.",
     "game:blockdesc-rammed-light-thicklight": "Thick and light.",

@@ -1,0 +1,16 @@
+[
+	{
+		"code": "whetstone-gem",
+		"__comment": "W wood G grit B binding F fat",
+		"ingredientPattern": "CP,SW,_W",
+		"ingredients": {
+			"W": { "type": "item", "code": "game:plank-*", "quantity": 1 },
+			"G": { "type": "item", "code": "crushed-*", "quantity": 1, "name": "gem", "allowedVariants": ["diamond", "emerald"] },
+			"B": { "type": "item", "code": "game:resin" },
+			"F": { "type": "item", "code": "game:fat" }
+		},
+		"width": 2,
+		"height": 3,
+		"output": { "type": "item", "code": "whetstone-{gem}", "quantity": 1 }
+	}
+]
