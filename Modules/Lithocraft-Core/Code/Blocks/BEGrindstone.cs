@@ -55,17 +55,17 @@ namespace Lithocraft.BlockEntities
             if (AmbientSound != null && !AmbientSound.IsPlaying && firstEvent)
             {
                 AmbientSound?.Start();
-                MarkDirty(true);
+                MarkDirty();
             }
             else if (AmbientSound != null && AmbientSound.IsPlaying && !GetBusy())
             {
                 AmbientSound?.Stop();
-                MarkDirty(true);
+                MarkDirty();
             }
             else if (!GetBusy())
             {
                 AmbientSound?.Stop();
-                MarkDirty(true);
+                MarkDirty();
             }
         }
 
@@ -208,7 +208,7 @@ namespace Lithocraft.BlockEntities
             // should probably let the client know the states have been set
             if (Api.Side == EnumAppSide.Server)
             {
-                MarkDirty(true);
+                MarkDirty();
             }
 
             return (BusyPlayer, StateBusy);
@@ -325,7 +325,7 @@ namespace Lithocraft.BlockEntities
                 if (!CheckRepairable(BusyPlayer)) { SetBusy(BusyPlayer, false); ClearData(); ToggleSound();  return; }
                 SetBusy(BusyPlayer, true);
                 UpdateRepair(BusyPlayer);
-                MarkDirty(true);
+                MarkDirty();
             }
         }
         #endregion
@@ -524,7 +524,7 @@ namespace Lithocraft.BlockEntities
             StopFlag = true;
             ClearData();
             StopFlag = false;
-            MarkDirty(true);
+            MarkDirty();
             //BlockGrindstone _block = Block as BlockGrindstone;
             //_block.StopFlag = true;
         }
