@@ -1,8 +1,8 @@
 [
 	{
-		"code": "whetstone-gem",
+		"code": "whetstone-vanilla-gem",
 		"__comment": "W wood G grit B binding F fat",
-		"ingredientPattern": "CP,SW,_W",
+		"ingredientPattern": "_F,RG,_W",
 		"ingredients": {
 			"W": { "type": "item", "code": "game:plank-*", "quantity": 1 },
 			"G": { "type": "item", "code": "crushed-*", "quantity": 1, "name": "gem", "allowedVariants": ["diamond", "emerald"] },

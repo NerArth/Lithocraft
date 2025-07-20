@@ -46,6 +46,7 @@ namespace Lithocraft
 
             // register item classes
             api.RegisterItemClass(_shortid + ".claycutter",typeof(ItemClaycutter));
+            //api.RegisterItemClass(_shortid + ".whetstone", typeof(ItemWhetstone));
             //api.RegisterItemClass(_shortid + ".chemicalresidue", typeof(ItemChemicalResidue));
 
             //api.RegisterItemClass(_shortid + ".handcannon", typeof(ItemHandCannon));
