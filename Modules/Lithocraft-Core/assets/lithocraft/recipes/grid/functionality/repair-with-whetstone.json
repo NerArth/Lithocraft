@@ -1,5 +1,6 @@
 [
 	{
+		"enabled": false,
 		"code": "whetstone-chisel",
 		"ingredientPattern": "T,R",
 		"recipeGroup": 0,

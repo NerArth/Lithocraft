@@ -1,5 +1,6 @@
 [
 	{
+		"enabled": false,
 		"code": "whetstone-vanilla-gem",
 		"__comment": "W wood G grit B binding F fat",
 		"ingredientPattern": "_F,RG,_W",
