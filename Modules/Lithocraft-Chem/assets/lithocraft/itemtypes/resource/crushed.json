@@ -1,62 +1,66 @@
 {
-	"code": "crushed",
-	"heldTpIdleAnimation": "holdbothhands",
-	"heldRightReadyAnimation": "holdbothhands",
-	"variantGroups": [
-		{ "code": "material", "states": [ "emerald", "beryl" ] }
-	],
-	"attributes": {
-		"handbook": {
-			"groupBy": ["crushed-*"],
-			"extraSections": [
-				{ "title": "game:handbooktitle-crushed", "text": "game:handbooktext-crushed" }
-			]
-		},
-		"displaycaseable": true, 
-		"shelvable": true,
-		"dissolveInWater": true,
-		"onDisplayTransform": {
-			"translation": { "x": 0.05, "y": 0, "z": 0 },
-			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-			"scale": 0.65
-		}
-	},
-	"shape": { "base": "item/resource/crushed/normal" },
-	"texturesByType": {
-		"*-emerald": { 
-			"quartz": {"base": "block/stone/special/emerald"},
-			"dusty": {"base": "item/crushed/berylgreen_dusty"}
-		},
-		"*-beryl": { 
-			"quartz": {"base": "block/stone/special/berylbixbite"},
-			"dusty": {"base": "item/crushed/berylred_dusty"}
-		}
-	},
-	"creativeInventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
-	"maxStackSize": 64,
-	"storageFlags": 5,
-	"materialDensity": 500,
-	"guiTransform": {
-		"translation": { "x": 0, "y": 0, "z": -25 },
-		"rotation": { "x": 171, "y": 57, "z": -20 },
-		"origin": { "x": 0.46, "y": 0.11, "z": 0.39 },
-		"scale": 2.64
-	},
-	"fpHandTransform": {
-		"translation": { "x": 0.1, "y": 0.16, "z": 0 },
-		"rotation": { "x": 37, "y": 77, "z": 2 },
-		"origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
-		"scale": 1.95
-	},
-	"tpHandTransform": {
-		"translation": { "x": -1.67, "y": -1.1, "z": -0.7 },
-		"rotation": { "x": 19, "y": 26, "z": -83 },
-		"scale": 0.48
-	},
-	"groundTransform": {
-		"translation": { "x": 0, "y": 0, "z": 0 },
-		"rotation": { "x": 3, "y": 1, "z": 0 },
-		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-		"scale": 2.65
-	}
+    "code": "crushed",
+    "__sample": "crushed-emerald",
+    "variantGroups": [
+        {
+            "code": "material",
+            "states": [ "emerald", "beryl" ] 
+        }
+    ],
+    "attributes": {
+        "handbook": {
+            "groupBy": ["crushed-*"],
+            "extraSections": [
+                { "title": "game:handbooktitle-crushed", "text": "game:handbooktext-crushed" }
+            ]
+        },
+        "displaycaseable": true, 
+        "shelvable": true,
+        "dissolveInWater": true,
+        "onDisplayTransform": {
+            "translation": { "x": 0.05, "y": 0, "z": 0 },
+            "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+            "scale": 0.65
+        }
+    },
+    "shape": { "base": "item/resource/crushed/normal" },
+    "texturesByType": {
+        "*-emerald": { 
+            "quartz": {"base": "block/stone/special/emerald"},
+            "dusty": {"base": "item/crushed/berylgreen_dusty"}
+        },
+        "*-beryl": { 
+            "quartz": {"base": "block/stone/special/berylbixbite"},
+            "dusty": {"base": "item/crushed/berylred_dusty"}
+        }
+    },
+    "creativeInventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
+    "maxStackSize": 64,
+    "storageFlags": 5,
+    "materialDensity": 500,
+    "heldTpIdleAnimation": "holdbothhands",
+    "heldRightReadyAnimation": "holdbothhands",
+    "guiTransform": {
+        "translation": { "x": 0, "y": 0, "z": -25 },
+        "rotation": { "x": 171, "y": 57, "z": -20 },
+        "origin": { "x": 0.46, "y": 0.11, "z": 0.39 },
+        "scale": 2.64
+    },
+    "fpHandTransform": {
+        "translation": { "x": 0.1, "y": 0.16, "z": 0 },
+        "rotation": { "x": 37, "y": 77, "z": 2 },
+        "origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+        "scale": 1.95
+    },
+    "tpHandTransform": {
+        "translation": { "x": -1.67, "y": -1.1, "z": -0.7 },
+        "rotation": { "x": 19, "y": 26, "z": -83 },
+        "scale": 0.48
+    },
+    "groundTransform": {
+        "translation": { "x": 0, "y": 0, "z": 0 },
+        "rotation": { "x": 3, "y": 1, "z": 0 },
+        "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+        "scale": 2.65
+    }
 }

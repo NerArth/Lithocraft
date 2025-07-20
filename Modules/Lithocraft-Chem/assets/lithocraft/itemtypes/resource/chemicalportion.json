@@ -1,177 +1,178 @@
 {
-	"code": "chemicalportion",
-	"variantgroups": [
+    "code": "chemicalportion",
+    "__sample": "chemicalportion-mineraloil_impure",
+    "variantGroups": [
         {
             "code": "type",
             "states": [ 
-				"organicslurry",
-				"ammonia",
-				"strongsodium",
-				"dilutedcuprite",
-				"cupricsolution",
-				"mineraloil_impure",
-				"mineraloil_pure",
-				"acidnitric",
-				"ferricslurry",
-				"alumslurry",
-				"alumsolution"
+                "organicslurry",
+                "ammonia",
+                "strongsodium",
+                "dilutedcuprite",
+                "cupricsolution",
+                "mineraloil_impure",
+                "mineraloil_pure",
+                "acidnitric",
+                "ferricslurry",
+                "alumslurry",
+                "alumsolution"
             ]
         }
-	],
-	"class": "ItemLiquidPortion",
-	"matterState": "liquid",
-	"attributes": {
-		"handbook": {
-			"ignoreCreativeInvStacks": true,
-			"extraSectionsByType": {
-				"*-ammonia": [{ "title": "handbooktitle-howtocreate", "text": "howto-chemicalportion-ammonia" }],
-				"*-cupricsolution": [{ "title": "handbooktitle-trivia", "text": "trivia-chemicalportion-cupricsolution" }],
-				"*-alumslurry": [{"title": "handbooktitle-howtocreate", "text": "game:howto-chemicalportion-alumsolution"}],
-				"*-alumsolution": [{"title": "handbooktitle-howtocreate", "text": "game:howto-chemicalportion-alumsolution"}]
-			}
-		},
-		"distillationPropsByType": {
-			"*-organicslurry": {
-				"distilledStack": { "type": "item", "code": "lithocraft:chemicalportion-ammonia" },
-				"ratio": 0.5
-			},
-			"*-alumslurry": {
-				"distilledStack": { "type": "item", "code": "lithocraft:chemicalportion-alumsolution" },
-				"ratio": 0.8
-			}
-		},
-		"waterTightContainerPropsByType": {
-			"*-organicslurry": {
-				"containable": true,
-				"itemsPerLitre": 100,
-				"texture": { "base": "block/liquid/organicslurry" },
-				"allowSpill": true,
-				"whenSpilled": {
-					"action": "DropContents",
-					"stack": { "type": "item", "code": "chemicalportion-organicslurry" } 
-				}
-			},
-			"*-ammonia": {
-				"containable": true,
-				"itemsPerLitre": 100,
-				"texture": { "base": "block/liquid/ammonia" },
-				"allowSpill": true,
-				"whenSpilled": {
-					"action": "DropContents",
-					"stack": { "type": "item", "code": "chemicalportion-ammonia" }
-				}
-			},
-			"*-strongsodium": {
-				"containable": true,
-				"itemsPerLitre": 100,
-				"texture": { "base": "block/liquid/sodium" },
-				"allowSpill": true,
-				"whenSpilled": {
-					"action": "DropContents",
-					"stack": { "type": "item", "code": "chemicalportion-strongsodium" }
-				}
-			},
-			"*-dilutedcuprite": {
-				"containable": true,
-				"itemsPerLitre": 100,
-				"texture": { "base": "block/liquid/dilutedcuprite" },
-				"allowSpill": true,
-				"whenSpilled": {
-					"action": "DropContents",
-					"stack": { "type": "item", "code": "dilutedcupriteportion" } 
-				}
-			},
-			"*-cupricsolution": {
-				"containable": true,
-				"itemsPerLitre": 100,
-				"texture": { "base": "block/liquid/cupricsolution" },
-				"allowSpill": true,
-				"whenSpilled": {
-					"action": "DropContents",
-					"stack": { "type": "item", "code": "chemicalportion-cupricsolution" } 
-				}
-			},
-			"*-mineraloil_impure": {
-				"containable": true,
-				"itemsPerLitre": 100,
-				"texture": { "base": "block/liquid/mineraloil_impure" },
-				"allowSpill": true,
-				"whenSpilled": {
-					"action": "DropContents",
-					"stack": { "type": "item", "code": "chemicalportion-mineraloil_impure" } 
-				}
-			},
-			"*-mineraloil_pure": {
-				"containable": true,
-				"itemsPerLitre": 100,
-				"texture": { "base": "block/liquid/mineraloil_pure" },
-				"allowSpill": true,
-				"whenSpilled": {
-					"action": "DropContents",
-					"stack": { "type": "item", "code": "chemicalportion-mineraloil_pure" } 
-				}
-			},
-			"*-acidnitric": {
-				"containable": true,
-				"itemsPerLitre": 100,
-				"texture": { "base": "block/liquid/acidnitric" },
-				"allowSpill": true,
-				"whenSpilled": {
-					"action": "DropContents",
-					"stack": { "type": "item", "code": "chemicalportion-acidnitric" } 
-				}
-			},
-			"*-alumslurry": {
-				"containable": true,
-				"itemsPerLitre": 100,
-				"texture": { "base": "block/liquid/alumslurry" },
-				"allowSpill": true,
-				"whenSpilled": {
-					"action": "DropContents",
-					"stack": { "type": "item", "code": "chemicalportion-alumslurry" } 
-				}
-			},
-			"*-alumsolution": {
-				"containable": true,
-				"itemsPerLitre": 100,
-				"texture": { "base": "block/liquid/alumsolution" },
-				"allowSpill": true,
-				"whenSpilled": {
-					"action": "DropContents",
-					"stack": { "type": "item", "code": "chemicalportion-alumsolution" } 
-				}
-			}
-		}
-	},
-	"shape": { "base": "game:item/liquid" },
-	"textureByType": {
-		"*": { "base": "block/liquid/{type}" }
-	},
-	"creativeinventoryStacksByType": {
-		"*-organicslurry": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-organicslurry", "makefull": true } ] } } ] } ],
-		"*-ammonia": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-ammonia", "makefull": true } ] } } ] } ],
-		"*-strongsodium": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-strongsodium", "makefull": true } ] } } ] } ],
-		"*-dilutedcuprite": [ { "tabs": ["general", "liquids", "lithocraft" ], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-dilutedcuprite", "makefull": true } ] } } ] } ],
-		"*-cupricsolution": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-cupricsolution", "makefull": true } ] } } ] } ],
-		"*-mineraloil_impure": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-mineraloil_impure", "makefull": true } ] } } ] } ],
-		"*-mineraloil_pure": [ { "tabs": ["general", "liquids", "lithocraft" ], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-mineraloil_pure", "makefull": true } ] } } ] } ],
-		"*-acidnitric": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-acidnitric", "makefull": true } ] } } ] } ],
-		"*-alumslurry": [ { "tabs": ["general", "liquids", "lithocraft" ], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-alumslurry", "makefull": true } ] } } ] } ],
-		"*-alumsolution": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-alumsolution", "makefull": true } ] } } ] } ]
-	},
-	"maxstacksize": 5000,
-	"materialDensity": 1000,
-	"guiTransform": {
-		"translation": { "x": 0, "y": 1, "z": 0 },
-		"rotation": { "x": 123, "y": -33, "z": -13 },
-		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-		"scale": 1.4
-	},
-	"fpHandTransform": {
-		"translation": { "x": 0, "y": 0, "z": 0 },
-		"rotation": { "x": 25, "y": 157, "z": -5 }
-	},
-	"tpHandTransform": {
-		"translation": { "x": -1.5, "y": -1, "z": -1.4 }
-	}
+    ],
+    "class": "ItemLiquidPortion",
+    "matterState": "liquid",
+    "attributes": {
+        "handbook": {
+            "ignoreCreativeInvStacks": true,
+            "extraSectionsByType": {
+            "*-ammonia": [{ "title": "handbooktitle-howtocreate", "text": "howto-chemicalportion-ammonia" }],
+            "*-cupricsolution": [{ "title": "handbooktitle-trivia", "text": "trivia-chemicalportion-cupricsolution" }],
+            "*-alumslurry": [{"title": "handbooktitle-howtocreate", "text": "game:howto-chemicalportion-alumsolution"}],
+            "*-alumsolution": [{"title": "handbooktitle-howtocreate", "text": "game:howto-chemicalportion-alumsolution"}]
+            }
+        },
+        "distillationPropsByType": {
+            "*-organicslurry": {
+                "distilledStack": { "type": "item", "code": "lithocraft:chemicalportion-ammonia" },
+                "ratio": 0.5
+          },
+            "*-alumslurry": {
+                "distilledStack": { "type": "item", "code": "lithocraft:chemicalportion-alumsolution" },
+                "ratio": 0.8
+          }
+        },
+        "waterTightContainerPropsByType": {
+            "*-organicslurry": {
+                "containable": true,
+                "itemsPerLitre": 100,
+                "texture": { "base": "block/liquid/organicslurry" },
+                "allowSpill": true,
+                "whenSpilled": {
+                    "action": "DropContents",
+                    "stack": { "type": "item", "code": "chemicalportion-organicslurry" } 
+                }
+            },
+            "*-ammonia": {
+                "containable": true,
+                "itemsPerLitre": 100,
+                "texture": { "base": "block/liquid/ammonia" },
+                "allowSpill": true,
+                "whenSpilled": {
+                    "action": "DropContents",
+                    "stack": { "type": "item", "code": "chemicalportion-ammonia" }
+                }
+            },
+            "*-strongsodium": {
+                "containable": true,
+                "itemsPerLitre": 100,
+                "texture": { "base": "block/liquid/sodium" },
+                "allowSpill": true,
+                "whenSpilled": {
+                    "action": "DropContents",
+                    "stack": { "type": "item", "code": "chemicalportion-strongsodium" }
+                }
+            },
+            "*-dilutedcuprite": {
+                "containable": true,
+                "itemsPerLitre": 100,
+                "texture": { "base": "block/liquid/dilutedcuprite" },
+                "allowSpill": true,
+                "whenSpilled": {
+                    "action": "DropContents",
+                    "stack": { "type": "item", "code": "dilutedcupriteportion" } 
+                }
+            },
+            "*-cupricsolution": {
+                "containable": true,
+                "itemsPerLitre": 100,
+                "texture": { "base": "block/liquid/cupricsolution" },
+                "allowSpill": true,
+                "whenSpilled": {
+                    "action": "DropContents",
+                    "stack": { "type": "item", "code": "chemicalportion-cupricsolution" } 
+                }
+            },
+            "*-mineraloil_impure": {
+                "containable": true,
+                "itemsPerLitre": 100,
+                "texture": { "base": "block/liquid/mineraloil_impure" },
+                "allowSpill": true,
+                "whenSpilled": {
+                    "action": "DropContents",
+                    "stack": { "type": "item", "code": "chemicalportion-mineraloil_impure" } 
+                }
+            },
+            "*-mineraloil_pure": {
+                "containable": true,
+                "itemsPerLitre": 100,
+                "texture": { "base": "block/liquid/mineraloil_pure" },
+                "allowSpill": true,
+                "whenSpilled": {
+                    "action": "DropContents",
+                    "stack": { "type": "item", "code": "chemicalportion-mineraloil_pure" } 
+                }
+            },
+            "*-acidnitric": {
+                "containable": true,
+                "itemsPerLitre": 100,
+                "texture": { "base": "block/liquid/acidnitric" },
+                "allowSpill": true,
+                "whenSpilled": {
+                    "action": "DropContents",
+                    "stack": { "type": "item", "code": "chemicalportion-acidnitric" } 
+                }
+            },
+            "*-alumslurry": {
+                "containable": true,
+                "itemsPerLitre": 100,
+                "texture": { "base": "block/liquid/alumslurry" },
+                "allowSpill": true,
+                "whenSpilled": {
+                    "action": "DropContents",
+                    "stack": { "type": "item", "code": "chemicalportion-alumslurry" } 
+                }
+            },
+            "*-alumsolution": {
+                "containable": true,
+                "itemsPerLitre": 100,
+                "texture": { "base": "block/liquid/alumsolution" },
+                "allowSpill": true,
+                "whenSpilled": {
+                    "action": "DropContents",
+                    "stack": { "type": "item", "code": "chemicalportion-alumsolution" } 
+                }
+            }
+        }
+    },
+    "shape": { "base": "game:item/liquid" },
+    "textureByType": {
+        "*": { "base": "block/liquid/{type}" }
+    },
+    "creativeInventoryStacksByType": {
+        "*-organicslurry": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-organicslurry", "makefull": true } ] } } ] } ],
+        "*-ammonia": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-ammonia", "makefull": true } ] } } ] } ],
+        "*-strongsodium": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-strongsodium", "makefull": true } ] } } ] } ],
+        "*-dilutedcuprite": [ { "tabs": ["general", "liquids", "lithocraft" ], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-dilutedcuprite", "makefull": true } ] } } ] } ],
+        "*-cupricsolution": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-cupricsolution", "makefull": true } ] } } ] } ],
+        "*-mineraloil_impure": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-mineraloil_impure", "makefull": true } ] } } ] } ],
+        "*-mineraloil_pure": [ { "tabs": ["general", "liquids", "lithocraft" ], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-mineraloil_pure", "makefull": true } ] } } ] } ],
+        "*-acidnitric": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-acidnitric", "makefull": true } ] } } ] } ],
+        "*-alumslurry": [ { "tabs": ["general", "liquids", "lithocraft" ], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-alumslurry", "makefull": true } ] } } ] } ],
+        "*-alumsolution": [ { "tabs": ["general", "liquids", "lithocraft"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "lithocraft:chemicalportion-alumsolution", "makefull": true } ] } } ] } ]
+    },
+    "maxStackSize": 5000,
+    "materialDensity": 1000,
+    "guiTransform": {
+        "translation": { "x": 0, "y": 1, "z": 0 },
+        "rotation": { "x": 123, "y": -33, "z": -13 },
+        "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+        "scale": 1.4
+    },
+    "fpHandTransform": {
+        "translation": { "x": 0, "y": 0, "z": 0 },
+        "rotation": { "x": 25, "y": 157, "z": -5 }
+    },
+    "tpHandTransform": {
+        "translation": { "x": -1.5, "y": -1, "z": -1.4 }
+    }
 }

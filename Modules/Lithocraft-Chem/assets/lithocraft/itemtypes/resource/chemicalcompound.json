@@ -1,6 +1,6 @@
 {
 	"code": "chemicalcompound",
-	"variantgroups": [
+	"variantGroups": [
         {
             "code": "type",
             "states": [
@@ -10,8 +10,6 @@
             ]
         }
 	],
-	"heldTpIdleAnimation": "holdbothhands",
-	"heldRightReadyAnimation": "holdbothhands",
 	"shapeByType": {
 		"*": {
 			"base": "item/resource/chemicalresidue/large" 
@@ -27,7 +25,7 @@
 				"dusty": { "base": "item/chemical/mineralwax"}
 			}
 		},
-	"creativeinventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
+	"creativeInventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
 	"attributes": {
 		"handbook": {
 			"extraSectionsByType": {
@@ -46,10 +44,12 @@
 			"burnDuration": 90
 		}
 	},
-	"maxstacksizeByType": {
+	"maxStackSizeByType": {
 		"*": 32
 	},
 	"materialDensity": 1200,
+	"heldTpIdleAnimation": "holdbothhands",
+	"heldRightReadyAnimation": "holdbothhands",
 	"guiTransformByType": {
 		"*": {
 			"translation": { "x": 0, "y": 0, "z": 0 },

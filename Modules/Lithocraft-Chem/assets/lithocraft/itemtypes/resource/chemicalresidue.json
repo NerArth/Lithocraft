@@ -59,7 +59,7 @@
             "dusty": { "base": "item/chemical/{type}_dusty" }
         }
     },
-    "creativeinventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
+    "creativeInventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
     "attributes": {
         "dissolveInWater": true,
         "fertilizerPropsByType": {

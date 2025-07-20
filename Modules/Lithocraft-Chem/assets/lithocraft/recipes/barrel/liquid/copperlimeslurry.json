@@ -1,29 +1,29 @@
 [
-	{
-		"code": "copperlimenative",
-		"sealHours": 48,
-		"ingredients": [
-			{ "type": "item", "code": "game:limewaterportion", "litres": 1 },
-			{ "type": "item", "code": "game:nugget-nativecopper", "quantity": 2 }
-		],
-		"output": { "type": "item", "code": "chemicalportion-dilutedcuprite", "litres": 1 }
-	},
-	{
-		"code": "copperlimeemalachite",
-		"sealHours": 48,
-		"ingredients": [
-			{ "type": "item", "code": "game:limewaterportion", "litres": 1 },
-			{ "type": "item", "code": "game:nugget-malachite", "quantity": 1 }
-		],
-		"output": { "type": "item", "code": "chemicalportion-dilutedcuprite", "litres": 1 }
-	},
-	{
-		"code": "copperlimestuff",
-		"sealHours": 48,
-		"ingredients": [
-			{ "type": "item", "code": "game:limewaterportion", "litres": 1 },
-			{ "type": "item", "code": "em:powdered-metal-copper", "quantity": 1 }
-		],
-		"output": { "type": "item", "code": "chemicalportion-dilutedcuprite", "litres": 1 }
-	}
+    {
+        "code": "copperlimenative",
+        "sealHours": 48,
+        "ingredients": [
+            { "type": "item", "code": "game:limewaterportion", "litres": 1 },
+            { "type": "item", "code": "game:nugget-nativecopper", "quantity": 2 }
+        ],
+        "output": { "type": "item", "code": "chemicalportion-dilutedcuprite", "litres": 1 }
+    },
+    {
+        "code": "copperlimeemalachite",
+        "sealHours": 48,
+        "ingredients": [
+            { "type": "item", "code": "game:limewaterportion", "litres": 1 },
+            { "type": "item", "code": "game:nugget-malachite", "quantity": 1 }
+        ],
+        "output": { "type": "item", "code": "chemicalportion-dilutedcuprite", "litres": 1 }
+    },
+    {
+        "code": "copperlimestuff",
+        "sealHours": 24,
+        "ingredients": [
+            { "type": "item", "code": "game:limewaterportion", "litres": 1 },
+            { "type": "item", "code": "em:powdered-metal-copper", "quantity": 1 }
+        ],
+        "output": { "type": "item", "code": "chemicalportion-dilutedcuprite", "litres": 1 }
+    }
 ]
