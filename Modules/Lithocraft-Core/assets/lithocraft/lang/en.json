@@ -392,6 +392,10 @@
     "incontainer-item-chemicalportion-alumsolution": "Alum solution",
     "game:howto-chemicalportion-alumsolution": "Alum solution is made by processing alum slurry in a distillation set-up using a boiler and condenser.<br><br>Alum solution must then be left to stand in a barrel in order to obtain the purer oxide form of the metal, known as alumina.",
 
+    "item-chemicalportion-hydroperoxide": "Hydrogen peroxide",
+    "itemdesc-chemicalportion-hydroperoxide": "A very strong redox agent.",
+    "incontainer-item-chemicalportion-hydroperoxide": "Hydrogen peroxide",
+
 
 
     "item-chemicalresidue-biomass": "Residual compound (biomass)",
