@@ -6,7 +6,6 @@
     "NetworkVersion": null,
     "Description": "Gameplay utilities, new processes, decorative blocks, and more. Previously known as Lithocraft.",
     "Website": "https://mods.vintagestory.at/lithocraft",
-    "CoreMod": false,
     "ModID": "lithocraft",
     "Authors": [
         "NerArth"
