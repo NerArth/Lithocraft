@@ -321,7 +321,7 @@ namespace Lithocraft.BlockEntities
             
             if (BusyPlayer != null && CanRepair)
             {
-                Api.Logger.Debug("Grindstone is running repair update: " + dt);
+                //Api.Logger.Debug("Grindstone is running repair update: " + dt);
                 if (!CheckRepairable(BusyPlayer)) { SetBusy(BusyPlayer, false); ClearData(); ToggleSound();  return; }
                 SetBusy(BusyPlayer, true);
                 UpdateRepair(BusyPlayer);
@@ -332,7 +332,7 @@ namespace Lithocraft.BlockEntities
 
         public bool CheckRepairable(IPlayer byPlayer) // check that the repair can happen
         {
-            if (Api?.World is null) { Api?.Logger.Debug("LC Grindstone: World is null?"); return false; }
+            if (Api?.World is null) { /*Api?.Logger.Debug("LC Grindstone: World is null?");*/ return false; }
             var player = byPlayer;
             if (player is null) return false;
             bool isValidTool = false;
@@ -436,9 +436,20 @@ namespace Lithocraft.BlockEntities
             return array;
         }
 
+        // this method really needs a cleanup
+        /// <summary>
+        /// Attempts to repair the tool held by the player, increasing its durability if certain conditions are met.
+        /// </summary>
+        /// <remarks>The repair action will only succeed if the tool's current durability is less than its
+        /// maximum durability and the number of times it has been repaired does not exceed a threshold determined by
+        /// the tool's maximum durability and a repair tolerance factor. If the repair would cause the tool's durability
+        /// to exceed its maximum, the durability is capped at the maximum value.</remarks>
+        /// <param name="byPlayer">The player attempting the repair action.</param>
+        /// <returns><see langword="true"/> if the repair action was successful and the tool's durability was increased;
+        /// otherwise, <see langword="false"/> if the repair could not be performed or no changes were made.</returns>
         public bool UpdateRepair(IPlayer byPlayer)
         {
-            if (Api?.World is null) { Api?.Logger.Debug("World is null?"); return false; }
+            if (Api?.World is null) { /*Api?.Logger.Debug("World is null?");*/ return false; }
             var player = byPlayer;
 
             // then if the tool is actually repairable after all checks...

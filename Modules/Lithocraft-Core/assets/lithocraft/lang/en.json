@@ -21,6 +21,8 @@
     "lithocraft:lithocraft99tweaks-title": "Medieval Industry 99: Wiki and Secondary Features",
     "lithocraft:lithocraft99tweaks-text": "<strong>Wiki:</strong><br>The mod has a <a href=\"https://github.com/NerArth/Lithocraft/wiki\">small Wiki</a> documenting the changes the mod and its modules make to the game. Anyone can contribute to the Wiki.<br><br><strong>Tweaks:<br></strong>Please see the <a href=\"https://github.com/NerArth/Lithocraft/wiki/Tweaks\">Tweaks (Wiki page)</a> for a mostly complete list of gameplay changes, applicable to the latest version the mod.",
 
+    "blockhelp-grindstone-repair": "Repair held tool.",
+
     "feedback-grindstone-toolnotvalid": "This item cannot be repaired with a grindstone",
     "feedback-grindstone-tooltoofargone": "This tool cannot be repaired further, at least with this grindstone tier",
     "feedback-grindstone-toolalreadymax": "This tool doesn't need repairs right now",

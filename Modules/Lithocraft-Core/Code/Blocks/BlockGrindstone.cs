@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Lithocraft.BlockEntities;
@@ -23,14 +24,26 @@ namespace Lithocraft.Blocks
     {
         private LangUtility _langutil = new();
         public BlockEntityGrindstone? beGrindstone { get; private set;}
+
+        public override void OnUnloaded(ICoreAPI api)
+        {
+            base.OnUnloaded(api);
+            beGrindstone = null;
+        }
+
         //internal bool StopFlag;
         public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {
             if (blockSel != null && !world.Claims.TryAccess(byPlayer, blockSel.Position, EnumBlockAccessFlags.Use)) return false;
 
-            api.Logger.Debug("Grindstone interaction start");
+            //api.Logger.Debug("Grindstone interaction start");
 
-            beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
+            if (beGrindstone is null || beGrindstone.firstEvent)
+            {
+                beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
+            }
+
+            //beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
 
             /*
             if (beGrindstone == null)
@@ -68,10 +81,14 @@ namespace Lithocraft.Blocks
 
         public override bool OnBlockInteractStep(float secondsUsed, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {
-            //base.OnBlockInteractStep(secondsUsed, world, byPlayer, blockSel);
-            api.Logger.Debug("Grindstone busy step by " + byPlayer.PlayerName);
+            base.OnBlockInteractStep(secondsUsed, world, byPlayer, blockSel);
+            //api.Logger.Debug("Grindstone busy step by " + byPlayer.PlayerName);
 
-            beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
+            //if (beGrindstone is null || beGrindstone.firstEvent)
+            //{
+            //    beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
+            //}
+            
 
             if (beGrindstone is null) return false;
             if (beGrindstone.BusyPlayer is null) return false;
@@ -95,9 +112,9 @@ namespace Lithocraft.Blocks
         
         public override bool OnBlockInteractCancel(float secondsUsed, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel, EnumItemUseCancelReason cancelReason)
         {
-            api.Logger.Debug("Grindstone interaction cancel");
+            //api.Logger.Debug("Grindstone interaction cancel");
 
-            beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
+            //beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
 
             //if (beGrindstone != null)
             //{
@@ -121,7 +138,7 @@ namespace Lithocraft.Blocks
         
         public override void OnBlockInteractStop(float secondsUsed, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {
-            api.Logger.Debug("Grindstone interaction stopped");
+            //api.Logger.Debug("Grindstone interaction stopped");
 
             beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
 
@@ -130,8 +147,6 @@ namespace Lithocraft.Blocks
             beGrindstone.SetBusy(byPlayer, false);
             beGrindstone.firstEvent = false;
             beGrindstone.ToggleSound();
-
-
 
             //beGrindstone = (BlockEntityGrindstone?)world?.BlockAccessor.GetBlockEntity(blockSel?.Position);
 
@@ -144,105 +159,20 @@ namespace Lithocraft.Blocks
 
         }
 
-        /*
-        public override WorldInteraction[] GetPlacedBlockInteractionHelp(IWorldAccessor world, BlockSelection selection, IPlayer forPlayer)
-        {
-            var beg = world.BlockAccessor.GetBlockEntity(selection.Position) as BlockEntityGroundStorage;
-            if (beg?.StorageProps != null)
-            {
-                int bulkquantity = beg.StorageProps.BulkTransferQuantity;
+        // this still needs to be implemented - needs to have a dynamic itemstack list based on the items that can be repaired, which should be fetched from the json attributes etc.
+        //public override WorldInteraction[] GetPlacedBlockInteractionHelp(IWorldAccessor world, BlockSelection selection, IPlayer forPlayer)
+        //{
+        //    return new WorldInteraction[]
+        //    {
+        //        new WorldInteraction()
+        //        {
+        //            ActionLangCode = "blockhelp-grindstone-repair",
+        //            MouseButton = EnumMouseButton.Right,
+        //            Itemstacks = new ItemStack[] { new ItemStack(world.GetItem(new AssetLocation("pickaxe-iron"))), new ItemStack(world.GetItem(new AssetLocation("chisel-iron"))) }
+        //        }
+        //    }.Append(base.GetPlacedBlockInteractionHelp(world, selection, forPlayer));
 
-                if (beg.StorageProps.Layout == EnumGroundStorageLayout.Stacking && !beg.Inventory.Empty)
-                {
-                    var canIgniteStacks = BlockBehaviorCanIgnite.CanIgniteStacks(api, true).ToArray();
-
-                    var collObj = beg.Inventory[0].Itemstack.Collectible;
-
-                    return new WorldInteraction[]
-                    {
-                        new WorldInteraction()
-                        {
-                            ActionLangCode = "blockhelp-firepit-ignite",
-                            MouseButton = EnumMouseButton.Right,
-                            HotKeyCode = "shift",
-                            Itemstacks = canIgniteStacks,
-                            GetMatchingStacks = (wi, bs, es) => {
-                                var begs = api.World.BlockAccessor.GetBlockEntity(bs.Position) as BlockEntityGroundStorage;
-                                if (begs?.IsBurning == false && begs?.CanIgnite == true)
-                                {
-                                    return wi.Itemstacks;
-                                }
-                                return null;
-                            }
-                        },
-                        new WorldInteraction()
-                        {
-                            ActionLangCode = "blockhelp-groundstorage-addone",
-                            MouseButton = EnumMouseButton.Right,
-                            HotKeyCode = "shift",
-                            Itemstacks = new ItemStack[] { new ItemStack(collObj, 1) }
-                        },
-                        new WorldInteraction()
-                        {
-                            ActionLangCode = "blockhelp-groundstorage-removeone",
-                            MouseButton = EnumMouseButton.Right,
-                            HotKeyCode = null
-                        },
-
-                        new WorldInteraction()
-                        {
-                            ActionLangCode = "blockhelp-groundstorage-addbulk",
-                            MouseButton = EnumMouseButton.Right,
-                            HotKeyCodes = new string[] {"ctrl", "shift" },
-                            Itemstacks = new ItemStack[] { new ItemStack(collObj, bulkquantity) }
-                        },
-                        new WorldInteraction()
-                        {
-                            ActionLangCode = "blockhelp-groundstorage-removebulk",
-                            HotKeyCode = "ctrl",
-                            MouseButton = EnumMouseButton.Right
-                        }
-
-                    }.Append(base.GetPlacedBlockInteractionHelp(world, selection, forPlayer));
-                }
-
-                if (beg.StorageProps.Layout == EnumGroundStorageLayout.SingleCenter)
-                {
-                    return new WorldInteraction[]
-                    {
-                        new WorldInteraction()
-                        {
-                            ActionLangCode = "blockhelp-behavior-rightclickpickup",
-                            MouseButton = EnumMouseButton.Right
-                        },
-
-                    }.Append(base.GetPlacedBlockInteractionHelp(world, selection, forPlayer));
-                }
-
-                if (beg.StorageProps.Layout == EnumGroundStorageLayout.Halves || beg.StorageProps.Layout == EnumGroundStorageLayout.Quadrants)
-                {
-                    return new WorldInteraction[]
-                    {
-                        new WorldInteraction()
-                        {
-                            ActionLangCode = "blockhelp-groundstorage-add",
-                            MouseButton = EnumMouseButton.Right,
-                            HotKeyCode = "shift",
-                            Itemstacks = beg.StorageProps.Layout == EnumGroundStorageLayout.Halves ? groundStorablesHalves : groundStorablesQuadrants
-                        },
-                        new WorldInteraction()
-                        {
-                            ActionLangCode = "blockhelp-groundstorage-remove",
-                            MouseButton = EnumMouseButton.Right,
-                            HotKeyCode = null
-                        }
-
-                    }.Append(base.GetPlacedBlockInteractionHelp(world, selection, forPlayer));
-                }
-
-            }
-
-            return base.GetPlacedBlockInteractionHelp(world, selection, forPlayer);
-        }*/
+        //    //return base.GetPlacedBlockInteractionHelp(world, selection, forPlayer);
+        //}
     }
 }
