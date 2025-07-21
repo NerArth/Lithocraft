@@ -5,6 +5,7 @@
 ### Overview:
 Reintroducing the grindstone block. Other repair changes coming in another 0.7.x patch.
 
+### Items:
 - Grindstone:
     - Reintroduced, mostly as it functioned in v0.3.4.
     - Used to repair tools.
