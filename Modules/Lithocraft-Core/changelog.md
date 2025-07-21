@@ -1,6 +1,16 @@
 # Medieval Industry Changelog
 (aka Lithocraft)
 
+## v0.7.1
+### Overview:
+Addition of a new item, the whetstone.
+
+### Items:
+**Whetstone (new)**:
+- Made with a variety of materials. Crafting requires appropriate ground materials, a binder, wood, and an oil or fat.
+- Can be placed in crafting grid with a tool to repair it.
+- Has limited uses based on material it's made of, but also stacks up to 16.
+
 ## v0.7.0
 ### Overview:
 Reintroducing the grindstone block. Other repair changes coming in another 0.7.x patch.
