@@ -11,51 +11,36 @@ namespace Lithocraft.Items
     {
         public override void OnConsumedByCrafting(ItemSlot[] allInputSlots, ItemSlot stackInSlot, GridRecipe gridRecipe, CraftingRecipeIngredient fromIngredient, IPlayer byPlayer, int quantity)
         {
-            int ActualRepairAmount = stackInSlot.Itemstack.Attributes.GetInt("reinforcementStrength");
-            // we don't want to use the base method
-            //base.OnConsumedByCrafting(allInputSlots, stackInSlot, gridRecipe, fromIngredient, byPlayer, quantity);
+            // we use reinforcementStrength in the json definition to keep things to a vanilla standard
+            int ReinfStr = stackInSlot.Itemstack.Attributes.GetInt("reinforcementStrength");
+            int DurabilityToApply;
 
-            // it's always assumed the whetstone is marked as tool in the recipe
-            if (fromIngredient.IsTool)
+            ItemSlot[] inputs = allInputSlots;
+            
+            foreach (ItemSlot slot in inputs)
             {
-                // unfortunately this is a duplicate of vanilla code but can't see a simpler way to handle this
-                stackInSlot.Itemstack.Collectible.DamageItem(byPlayer.Entity.World, byPlayer.Entity, stackInSlot, fromIngredient.ToolDurabilityCost);
-
-                if (stackInSlot.Itemstack.Collectible.Durability <= 1)
+                if (!slot.Empty)
                 {
-                    stackInSlot.Itemstack.StackSize -= quantity;
-                }
-                else if (stackInSlot.Itemstack.StackSize <= 0)
-                {
-                    stackInSlot.Itemstack = null;
-                    stackInSlot.MarkDirty();
-                }
-                for (int i = 0; i < allInputSlots.Length; i++)
-                {
-                    var otherStack = allInputSlots[i];
-                    if (otherStack == null) { return; }
-                    base.api.Logger.Debug("whetstone debug: " + allInputSlots[i].Itemstack.GetName());
-                    var impossibleCheck = false;
-                    
-                    if (impossibleCheck)
+                    if (slot.Itemstack.Collectible.Tool != null && slot.Itemstack.Attributes.HasAttribute("durability"))
                     {
-                        if ((otherStack != stackInSlot) && (otherStack?.Itemstack.Collectible.Tool != null))
+                        int curDura = slot.Itemstack.Attributes.GetInt("durability");
+                        int maxDura = slot.Itemstack.Collectible.GetMaxDurability(slot.Itemstack);
+
+                        if (ReinfStr + curDura > maxDura)
                         {
-                            //gridRecipe.Output
-                            var currDura = otherStack.Itemstack.Collectible.Durability;
-                            otherStack.Itemstack.Attributes.SetInt("durability", currDura + ActualRepairAmount);
-                            otherStack.MarkDirty();
-                            return;
+                            DurabilityToApply = maxDura - curDura;
                         }
+                        else
+                        {
+                            DurabilityToApply = ReinfStr;
+                        }
+
+                        slot.Itemstack.Attributes.SetInt("durability", DurabilityToApply);
+                        slot.MarkDirty();
                     }
                 }
-                return;
             }
-
-            else
-            {
-                return;
-            }
+            base.OnConsumedByCrafting(allInputSlots, stackInSlot, gridRecipe, fromIngredient, byPlayer, quantity);
         }
     }
 }

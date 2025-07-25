@@ -1,7 +1,8 @@
 [
 	{
-		"enabled": false,
-		"code": "whetstone-chisel",
+		"enabled": true,
+		"name": "whetstone-chisel-repair",
+		"showInCreatedBy": false,
 		"ingredientPattern": "T,R",
 		"recipeGroup": 0,
 		"ingredients": {
@@ -12,7 +13,6 @@
 		"height": 2,
 		"shapeless": true,
 		"copyAttributesFrom": "T",
-		"averageDurability": false,
-		"output": { "type": "item", "code": "game:chisel-{metal}"  }
+		"output": { "type": "item", "code": "game:chisel-{metal}" }
 	}
 ]

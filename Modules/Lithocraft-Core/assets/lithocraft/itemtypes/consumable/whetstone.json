@@ -1,5 +1,5 @@
 {
-    "enabled": false,
+    "enabled": true,
     "code": "whetstone",
     "class": "lithocraft.whetstone",
     "__sample": "whetstone-flint",
