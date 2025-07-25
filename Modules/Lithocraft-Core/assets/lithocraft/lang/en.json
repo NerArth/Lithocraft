@@ -2,6 +2,8 @@
     "game:tabname-lithocraft": "Medieval Industry",
     "game:handbook-category-lithocraft": "Medieval Industry",
     "handbook-category-lithocraft:category": "Medieval Industry",
+    "game:lithocraft-addedby-title": "Mod:",
+    "game:lithocraft-addedby-text": "<i>Added by Medieval Industry</i>",
 
     "lithocraft:lithocraft1guide-title": "Medieval Industry 01: Introduction",
     "lithocraft:lithocraft1guide-text": "<strong>Core module:</strong><br><a href=\"handbooksearch://Medieval Industry\">Medieval Industry</a> changes the gameplay experience through simple additions or modifications, the complexity of which depends on the installed Medieval Industry modules.<br><br><strong>Core features:</strong><br>- <a href=\"handbooksearch://cutter\">Claycutters</a> are a new item, which is used to save time that would be spent clayforming, providing great convenience by shifting some of the time investment into smithing the brand new claycutters.<br>  - The cutters can be used to create ready-to-fire pottery shapes and <a href=\"handbooksearch://trimmed\">trimmed pieces of clay</a>.<br><br>This is not a comprehensive list and the core module also presents other <a href=\"handbook://lithocraft99tweaks\">secondary features</a>.<br><br><strong>Known issues:</strong><br>Please refer to the <a href=https://github.com/NerArth/Lithocraft/issues>\"issues page\"</a> of the GitHub repo, pertinent to the latest released version of the mod(s).<br><br><strong>Please note:</strong><br>Particulary for the addon modules, while I have taken some care in making recipes which feel authentic <i>enough</i> to real-world analogues for obtaining vanilla items, some processes are simplified for the purpose of reducing complexity and keeping things simpler. I also try to follow vanilla game-logic, usually.<br><br>The mod and modules are subject to potentially having balancing issues or being incomplete in some areas. In terms of development, the time it takes for content to be added depends on its complexity. Please be sure to leave feedback and comments on <a href=\"https://mods.vintagestory.at/lithocraft\">the mod page</a> and be sure to check out the <a href=\"https://github.com/NerArth/Lithocraft/wiki\">Wiki</a>.",
@@ -674,6 +676,12 @@
     "game:blockdesc-rammed-light-thickheavy": "Thick and heavy.",
     "game:blockdesc-rammed-light-thicklight": "Thick and light.",
     "game:blockdesc-rammed-light-thinheavy": "Thin and heavy.",
-    "game:blockdesc-rammed-light-thinlight": "Thin and light."
+    "game:blockdesc-rammed-light-thinlight": "Thin and light.",
 
+
+    "game:block-crop-mangelwurzel": "Root of scarcity",
+    "game:item-vegetable-mangelwurzel": "Root of scarcity",
+    "game:itemdesc-vegetable-mangelwurzel": "A root vegetable, sometimes known as fodder beet, or mangelwurzel.",
+    "game:item-seeds-mangelwurzel": "Mangelwurzel seed",
+    "game:trivia-mangelwurzel": "The root of scarcity is a vegetable that has commonly been used as animal feed, especially in Europe.<br><br>It is halfway between a sugar beet and a beetroot, and can grow quite large. Some varieties may be known for having a certain sweetness.<br><br>In the context of <a href=\"handbooksearch://Medieval Industry\">Medieval Industry</a>, the mangelwurzel is meant to fill the niche of a Winter-hardy crop, particularly for regions where temperatures often go down to -15C for prolonged periods.<br><br>For players living in such climates - or even a bit colder and making the use of a greenhouse - these crops should be planted by early November to maximise the use of Winter for the purpose of growing this root vegetable crop in what would otherwise be fallow farmland, as the crop will on average take 3-4months to grow." 
 }

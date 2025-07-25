@@ -3,9 +3,15 @@
 
 ## v0.7.1
 ### Overview:
-Addition of a new item, the whetstone.
+Additions to repair mechanics and agriculture.
 
 ### Items:
+**Root of scarcity**:
+- New crop which fills the niche of a Winter crop.
+- Can be planted all-year round, depending on climate.
+- Very high satiation, but low yield.
+- Takes an average of 4 months to grow.
+
 **Whetstone (new)**:
 - Made with a variety of materials. Crafting requires appropriate ground materials, a binder, wood, and an oil or fat.
 - Can be placed in crafting grid with a tool to repair it.
