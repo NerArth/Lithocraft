@@ -32,6 +32,7 @@ namespace Lithocraft
         // Useful for registering block/entity classes on both sides
         public override void Start(ICoreAPI api)
         {
+            LogPassthrough.LithocraftModReference = Mod;
             string _shortid = Mod.Info.ModID;
             base.Start(api); // self-memo: read the base.Start tooltip description
 
@@ -82,6 +83,11 @@ namespace Lithocraft
             //    //if (page.PageCode == )
             //}
         }
+    }
+
+    internal static class LogPassthrough
+    {
+        public static Mod? LithocraftModReference { get; internal set; }
     }
     public class BlockEntityOveny : BlockEntityOven
     {
