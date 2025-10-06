@@ -16,6 +16,10 @@
 		<OutputPath>bin\$(Configuration)\$(Version)\Lithocraft-Core\</OutputPath>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <DefineConstants>$(DefineConstants);DEBUG_BUILD</DefineConstants>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- VINTAGE STORY DEPENDENCIES -->
 		<Reference Include="VintagestoryAPI">

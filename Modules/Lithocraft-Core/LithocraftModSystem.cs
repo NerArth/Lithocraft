@@ -1,5 +1,6 @@
 ﻿using Lithocraft.BlockEntities;
 using Lithocraft.Blocks;
+using Lithocraft.Code.Abstract;
 using Lithocraft.Items;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
