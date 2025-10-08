@@ -15,7 +15,7 @@ namespace Lithocraft.Code.Abstract
 
         public override void Start(ICoreAPI api)
         {
-            RepairsValidTools = api.Assets.Get<JsonObject>("blocktypes/grindstone.json")["attributes"]["validTools"].AsArray<string>();
+            RepairsValidTools = api.Assets.Get<JsonObject>("blocktypes/grindstone.json")["attributes"]["validToolsByType"].AsArray<string>();
             base.Start(api);
         }
     }
