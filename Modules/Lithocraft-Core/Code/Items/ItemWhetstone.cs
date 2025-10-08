@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Lithocraft.BlockEntities;
 using Lithocraft.Blocks;
+using Lithocraft.Code.Abstract;
 using Vintagestory.API.Common;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
@@ -29,7 +30,7 @@ namespace Lithocraft.Items
             int? dura = slot.Itemstack.Attributes.TryGetInt("durability");
             if (value != 0)
             {
-                if (AssessRepairable<bool>(slot) && dura != null && maxDura != null)
+                if ( && dura != null && maxDura != null)
                 {
                     if (dura < maxDura && dura + value <= maxDura)
                     {
@@ -62,32 +63,32 @@ namespace Lithocraft.Items
         /// </summary>
         /// <param name="slot"></param>
         /// <returns></returns>
-        public static T AssessRepairable<T>(ItemSlot? slot = null)
-        {
-#if DEBUG_BUILD
-            LogPassthrough.LithocraftModReference.Logger.Debug("ItemWhetstone: AssessRepairable called");
-#endif
-            // TODO: this check has to be turned into some kind of internal class because it's duplicating code from BEGrindstone
-            BlockGrindstone? bg = new();
-            string[] validTools = bg.Attributes["validTools"].AsObject<string[]>();
+//        public static T AssessRepairable<T>(ItemSlot? slot = null)
+//        {
+//#if DEBUG_BUILD
+//            LogPassthrough.LithocraftModReference.Logger.Debug("ItemWhetstone: AssessRepairable called");
+//#endif
+//            // TODO: this check has to be turned into some kind of internal class because it's duplicating code from BEGrindstone
+//            BlockGrindstone? bg = new();
+//            string[] validTools = bg.Attributes["validTools"].AsObject<string[]>();
 
-            foreach (string tool in validTools)
-            {
-                if (slot == null || slot.Itemstack == null)
-                {
-                    LogPassthrough.LithocraftModReference.Logger.Debug("ItemWhetstone: AssessRepairable called with null slot or itemstack");
-                    return (T)(object)validTools;
-                }
-                if (slot.Itemstack.Collectible.WildCardMatch(tool + "-*"))
-                {
-                    bg = null; // reset bg to null so it can be handled by GC
-                    return (T)(object)true;
-                }
-            }
+//            foreach (string tool in validTools)
+//            {
+//                if (slot == null || slot.Itemstack == null)
+//                {
+//                    LogPassthrough.LithocraftModReference.Logger.Debug("ItemWhetstone: AssessRepairable called with null slot or itemstack");
+//                    return (T)(object)validTools;
+//                }
+//                if (slot.Itemstack.Collectible.WildCardMatch(tool + "-*"))
+//                {
+//                    bg = null; // reset bg to null so it can be handled by GC
+//                    return (T)(object)true;
+//                }
+//            }
 
-            bg = null; // reset bg to null so it can be handled by GC
-            return (T)(object)false;
-        }
+//            bg = null; // reset bg to null so it can be handled by GC
+//            return (T)(object)false;
+//        }
 
         // TODO: write something more appropriate if this method is needed, because this is a duplicate from vanilla ItemWearable
         public override int GetMergableQuantity(ItemStack sinkStack, ItemStack sourceStack, EnumMergePriority priority)
