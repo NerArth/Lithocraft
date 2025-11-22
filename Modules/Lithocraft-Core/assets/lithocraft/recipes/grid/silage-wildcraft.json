@@ -1,0 +1,30 @@
+[
+    {
+        "enabled": false,
+        "recipeGroup": 0,
+        "code": "silage-wc-vegetable",
+        "ingredientPattern": "VG",
+        "ingredients": {
+            "V": { "type": "item", "code": "wildcraftfruit:vegetable-*", "quantity": 4, "name": "vegetable" },
+            "G": { "type": "item", "code": "game:drygrass", "quantity": 5 }
+        },
+        "shapeless": true,
+        "width": 1,
+        "height": 2,
+        "output": { "type": "block", "code": "silage-organicmatter-ud", "quantity": 1 }
+    },
+    {
+        "enabled": false,
+        "recipeGroup": 3,
+        "code": "silage-wc-fruit",
+        "ingredientPattern": "VG",
+        "ingredients": {
+            "V": { "type": "item", "code": "wildcraftfruit:fruit-*", "quantity": 12, "name": "fruit" },
+            "G": { "type": "item", "code": "game:drygrass", "quantity": 5 }
+        },
+        "shapeless": true,
+        "width": 1,
+        "height": 2,
+        "output": { "type": "block", "code": "silage-organicmatter-ud", "quantity": 1 }
+    }
+]

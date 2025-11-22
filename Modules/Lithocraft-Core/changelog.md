@@ -7,7 +7,7 @@ Additions to repair mechanics and agriculture.
 
 ### Items:
 **Root of scarcity**:
-- New crop which fills the niche of a Winter crop.
+- New crop which fills the niche of a Winter-hardy crop.
 - Can be planted all-year round, depending on climate.
 - Very high satiation, but low yield.
 - Takes an average of 4 months to grow.
@@ -16,6 +16,12 @@ Additions to repair mechanics and agriculture.
 - Made with a variety of materials. Crafting requires appropriate ground materials, a binder, wood, and an oil or fat.
 - Can be placed in crafting grid with a tool to repair it.
 - Has limited uses based on material it's made of, but also stacks up to 16.
+
+**Silage (all types)**:
+- Improved recipe clarity, as all recipes have always been shapeless. Balance remains unchanged.
+
+### Compatibility:
+- Wildcraft fruits and vegetables can now be used to make silage (plant).
 
 ## v0.7.0
 ### Overview:
