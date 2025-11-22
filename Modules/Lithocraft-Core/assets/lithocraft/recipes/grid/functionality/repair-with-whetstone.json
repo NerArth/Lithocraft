@@ -1,18 +1,18 @@
 [
-	{
-		"enabled": true,
-		"name": "whetstone-chisel-repair",
-		"showInCreatedBy": false,
-		"ingredientPattern": "T,R",
-		"recipeGroup": 0,
-		"ingredients": {
-			"T": { "type": "item", "code": "game:chisel-*", "name": "metal" },
-			"R": { "type": "item", "code": "whetstone-*", "name": "material", "isTool": true }
-		},
-		"width": 1,
-		"height": 2,
-		"shapeless": true,
-		"copyAttributesFrom": "T",
-		"output": { "type": "item", "code": "game:chisel-{metal}" }
-	}
+    {
+        "enabled": true,
+        "name": "whetstone-chisel-repair",
+        "showInCreatedBy": false,
+        "ingredientPattern": "T,R",
+        "recipeGroup": 0,
+        "ingredients": {
+            "T": { "type": "item", "code": "game:chisel-*", "name": "metal" },
+            "R": { "type": "item", "code": "whetstone-*", "name": "material", "isTool": true }
+        },
+        "width": 1,
+        "height": 2,
+        "shapeless": true,
+        "copyAttributesFrom": "T",
+        "output": { "type": "item", "code": "game:chisel-{metal}" }
+    }
 ]

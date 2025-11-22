@@ -27,7 +27,7 @@
             "*-ceramic": 300,
             "*-corundum": 350,
             "*-diamond": 500
-		}
+        }
     },
     "materialDensity": 2500,
     "variantGroups": [
