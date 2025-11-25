@@ -1,6 +1,6 @@
 [
     {
-        "enabled": true,
+        "enabled": false,
         "name": "whetstone-chisel-repair",
         "showInCreatedBy": false,
         "ingredientPattern": "T,R",
