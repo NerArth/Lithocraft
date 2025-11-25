@@ -21,70 +21,99 @@
     "side": "Server"
   },
   {
-	"op": "addmerge",
+    "op": "addmerge",
     "path": "/attributes/inContainerTextureByType",
     "value": {
-		"*-lignite": { "base": "game:block/coal/lignite" },
-		"*-bituminouscoal": { "base": "game:block/coal/bituminous" },
-		"*-anthracite": { "base": "game:block/coal/anthracite" }
-	},
-    "file": "game:itemtypes/resource/ore-ungraded.json",
-    "side": "Server" 
-  },
-  {
-	"op": "addmerge",
-    "path": "/attributes/inContainerTextureByType",
-    "value": {
-		"*-lapislazuli": { "base": "block/stone/special/lapislazuli" }
-	},
-    "file": "game:itemtypes/resource/ore-ungraded.json",
-    "side": "Server" 
-  },
-  {
-	"op": "addmerge",
-    "path": "/attributes/inContainerTextureByType",
-    "value": {
-		"*-alum": { "base": "game:block/stone/gravel/chalk" },
-		"*-cinnabar": { "base": "game:item/resource/ungraded/cinnabar" },
-		"*-sulfur": { "base": "game:item/resource/ungraded/sulfur" },
-		"*-sylvite": { "base": "game:item/resource/ungraded/sylvite" },
-		"*-borax": { "base": "game:item/resource/ungraded/borax" }
-	},
+        "*-lignite": { "base": "game:block/coal/lignite" },
+        "*-bituminouscoal": { "base": "game:block/coal/bituminous" },
+        "*-anthracite": { "base": "game:block/coal/anthracite" }
+    },
     "file": "game:itemtypes/resource/ore-ungraded.json",
     "side": "Server" 
   },
   {
     "op": "addmerge",
-    "path": "/attributes",
+    "path": "/attributes/inContainerTextureByType",
     "value": {
-      "inContainerTextureByType": {
+        "*-lapislazuli": { "base": "block/stone/special/lapislazuli" }
+    },
+    "file": "game:itemtypes/resource/ore-ungraded.json",
+    "side": "Server" 
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/inContainerTextureByType",
+    "value": {
+        "*-alum": { "base": "game:block/stone/gravel/chalk" },
+        "*-cinnabar": { "base": "game:item/resource/ungraded/cinnabar" },
+        "*-sulfur": { "base": "game:item/resource/ungraded/sulfur" },
+        "*-sylvite": { "base": "game:item/resource/ungraded/sylvite" },
+        "*-borax": { "base": "game:item/resource/ungraded/borax" }
+    },
+    "file": "game:itemtypes/resource/ore-ungraded.json",
+    "side": "Server" 
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/inContainerTextureByType",
+    "value": {
         "*": { "base": "game:block/stone/rock/{rock}1" }
-      }
     },
     "file": "game:itemtypes/resource/stone.json",
     "side": "Server"
   },
   {
     "op": "addmerge",
-    "path": "/attributes",
+    "path": "/attributes/inContainerTextureByType",
     "value": {
-      "inContainerTextureByType": {
         "*": { "base": "game:block/soil/{type}clay" }
-      }
     },
     "file": "game:itemtypes/resource/clay.json",
     "side": "Server"
-  }
-  ,
+  },
   {
     "op": "addmerge",
-    "path": "/attributes",
+    "path": "/attributes/inContainerTextureByType",
     "value": {
-      "inContainerTextureByType": {
         "*": { "base": "game:block/clay/shingles/{type}" }
-      }
     },
     "file": "game:itemtypes/resource/shingle.json",
+    "side": "Server"
+  },
+  {
+  "op": "addmerge",
+  "path": "/attributes/inContainerTextureByType",
+  "value": {
+    "*": { "base": "game:block/stone/gravel/{rock}gravel" }
+  },
+  "file": "game:blocktypes/stone/gravel.json",
+  "side": "Server"
+  },
+  {
+  "op": "addmerge",
+  "path": "/attributes/inContainerTextureByType",
+  "value": {
+    "*": { "base": "block/stone/drystone/{rock}1" }
+  },
+  "file": "game:blocktypes/stone/drystone.json",
+  "side": "Server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/inContainerTextureByType",
+    "value": {
+      "*": { "base": "block/stone/cobbleskull/{rock}1" }
+    },
+    "file": "game:blocktypes/stone/cobble/cobbleskull.json",
+    "side": "Server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/inContainerTextureByType",
+    "value": {
+      "*": { "base": "block/stone/cobblestone/{rock}1" }
+    },
+    "file": "game:blocktypes/stone/cobble/cobblestone.json",
     "side": "Server"
   }
 ]

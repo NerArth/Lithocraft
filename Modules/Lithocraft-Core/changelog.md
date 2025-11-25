@@ -20,6 +20,10 @@ Additions to repair mechanics and agriculture.
 **Silage (all types)**:
 - Improved recipe clarity, as all recipes have always been shapeless. Balance remains unchanged.
 
+### Tweaks:
+- Container textures for gravel blocks.
+- Container textures for cobblestone, drystone and cobbleskull  blocks.
+
 ### Compatibility:
 - Wildcraft fruits and vegetables can now be used to make silage (plant).
 
