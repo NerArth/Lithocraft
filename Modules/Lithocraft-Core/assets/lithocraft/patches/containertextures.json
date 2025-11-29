@@ -81,28 +81,37 @@
     "side": "Server"
   },
   {
-  "op": "addmerge",
-  "path": "/attributes/inContainerTextureByType",
-  "value": {
+    "op": "addmerge",
+    "path": "/attributes/inContainerTextureByType",
+    "value": {
     "*": { "base": "game:block/stone/gravel/{rock}gravel" }
-  },
-  "file": "game:blocktypes/stone/gravel.json",
-  "side": "Server"
-  },
-  {
-  "op": "addmerge",
-  "path": "/attributes/inContainerTextureByType",
-  "value": {
-    "*": { "base": "block/stone/drystone/{rock}1" }
-  },
-  "file": "game:blocktypes/stone/drystone.json",
-  "side": "Server"
+    },
+    "file": "game:blocktypes/stone/gravel.json",
+    "side": "Server"
   },
   {
     "op": "addmerge",
     "path": "/attributes/inContainerTextureByType",
     "value": {
-      "*": { "base": "block/stone/cobbleskull/{rock}1" }
+    "*": { "base": "game:block/stone/drystone/{rock}1" }
+    },
+    "file": "game:blocktypes/stone/drystone.json",
+    "side": "Server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/inContainerTextureByType",
+    "value": {
+    "*": { "base": "game:block/stone/drystone/{rock}1" }
+    },
+    "file": "game:blocktypes/stone/drystonefence-free.json",
+    "side": "Server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/inContainerTextureByType",
+    "value": {
+      "*": { "base": "game:block/stone/cobbleskull/{rock}1" }
     },
     "file": "game:blocktypes/stone/cobble/cobbleskull.json",
     "side": "Server"
@@ -111,9 +120,18 @@
     "op": "addmerge",
     "path": "/attributes/inContainerTextureByType",
     "value": {
-      "*": { "base": "block/stone/cobblestone/{rock}1" }
+      "*": { "base": "game:block/stone/cobblestone/{rock}1" }
     },
     "file": "game:blocktypes/stone/cobble/cobblestone.json",
+    "side": "Server"
+  },
+  {
+    "op": "addmerge",
+    "path": "/attributes/inContainerTextureByType",
+    "value": {
+      "*": { "base": "game:block/soil/cob/normal1" }
+    },
+    "file": "game:blocktypes/soil/cob.json",
     "side": "Server"
   }
 ]

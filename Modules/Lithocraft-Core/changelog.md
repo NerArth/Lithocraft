@@ -11,6 +11,8 @@ Additions to repair mechanics and agriculture.
 - Can be planted all-year round, depending on climate.
 - Very high satiation, but low yield.
 - Takes an average of 4 months to grow.
+- Can be found in temperate and cold biomes.
+- Can be found in cracked vessels and bought from traders.
 
 **Whetstone (new)**:
 - Made with a variety of materials. Crafting requires appropriate ground materials, a binder, wood, and an oil or fat.
@@ -18,11 +20,12 @@ Additions to repair mechanics and agriculture.
 - Has limited uses based on material it's made of, but also stacks up to 16.
 
 **Silage (all types)**:
-- Improved recipe clarity, as all recipes have always been shapeless. Balance remains unchanged.
+- Improved recipe clarity. Recipes were always shapeless, balance remains unchanged.
 
 ### Tweaks:
 - Container textures for gravel blocks.
-- Container textures for cobblestone, drystone and cobbleskull  blocks.
+- Container textures for cob blocks.
+- Container textures for more cobblestone, drystone and cobbleskull blocks or related blocks.
 
 ### Compatibility:
 - Wildcraft fruits and vegetables can now be used to make silage (plant).
