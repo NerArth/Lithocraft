@@ -1,0 +1,101 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"item": "block/plant/crop/mangelwurzel/bulb",
+		"e3": "game:block/plant/crop/turnip/e1",
+		"s4": "game:block/plant/crop/turnip/s1"
+	},
+	"elements": [
+		{
+			"name": "turnip 1",
+			"from": [ 6.5, 1.5, 6.5 ],
+			"to": [ 9.5, 5.0, 9.5 ],
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#item", "uv": [ 6.0, 4.5, 9.0, 8.0 ] },
+				"east": { "texture": "#item", "uv": [ 11.0, 4.5, 14.0, 8.0 ] },
+				"south": { "texture": "#item", "uv": [ 6.5, 4.5, 9.5, 8.0 ] },
+				"west": { "texture": "#item", "uv": [ 3.0, 4.5, 6.0, 8.0 ] },
+				"up": { "texture": "#item", "uv": [ 5.5, 2.0, 8.5, 5.0 ], "autoUv": false },
+				"down": { "texture": "#item", "uv": [ 7.5, 1.5, 10.5, 4.5 ] }
+			},
+			"children": [
+				{
+					"name": "turnip 1 top",
+					"from": [ 0.5, 6.5, 0.5 ],
+					"to": [ 2.5, 8.0, 2.5 ],
+					"faces": {
+						"north": { "texture": "#item", "uv": [ 6.0, 2.5, 8.0, 4.0 ] },
+						"east": { "texture": "#item", "uv": [ 6.0, 4.5, 8.0, 6.0 ] },
+						"south": { "texture": "#item", "uv": [ 13.5, 5.0, 15.5, 6.5 ] },
+						"west": { "texture": "#item", "uv": [ 5.0, 5.0, 7.0, 6.5 ] },
+						"up": { "texture": "#item", "uv": [ 9.0, 5.0, 11.0, 7.0 ] }
+					}
+				},
+				{
+					"name": "s 1",
+					"from": [ -5.0, 7.5, 1.5 ],
+					"to": [ 8.0, 20.5, 1.5 ],
+					"shade": false,
+					"rotationOrigin": [ 1.5, 0.0, 1.5 ],
+					"faces": {
+						"south": { "texture": "#s4", "uv": [ 1.5, 2.0, 14.5, 15.0 ] }
+					}
+				},
+				{
+					"name": "e 1",
+					"from": [ 1.5, 6.5, -5.0 ],
+					"to": [ 1.5, 19.5, 8.0 ],
+					"shade": false,
+					"rotationOrigin": [ 1.5, -2.0, 1.5 ],
+					"faces": {
+						"east": { "texture": "#e3", "uv": [ 1.5, 3.0, 14.5, 16.0 ] }
+					}
+				},
+				{
+					"name": "root",
+					"from": [ 0.5, -1.0, 0.5 ],
+					"to": [ 2.5, 0.0, 2.5 ],
+					"faces": {
+						"north": { "texture": "#item", "uv": [ 2.0, 15.0, 4.0, 16.0 ] },
+						"east": { "texture": "#item", "uv": [ 3.0, 15.0, 5.0, 16.0 ] },
+						"south": { "texture": "#item", "uv": [ 13.0, 15.0, 15.0, 16.0 ] },
+						"west": { "texture": "#item", "uv": [ 1.5, 15.0, 3.5, 16.0 ] },
+						"down": { "texture": "#item", "uv": [ 12.5, 14.0, 14.5, 16.0 ] }
+					}
+				},
+				{
+					"name": "tip",
+					"from": [ 0.9, -1.5, 0.9 ],
+					"to": [ 2.1, -1.0, 2.1 ],
+					"rotationOrigin": [ 0.3, 1.0, 0.2 ],
+					"faces": {
+						"north": { "texture": "#item", "uv": [ 7.5, 15.0, 8.5, 15.5 ] },
+						"east": { "texture": "#item", "uv": [ 7.0, 15.0, 8.0, 15.5 ] },
+						"south": { "texture": "#item", "uv": [ 3.5, 15.0, 4.5, 15.5 ] },
+						"west": { "texture": "#item", "uv": [ 8.5, 14.5, 9.5, 15.0 ] },
+						"down": { "texture": "#item", "uv": [ 9.0, 15.0, 10.0, 16.0 ] }
+					}
+				},
+				{
+					"name": "turnip 1 top2",
+					"from": [ 0.3, 3.5, 0.3 ],
+					"to": [ 2.7, 7.0, 2.7 ],
+					"faces": {
+						"north": { "texture": "#item", "uv": [ 2.5, 11.0, 4.5, 14.5 ] },
+						"east": { "texture": "#item", "uv": [ 9.5, 3.0, 11.5, 6.5 ] },
+						"south": { "texture": "#item", "uv": [ 10.5, 3.5, 12.5, 7.0 ] },
+						"west": { "texture": "#item", "uv": [ 8.0, 11.5, 10.0, 15.0 ] },
+						"up": { "texture": "#item", "uv": [ 8.5, 3.5, 10.5, 5.5 ] }
+					}
+				}
+			]
+		}
+	]}

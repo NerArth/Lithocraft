@@ -6,11 +6,11 @@
 Additions to repair mechanics and agriculture.
 
 ### Items:
-**Root of scarcity**:
-- New crop which fills the niche of a Winter-hardy crop.
+**Root of scarcity (new)**:
+- New crop which fills the niche of a Winter-hardy (K) crop.
 - Can be planted all-year round, depending on climate.
 - Very high satiation, but low yield.
-- Takes an average of 4 months to grow.
+- Takes an average of 3 months to grow.
 - Can be found in temperate and cold biomes.
 - Can be found in cracked vessels and bought from traders.
 

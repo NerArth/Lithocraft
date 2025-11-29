@@ -18,7 +18,7 @@
         "seed": { "base": "game:item/resource/seeds/{type}" }
     },
     "creativeInventory": { "general": ["*"], "items": ["*"], "lithocraft": ["*"] },
-    "materialDensity": 450,
+    "materialDensity": 600,
     "guiTransform": {
         "translation": { "x": 0, "y": 0, "z": 0 },
         "rotation": { "x": 159, "y": -152, "z": 0 },

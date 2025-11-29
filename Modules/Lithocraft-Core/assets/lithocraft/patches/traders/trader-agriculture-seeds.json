@@ -1,0 +1,12 @@
+[
+    {
+        "enabled": true,
+        "op": "addeach",
+        "path": "/selling/list/-",
+        "value": [
+            { "code": "lithocraft:seeds-mangelwurzel", "type": "item", "stacksize": 3, "stock": { "avg": 3, "var": 1.0 }, "price": { "avg": 7, "var": 3 } }
+        ],
+        "file": "game:config/tradelists/trader-agriculture.json",
+        "side": "Server"
+    }
+]

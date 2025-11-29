@@ -1,0 +1,42 @@
+[
+    {
+        "enabled": true,
+        "op": "addeach",
+        "path": "/-",
+        "value": [
+            {
+                "comment": "Small patches of mangelwurzel",
+                "blockCodes": ["crop-mangelwurzel-1", "crop-mangelwurzel-2", "crop-mangelwurzel-5"],
+                "minTemp": -14,
+                "maxTemp": 10,
+                "minRain": 0.15,
+                "maxRain": 0.55,
+                "maxForest": 0.75,
+                "quantity": { "avg": 5, "var": 5 },
+                "chance": 0.015
+            }
+        ],
+        "file": "game:worldgen/blockpatches/crop.json",
+        "side": "Server"
+    },
+    {
+        "enabled": true,
+        "op": "addeach",
+        "path": "/-",
+        "value": [
+            {
+                "comment": "Rare large patches of mangelwurzel",
+                "blockCodes": ["crop-mangelwurzel-1", "crop-mangelwurzel-3", "crop-mangelwurzel-4"],
+                "minTemp": -8,
+                "maxTemp": 13,
+                "minRain": 0.28,
+                "maxRain": 0.52,
+                "maxForest": 0.95,
+                "quantity": { "avg": 12, "var": 5 },
+                "chance": 0.005
+            }
+        ],
+        "file": "game:worldgen/blockpatches/crop.json",
+        "side": "Server"
+    }
+]
