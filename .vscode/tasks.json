@@ -3,38 +3,35 @@
     "tasks": [
         {
             "label": "build",
-            "command": "dotnet",
-            "type": "process",
+            "type": "shell",
+            "command": "powershell",
             "args": [
-                "build",
-                "-c",
-                "Debug",
-                "${workspaceFolder}/Lithocraft/Lithocraft.csproj"
+                "-File",
+                "${workspaceFolder}/build.ps1",
+                "-Target",
+                "All",
+                "-Config",
+                "Debug"
             ],
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
-            "label": "package",
-            "command": "dotnet",
-            "type": "process",
+            "label": "build interactive",
+            "type": "shell",
+            "command": "powershell",
             "args": [
-                "run",
-                "--project",
-                "${workspaceFolder}/CakeBuild/CakeBuild.csproj"
+                "-File",
+                "${workspaceFolder}/build.ps1"
             ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "build (Cake)",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "-c",
-                "Debug",
-                "${workspaceFolder}/CakeBuild/CakeBuild.csproj"
-            ],
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
+            "presentation": {
+                "focus": true,
+                "panel": "shared"
+            }
         }
     ]
 }
