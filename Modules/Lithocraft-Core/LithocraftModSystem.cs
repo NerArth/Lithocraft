@@ -20,10 +20,14 @@ using Vintagestory.GameContent;
 ]
 */
 
+using Lithocraft.API;
+
 namespace Lithocraft
 {
     public class LithocraftModSystem : ModSystem
     {
+        public ILithocraftAPI? LithoAPI { get; private set; }
+
         public override void StartPre(ICoreAPI api)
         {
 
@@ -33,6 +37,9 @@ namespace Lithocraft
         // Useful for registering block/entity classes on both sides
         public override void Start(ICoreAPI api)
         {
+            LithoAPI = new LithocraftAPI();
+            api.ModLoader.GetModSystem<LithocraftModSystem>(); // just to ensure it's loaded, though we are it.
+
             LogPassthrough.LithocraftModReference = Mod;
             string _shortid = Mod.Info.ModID;
             base.Start(api); // self-memo: read the base.Start tooltip description

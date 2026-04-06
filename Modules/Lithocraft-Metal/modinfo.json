@@ -1,0 +1,23 @@
+{
+    "Type": "code",
+    "TextureSize": 32,
+    "Name": "Medieval Industry: Metal",
+    "Version": "0.0.0",
+    "NetworkVersion": null,
+    "Description": "Addon to Medieval Industry. Adds a number of new metalworking processes.",
+    "Website": "https://mods.vintagestory.at/lithocraft-metal",
+    "CoreMod": false,
+    "ModID": "lithocraftmetal",
+    "Authors": [
+        "NerArth"
+    ],
+    "Contributors": [
+
+    ],
+    "Side": "Universal",
+    "RequiredOnClient": true,
+    "RequiredOnServer": true,
+    "Dependencies": {
+        "lithocraft": "0.7.0"
+    }
+}
