@@ -13,7 +13,6 @@
 		<!-- Read Version from modinfo.json -->
 		<ModInfoJson>modinfo.json</ModInfoJson>
 		<OutputPath>bin\$(Configuration)\$(Version)\Lithocraft-Chem\</OutputPath>
-		<CoreBuiltPath>$(SolutionDir)\Modules\Lithocraft-Core\bin\Debug\</CoreBuiltPath>
 	</PropertyGroup>
 
 	<ItemGroup>

@@ -1,10 +1,97 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <RootNamespace>Lithocraft_Metal</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<Import Project="Version.props" Condition="Exists('Version.props')" />
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>Lithocraft_Metal</RootNamespace>
+		<AssemblyName>Lithocraft.Metal</AssemblyName>
+		<FriendlyName>Lithocraft-Metal</FriendlyName>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<Nullable>enable</Nullable>
+		<AnalysisLevel>latest-recommended</AnalysisLevel>
+		<ModInfoJson>modinfo.json</ModInfoJson>
+		<OutputPath>bin\$(Configuration)\$(Version)\Lithocraft-Metal\</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- VINTAGE STORY DEPENDENCIES -->
+		<Reference Include="VintagestoryAPI">
+			<HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="VSSurvivalMod">
+			<HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="VSCreativeMod">
+			<HintPath>$(VINTAGE_STORY)/Mods/VSCreativeMod.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="VSEssentials">
+			<HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="VintagestoryLib">
+			<HintPath>$(VINTAGE_STORY)/VintagestoryLib.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="protobuf-net">
+			<HintPath>$(VINTAGE_STORY)/Lib/protobuf-net.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="cairo-sharp">
+			<HintPath>$(VINTAGE_STORY)/Lib/cairo-sharp.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Lithocraft-Core\Lithocraft-Core.csproj">
+			<Private>false</Private>
+		</ProjectReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="extract-version.ps1" Condition="Exists('extract-version.ps1')" />
+	</ItemGroup>
+
+	<Target Name="PreBuild" BeforeTargets="PrepareForBuild" Condition="Exists('extract-version.ps1')">
+		<Exec Command="powershell -ExecutionPolicy Bypass -File extract-version.ps1" />
+	</Target>
+
+	<ItemGroup>
+		<Content Include="assets\**" Condition="Exists('assets')">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="modinfo.json" Condition="Exists('modinfo.json')">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="modicon.png" Condition="Exists('modicon.png')">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="changelog.md" Condition="Exists('changelog.md')">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<Target Name="PackageOutputAsZip" AfterTargets="Build">
+		<PropertyGroup>
+			<ZipOutputDir>$(OutputPath)</ZipOutputDir>
+			<ZipFileName>$(MSBuildProjectDirectory)\bin\$(Configuration)\Lithocraft-Metal-$(Version).zip</ZipFileName>
+		</PropertyGroup>
+		<ItemGroup>
+			<FilesToZip Include="$(ZipOutputDir)**\*" />
+		</ItemGroup>
+		<ZipDirectory SourceDirectory="$(ZipOutputDir)" DestinationFile="$(ZipFileName)" Overwrite="true" Condition="Exists('$(ZipOutputDir)')" />
+	</Target>
 
 </Project>

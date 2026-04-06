@@ -21,7 +21,11 @@
                 // "--openWorld" , "modding test world",
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/Lithocraft/bin/Debug/Mods"
+                "${workspaceFolder}/Modules/Lithocraft-Core/bin/Debug/0.0.0",
+                "--addModPath",
+                "${workspaceFolder}/Modules/Lithocraft-Chem/bin/Debug/0.0.0",
+                "--addModPath",
+                "${workspaceFolder}/Modules/Lithocraft-Metal/bin/Debug/0.0.0"
             ],
             "console": "internalConsole",
             "stopAtEntry": false
@@ -41,21 +45,14 @@
             "args": [
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/Lithocraft/bin/Debug/Mods"
+                "${workspaceFolder}/Modules/Lithocraft-Core/bin/Debug/0.0.0",
+                "--addModPath",
+                "${workspaceFolder}/Modules/Lithocraft-Chem/bin/Debug/0.0.0",
+                "--addModPath",
+                "${workspaceFolder}/Modules/Lithocraft-Metal/bin/Debug/0.0.0"
             ],
             "console": "internalConsole",
             "stopAtEntry": false
-        },
-        {
-            "name": "CakeBuild",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build (Cake)",
-            "program": "${workspaceFolder}/CakeBuild/bin/Debug/net7.0/CakeBuild.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/CakeBuild",
-            "stopAtEntry": false,
-            "console": "internalConsole"
         }
     ]
 }
