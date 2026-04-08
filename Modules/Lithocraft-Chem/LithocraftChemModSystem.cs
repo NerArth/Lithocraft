@@ -1,6 +1,7 @@
 ﻿using Lithocraft;
 using Lithocraft.Items;
 using Lithocraft.Chem.Items;
+using Lithocraft.Core.Utility;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
@@ -29,7 +30,7 @@ namespace Lithocraft.Chem
             Mod.Logger.StoryEvent("Throwing free radicals...");
 
             // register item classes
-            api.RegisterItemClass(_shortid + ".chemicalresidue", typeof(ItemChemicalResidue));
+            SafeRegistrar.RegisterItemClass(api, _shortid + ".chemicalresidue", typeof(ItemChemicalResidue));
 
             //List<CollectibleObject> lithocraftChemItems = new();
 

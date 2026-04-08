@@ -12,6 +12,7 @@ using Vintagestory.API.Util;
 using Vintagestory.Client.NoObf;
 using Vintagestory.GameContent;
 using Vintagestory.ServerMods.NoObf;
+using Lithocraft.Core.Utility;
 
 // Remember to comment out logging before release
 
@@ -23,120 +24,132 @@ namespace Lithocraft.CodeContent
         //internal bool StopFlag;
         public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {
-            if (blockSel != null && !world.Claims.TryAccess(byPlayer, blockSel.Position, EnumBlockAccessFlags.Use)) return false;
-
-            api.Logger.Debug("Grindstone interaction start");
-
-            BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
-
-            /*
-            if (beGrindstone == null)
+            return ErrorGuard.TryGet(api.Logger, () =>
             {
-                api.Logger.Debug("beGrindstone is null at position: " + blockSel.Position);
-                api.Logger.Debug("position reports it is a " + blockSel.Block.GetPlacedBlockName(world,blockSel.Position));
-            }
-            else if (beGrindstone.GetBusy())
-            {
-                api.Logger.Debug("beGrindstone is already busy");
-            }
-            */
+                if (blockSel != null && !world.Claims.TryAccess(byPlayer, blockSel.Position, EnumBlockAccessFlags.Use)) return false;
 
-            if (beGrindstone != null && !beGrindstone.GetBusy())
-            {
-                if (!beGrindstone.CheckRepairable(byPlayer)) return false;
-                if (beGrindstone.GetBusy()) {_langutil.ProvideErrorFeedback("lithocraft:grindstone-alreadyinuse", "lithocraft:feedback-grindstone-alreadyinuse", api); return false; }
-                else if (beGrindstone.CanRepair)
+                api.Logger.Debug("Grindstone interaction start");
+
+                BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
+
+                /*
+                if (beGrindstone == null)
                 {
-                    beGrindstone.LoadTickListener();
-                    //api.Logger.Debug("Grindstone set to busy by " + byPlayer.PlayerName);
-                    beGrindstone.SetBusy(byPlayer, true);
-                    beGrindstone.firstEvent = true;
-                    beGrindstone.ToggleSound();
-                    return true;
+                    api.Logger.Debug("beGrindstone is null at position: " + blockSel.Position);
+                    api.Logger.Debug("position reports it is a " + blockSel.Block.GetPlacedBlockName(world,blockSel.Position));
                 }
-                else
+                else if (beGrindstone.GetBusy())
                 {
-                    beGrindstone.ToggleSound();
-                    return false;
+                    api.Logger.Debug("beGrindstone is already busy");
                 }
-            }
-            else return false;
+                */
+
+                if (beGrindstone != null && !beGrindstone.GetBusy())
+                {
+                    if (!beGrindstone.CheckRepairable(byPlayer)) return false;
+                    if (beGrindstone.GetBusy()) {_langutil.ProvideErrorFeedback("lithocraft:grindstone-alreadyinuse", "lithocraft:feedback-grindstone-alreadyinuse", api); return false; }
+                    else if (beGrindstone.CanRepair)
+                    {
+                        beGrindstone.LoadTickListener();
+                        //api.Logger.Debug("Grindstone set to busy by " + byPlayer.PlayerName);
+                        beGrindstone.SetBusy(byPlayer, true);
+                        beGrindstone.firstEvent = true;
+                        beGrindstone.ToggleSound();
+                        return true;
+                    }
+                    else
+                    {
+                        beGrindstone.ToggleSound();
+                        return false;
+                    }
+                }
+                else return false;
+            }, false, "BlockGrindstone.OnBlockInteractStart");
         }
 
         public override bool OnBlockInteractStep(float secondsUsed, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {
-            api.Logger.Debug("Grindstone busy step by " + byPlayer.PlayerName);
-
-            BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
-
-            if (beGrindstone is null) return false;
-            if (beGrindstone.BusyPlayer is null) return false;
-            //if (StopFlag) { StopFlag = false; return false; }
-            if (!beGrindstone.CheckRepairable(byPlayer)) return false;
-            if (!beGrindstone.GetBusy()) return false;
-            /*{
-                beGrindstone.firstEvent = false;
-                //beGrindstone.MarkDirty();
-                return false;
-            }*/
-            /*else if (beGrindstone.GetBusy())
+            return ErrorGuard.TryGet(api.Logger, () =>
             {
-                //api.Logger.Debug("Grindstone continuing...");
-                //beGrindstone.UpdateRepair(byPlayer);
+                api.Logger.Debug("Grindstone busy step by " + byPlayer.PlayerName);
+
+                BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
+
+                if (beGrindstone is null) return false;
+                if (beGrindstone.BusyPlayer is null) return false;
+                //if (StopFlag) { StopFlag = false; return false; }
+                if (!beGrindstone.CheckRepairable(byPlayer)) return false;
+                if (!beGrindstone.GetBusy()) return false;
+                /*{
+                    beGrindstone.firstEvent = false;
+                    //beGrindstone.MarkDirty();
+                    return false;
+                }*/
+                /*else if (beGrindstone.GetBusy())
+                {
+                    //api.Logger.Debug("Grindstone continuing...");
+                    //beGrindstone.UpdateRepair(byPlayer);
+                    return true;
+                }*/
+                if (beGrindstone.firstEvent) beGrindstone.firstEvent = false;
                 return true;
-            }*/
-            if (beGrindstone.firstEvent) beGrindstone.firstEvent = false;
-            return true;
-            //return base.OnBlockInteractStep(secondsUsed, world, byPlayer, blockSel);
+                //return base.OnBlockInteractStep(secondsUsed, world, byPlayer, blockSel);
+            }, false, "BlockGrindstone.OnBlockInteractStep");
         }
         
         public override bool OnBlockInteractCancel(float secondsUsed, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel, EnumItemUseCancelReason cancelReason)
         {
-            api.Logger.Debug("Grindstone interaction cancel");
-
-            BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
-
-            /*if (beGrindstone != null)
+            return ErrorGuard.TryGet(api.Logger, () =>
             {
-                if (beGrindstone.GetBusy() && beGrindstone.CheckRepairable(byPlayer))
-                {
-                    return false;
-                }
-                else
-                {*/
-                    beGrindstone.ClearData();
-                    beGrindstone.SetBusy(null, false);
-                    beGrindstone.firstEvent = false;
-                    beGrindstone.ToggleSound();
-                    return true;
-                /*}
-            }*/
+                api.Logger.Debug("Grindstone interaction cancel");
 
-            //return true;//base.OnBlockInteractCancel(secondsUsed, world, byPlayer, blockSel, cancelReason);
+                BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
+
+                /*if (beGrindstone != null)
+                {
+                    if (beGrindstone.GetBusy() && beGrindstone.CheckRepairable(byPlayer))
+                    {
+                        return false;
+                    }
+                    else
+                    {*/
+                        beGrindstone.ClearData();
+                        beGrindstone.SetBusy(null, false);
+                        beGrindstone.firstEvent = false;
+                        beGrindstone.ToggleSound();
+                        return true;
+                    /*}
+                }*/
+
+                //return true;//base.OnBlockInteractCancel(secondsUsed, world, byPlayer, blockSel, cancelReason);
+            }, true, "BlockGrindstone.OnBlockInteractCancel");
         }
         
         public override void OnBlockInteractStop(float secondsUsed, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {
-            api.Logger.Debug("Grindstone interaction stopped");
-
-            BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
-
-            beGrindstone.ClearData();
-            beGrindstone.SetBusy(null, false);
-            beGrindstone.firstEvent = false;
-            beGrindstone.ToggleSound();
-
-
-            /*
-            BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
-            
-            if (beGrindstone != null)
+            ErrorGuard.TryExecute(api.Logger, () =>
             {
+                api.Logger.Debug("Grindstone interaction stopped");
+
+                BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
+
+                beGrindstone.ClearData();
+                beGrindstone.SetBusy(null, false);
+                beGrindstone.firstEvent = false;
+                beGrindstone.ToggleSound();
+
+
+                /*
+                BlockEntityGrindstone beGrindstone = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGrindstone;
+
+                if (beGrindstone != null)
                 {
-                    beGrindstone.SetBusy(byPlayer, false); // this should have already been set according to other logic
+                    {
+                        beGrindstone.SetBusy(byPlayer, false); // this should have already been set according to other logic
+                    }
                 }
-            }
-            */
+                */
+            }, "BlockGrindstone.OnBlockInteractStop");
         }
         
         /*
