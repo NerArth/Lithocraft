@@ -2,6 +2,7 @@
 using Lithocraft.Blocks;
 using Lithocraft.Code.Abstract;
 using Lithocraft.Items;
+using Lithocraft.Core.Utility;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
@@ -47,16 +48,16 @@ namespace Lithocraft
             //api.RegisterEntity(_shortid + ".projectileexploding", typeof(EntityProjectileExploding));
 
             // register item classes
-            api.RegisterItemClass(_shortid + ".claycutter",typeof(ItemClaycutter));
-            api.RegisterItemClass(_shortid + ".whetstone", typeof(ItemWhetstone));
-            //api.RegisterItemClass(_shortid + ".chemicalresidue", typeof(ItemChemicalResidue));
+            SafeRegistrar.RegisterItemClass(api, _shortid + ".claycutter",typeof(ItemClaycutter));
+            SafeRegistrar.RegisterItemClass(api, _shortid + ".whetstone", typeof(ItemWhetstone));
+            //SafeRegistrar.RegisterItemClass(api, _shortid + ".chemicalresidue", typeof(ItemChemicalResidue));
 
-            //api.RegisterItemClass(_shortid + ".handcannon", typeof(ItemHandCannon));
-            //api.RegisterItemClass(_shortid + ".cannonrocket", typeof(ItemCannonRocket));
+            //SafeRegistrar.RegisterItemClass(api, _shortid + ".handcannon", typeof(ItemHandCannon));
+            //SafeRegistrar.RegisterItemClass(api, _shortid + ".cannonrocket", typeof(ItemCannonRocket));
 
             // register block/BE paired classes
-            api.RegisterBlockClass(_shortid + ".grindstone", typeof(BlockGrindstone));
-            api.RegisterBlockEntityClass(_shortid + ".BEgrindstone", typeof(BlockEntityGrindstone));
+            SafeRegistrar.RegisterBlockClass(api, _shortid + ".grindstone", typeof(BlockGrindstone));
+            SafeRegistrar.RegisterBlockEntityClass(api, _shortid + ".BEgrindstone", typeof(BlockEntityGrindstone));
 
             //api.RegisterBlockEntityClass(_shortid + ".BEtoolmold", typeof(BlockEntityToolMoldCustom));
 
